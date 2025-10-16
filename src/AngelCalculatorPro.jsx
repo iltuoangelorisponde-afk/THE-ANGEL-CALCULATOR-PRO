@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Calendar, CreditCard, Download, Printer, Sparkles, Star } from 'lucide-react';
+import { Calendar, CreditCard, Download, Printer, Sparkles, Star, Globe } from 'lucide-react';
 
 const AngelCalculator = () => {
+  const [language, setLanguage] = useState('it');
   const [formData, setFormData] = useState({
     nome: '',
     cognome: '',
@@ -15,11 +16,221 @@ const AngelCalculator = () => {
   const [angelResult, setAngelResult] = useState(null);
   const [selectedPlan, setSelectedPlan] = useState(null);
 
+  const translations = {
+    it: {
+      title: 'The Angels Calculator',
+      subtitle: 'Scopri il Tuo Angelo Custode',
+      firstName: 'Nome',
+      lastName: 'Cognome',
+      email: 'Email',
+      phone: 'Cellulare',
+      birthDate: 'Data di Nascita',
+      promo: 'Autorizzo ad essere contattato/a per offerte promozionali sugli Angeli',
+      calculate: 'Calcola il Mio Angelo',
+      print: 'Stampa Report',
+      newSearch: 'Nuova Ricerca',
+      guardianOf: 'Angelo Custode di',
+      choir: 'CORO',
+      essence: 'ESSENZA',
+      freeVersion: 'Versione Gratuita',
+      freeText: 'Questo è il tuo Angelo Custode! Per scoprire la preghiera completa e i rituali personalizzati, scegli uno dei piani premium.',
+      angelicPrayer: 'Preghiera Angelica',
+      prayerInstruction: 'Recita questa preghiera ogni mattina per entrare in sintonia con il tuo Angelo Custode.',
+      angelicQualities: 'Qualità Angeliche',
+      quality1: 'Protezione spirituale costante',
+      quality2: 'Guida nelle decisioni importanti',
+      quality3: 'Supporto nei momenti difficili',
+      quality4: 'Sviluppo essenza',
+      personalRituals: 'Rituali Personalizzati',
+      activation: 'ATTIVAZIONE ANGELO CUSTODE',
+      activationText: 'Riceverai attivazione energetica del tuo Angelo',
+      activationNote: 'Questa attivazione apre un canale diretto con il tuo Angelo Custode',
+      services: 'Scopri i Nostri Servizi Angelici!',
+      free: 'GRATIS',
+      active: 'Attivo',
+      select: 'Seleziona',
+      buy: 'Acquista',
+      howItWorks: 'Come Funziona',
+      step1: 'Scegli il tuo piano',
+      step2: 'Pagamento sicuro PayPal',
+      step3: 'Ricevi report via email',
+      fillRequired: 'Compila tutti i campi obbligatori'
+    },
+    en: {
+      title: 'The Angels Calculator',
+      subtitle: 'Discover Your Guardian Angel',
+      firstName: 'First Name',
+      lastName: 'Last Name',
+      email: 'Email',
+      phone: 'Phone',
+      birthDate: 'Birth Date',
+      promo: 'I authorize to be contacted for promotional offers about Angels',
+      calculate: 'Calculate My Angel',
+      print: 'Print Report',
+      newSearch: 'New Search',
+      guardianOf: 'Guardian Angel of',
+      choir: 'CHOIR',
+      essence: 'ESSENCE',
+      freeVersion: 'Free Version',
+      freeText: 'This is your Guardian Angel! To discover the complete prayer and personalized rituals, choose one of the premium plans.',
+      angelicPrayer: 'Angelic Prayer',
+      prayerInstruction: 'Recite this prayer every morning to attune with your Guardian Angel.',
+      angelicQualities: 'Angelic Qualities',
+      quality1: 'Constant spiritual protection',
+      quality2: 'Guidance in important decisions',
+      quality3: 'Support in difficult times',
+      quality4: 'Essence development',
+      personalRituals: 'Personalized Rituals',
+      activation: 'GUARDIAN ANGEL ACTIVATION',
+      activationText: 'You will receive energetic activation of your Angel',
+      activationNote: 'This activation opens a direct channel with your Guardian Angel',
+      services: 'Discover Our Angelic Services!',
+      free: 'FREE',
+      active: 'Active',
+      select: 'Select',
+      buy: 'Buy',
+      howItWorks: 'How It Works',
+      step1: 'Choose your plan',
+      step2: 'Secure PayPal payment',
+      step3: 'Receive report via email',
+      fillRequired: 'Fill in all required fields'
+    },
+    fr: {
+      title: 'The Angels Calculator',
+      subtitle: 'Découvrez Votre Ange Gardien',
+      firstName: 'Prénom',
+      lastName: 'Nom',
+      email: 'Email',
+      phone: 'Téléphone',
+      birthDate: 'Date de Naissance',
+      promo: 'J\'autorise à être contacté(e) pour des offres promotionnelles sur les Anges',
+      calculate: 'Calculer Mon Ange',
+      print: 'Imprimer Rapport',
+      newSearch: 'Nouvelle Recherche',
+      guardianOf: 'Ange Gardien de',
+      choir: 'CHOEUR',
+      essence: 'ESSENCE',
+      freeVersion: 'Version Gratuite',
+      freeText: 'Ceci est votre Ange Gardien! Pour découvrir la prière complète et les rituels personnalisés, choisissez un des plans premium.',
+      angelicPrayer: 'Prière Angélique',
+      prayerInstruction: 'Récitez cette prière chaque matin pour vous harmoniser avec votre Ange Gardien.',
+      angelicQualities: 'Qualités Angéliques',
+      quality1: 'Protection spirituelle constante',
+      quality2: 'Guidance dans les décisions importantes',
+      quality3: 'Soutien dans les moments difficiles',
+      quality4: 'Développement essence',
+      personalRituals: 'Rituels Personnalisés',
+      activation: 'ACTIVATION ANGE GARDIEN',
+      activationText: 'Vous recevrez l\'activation énergétique de votre Ange',
+      activationNote: 'Cette activation ouvre un canal direct avec votre Ange Gardien',
+      services: 'Découvrez Nos Services Angéliques!',
+      free: 'GRATUIT',
+      active: 'Actif',
+      select: 'Sélectionner',
+      buy: 'Acheter',
+      howItWorks: 'Comment Ça Marche',
+      step1: 'Choisissez votre plan',
+      step2: 'Paiement sécurisé PayPal',
+      step3: 'Recevez rapport par email',
+      fillRequired: 'Remplir tous les champs obligatoires'
+    },
+    es: {
+      title: 'The Angels Calculator',
+      subtitle: 'Descubre Tu Ángel Guardián',
+      firstName: 'Nombre',
+      lastName: 'Apellido',
+      email: 'Email',
+      phone: 'Teléfono',
+      birthDate: 'Fecha de Nacimiento',
+      promo: 'Autorizo a ser contactado/a para ofertas promocionales sobre Ángeles',
+      calculate: 'Calcular Mi Ángel',
+      print: 'Imprimir Informe',
+      newSearch: 'Nueva Búsqueda',
+      guardianOf: 'Ángel Guardián de',
+      choir: 'CORO',
+      essence: 'ESENCIA',
+      freeVersion: 'Versión Gratuita',
+      freeText: '¡Este es tu Ángel Guardián! Para descubrir la oración completa y los rituales personalizados, elige uno de los planes premium.',
+      angelicPrayer: 'Oración Angélica',
+      prayerInstruction: 'Recita esta oración cada mañana para sintonizar con tu Ángel Guardián.',
+      angelicQualities: 'Cualidades Angélicas',
+      quality1: 'Protección espiritual constante',
+      quality2: 'Guía en decisiones importantes',
+      quality3: 'Apoyo en momentos difíciles',
+      quality4: 'Desarrollo esencia',
+      personalRituals: 'Rituales Personalizados',
+      activation: 'ACTIVACIÓN ÁNGEL GUARDIÁN',
+      activationText: 'Recibirás activación energética de tu Ángel',
+      activationNote: 'Esta activación abre un canal directo con tu Ángel Guardián',
+      services: '¡Descubre Nuestros Servicios Angélicos!',
+      free: 'GRATIS',
+      active: 'Activo',
+      select: 'Seleccionar',
+      buy: 'Comprar',
+      howItWorks: 'Cómo Funciona',
+      step1: 'Elige tu plan',
+      step2: 'Pago seguro PayPal',
+      step3: 'Recibe informe por email',
+      fillRequired: 'Completa todos los campos obligatorios'
+    },
+    de: {
+      title: 'The Angels Calculator',
+      subtitle: 'Entdecke Deinen Schutzengel',
+      firstName: 'Vorname',
+      lastName: 'Nachname',
+      email: 'Email',
+      phone: 'Telefon',
+      birthDate: 'Geburtsdatum',
+      promo: 'Ich erlaube, für Werbeangebote über Engel kontaktiert zu werden',
+      calculate: 'Berechne Meinen Engel',
+      print: 'Bericht Drucken',
+      newSearch: 'Neue Suche',
+      guardianOf: 'Schutzengel von',
+      choir: 'CHOR',
+      essence: 'ESSENZ',
+      freeVersion: 'Kostenlose Version',
+      freeText: 'Dies ist dein Schutzengel! Um das vollständige Gebet und personalisierte Rituale zu entdecken, wähle einen der Premium-Pläne.',
+      angelicPrayer: 'Engelgebet',
+      prayerInstruction: 'Rezitiere dieses Gebet jeden Morgen, um dich mit deinem Schutzengel zu verbinden.',
+      angelicQualities: 'Engelhafte Qualitäten',
+      quality1: 'Ständiger spiritueller Schutz',
+      quality2: 'Führung bei wichtigen Entscheidungen',
+      quality3: 'Unterstützung in schwierigen Zeiten',
+      quality4: 'Essenzentwicklung',
+      personalRituals: 'Personalisierte Rituale',
+      activation: 'SCHUTZENGEL AKTIVIERUNG',
+      activationText: 'Du erhältst die energetische Aktivierung deines Engels',
+      activationNote: 'Diese Aktivierung öffnet einen direkten Kanal zu deinem Schutzengel',
+      services: 'Entdecke Unsere Engeldienste!',
+      free: 'KOSTENLOS',
+      active: 'Aktiv',
+      select: 'Wählen',
+      buy: 'Kaufen',
+      howItWorks: 'Wie Es Funktioniert',
+      step1: 'Wähle deinen Plan',
+      step2: 'Sichere PayPal-Zahlung',
+      step3: 'Erhalte Bericht per Email',
+      fillRequired: 'Fülle alle Pflichtfelder aus'
+    }
+  };
+
+  const t = translations[language];
+
+  const languages = [
+    { code: 'it', flag: '🇮🇹', name: 'Italiano' },
+    { code: 'en', flag: '🇺🇸', name: 'English' },
+    { code: 'fr', flag: '🇫🇷', name: 'Français' },
+    { code: 'es', flag: '🇪🇸', name: 'Español' },
+    { code: 'de', flag: '🇩🇪', name: 'Deutsch' }
+  ];
+
   const prefissi = [
     { code: '+39', flag: '🇮🇹' },
     { code: '+1', flag: '🇺🇸' },
     { code: '+44', flag: '🇬🇧' },
-    { code: '+33', flag: '🇫🇷' }
+    { code: '+33', flag: '🇫🇷' },
+    { code: '+34', flag: '🇪🇸' },
+    { code: '+49', flag: '🇩🇪' }
   ];
 
   const angelsDB = [
@@ -94,189 +305,4 @@ const AngelCalculator = () => {
     { num: 69, nome: 'ROCHEL', coro: 'ANGELI', essenza: 'RESTITUZIONE', inizio: '03-01', fine: '03-05', preghiera: 'Dio che vede tutto' },
     { num: 70, nome: 'JABAMIAH', coro: 'ANGELI', essenza: 'ALCHIMIA', inizio: '03-06', fine: '03-10', preghiera: 'Verbo che produce tutto' },
     { num: 71, nome: 'HAIAIEL', coro: 'ANGELI', essenza: 'ARMI', inizio: '03-11', fine: '03-15', preghiera: 'Dio padrone universo' },
-    { num: 72, nome: 'MUMIAH', coro: 'ANGELI', essenza: 'FINE E RINASCITA', inizio: '03-16', fine: '03-20', preghiera: 'Dio fine di tutte le cose' }
-  ];
-
-  const plans = [
-    { id: 'free', name: 'GRATUITO', price: 0, features: ['Nome Angelo', 'Coro di Appartenenza', 'Essenza Angelica'], icon: '✨' },
-    { id: 'light', name: 'LIGHT', price: 4.99, features: ['Tutto Gratuito', 'Scheda Completa', 'Preghiera Angelo', 'PDF Download'], icon: '🌙' },
-    { id: 'full', name: 'FULL', price: 19.99, features: ['Tutto Light', '3 Rituali Personalizzati', 'Meditazioni Guidate', 'Supporto 24h'], icon: '⭐' },
-    { id: 'platinum', name: 'PLATINUM', price: 49.99, features: ['Tutto Full', 'Attivazione Angelo a Distanza', 'Consegna entro 3 giorni', 'Consulenza Personale'], icon: '👼' }
-  ];
-
-  const findAngel = (date) => {
-    const [year, month, day] = date.split('-');
-    const birthDate = `${month}-${day}`;
-    return angelsDB.find(angel => birthDate >= angel.inizio && birthDate <= angel.fine);
-  };
-
-  const handleCalculate = () => {
-    if (!formData.nome || !formData.cognome || !formData.email || !formData.dataNascita) {
-      alert('Compila tutti i campi obbligatori');
-      return;
-    }
-    const angel = findAngel(formData.dataNascita);
-    if (angel) {
-      setAngelResult(angel);
-      setSelectedPlan('free');
-    }
-  };
-
-  const handlePrint = () => window.print();
-  const handleCheckout = (plan) => alert(`Checkout ${plan.name} - €${plan.price.toFixed(2)}`);
-
-  const generateRituals = () => [
-    { title: 'Rituale del Mantra Sacro', description: `Accendi una candela bianca e incenso. Ripeti "${angelResult.nome}" 108 volte come mantra, visualizzando luce dorata. Recita: "${angelResult.preghiera}" e formula le tue richieste.` },
-    { title: 'Rituale della Luna Piena', description: `Scrivi su foglio bianco ${angelResult.nome} e la tua richiesta. Piegalo 3 volte, tienilo sotto il cuscino per 3 notti consecutive recitando la preghiera angelica.` },
-    { title: 'Rituale dell Alba', description: `All'alba verso est, accendi candela oro e pronuncia 7 volte: "Angelo ${angelResult.nome}, guida la mia ${angelResult.essenza}". Lascia bruciare completamente.` }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 text-white py-12 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-6xl font-bold mb-4 animate-pulse">✨ The Angels Calculator ✨</h1>
-          <p className="text-2xl text-purple-200">Scopri il Tuo Angelo Custode</p>
-        </div>
-
-        {!angelResult && (
-          <div className="max-w-2xl mx-auto bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
-            <div className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <input type="text" placeholder="Nome *" value={formData.nome} onChange={(e) => setFormData({...formData, nome: e.target.value})} className="px-4 py-3 rounded-xl bg-white/20 border-2 border-white/30 focus:border-pink-400 focus:outline-none text-white placeholder-white/50" />
-                <input type="text" placeholder="Cognome *" value={formData.cognome} onChange={(e) => setFormData({...formData, cognome: e.target.value})} className="px-4 py-3 rounded-xl bg-white/20 border-2 border-white/30 focus:border-pink-400 focus:outline-none text-white placeholder-white/50" />
-              </div>
-              <input type="email" placeholder="Email *" value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} className="w-full px-4 py-3 rounded-xl bg-white/20 border-2 border-white/30 focus:border-pink-400 focus:outline-none text-white placeholder-white/50" />
-              <div className="grid grid-cols-12 gap-3">
-                <select value={formData.prefisso} onChange={(e) => setFormData({...formData, prefisso: e.target.value})} className="col-span-4 px-3 py-3 rounded-xl bg-white/20 border-2 border-white/30 text-white">
-                  {prefissi.map(p => <option key={p.code} value={p.code} className="bg-purple-900">{p.flag} {p.code}</option>)}
-                </select>
-                <input type="tel" placeholder="Cellulare" value={formData.cellulare} onChange={(e) => setFormData({...formData, cellulare: e.target.value})} className="col-span-8 px-4 py-3 rounded-xl bg-white/20 border-2 border-white/30 focus:border-pink-400 focus:outline-none text-white placeholder-white/50" />
-              </div>
-              <label className="flex items-start gap-3 bg-white/10 rounded-xl p-4 cursor-pointer">
-                <input type="checkbox" checked={formData.accettoPromo} onChange={(e) => setFormData({...formData, accettoPromo: e.target.checked})} className="mt-1 w-5 h-5" />
-                <span className="text-sm">Autorizzo ad essere contattato/a per offerte promozionali sugli Angeli</span>
-              </label>
-              <input type="date" value={formData.dataNascita} onChange={(e) => setFormData({...formData, dataNascita: e.target.value})} className="w-full px-4 py-3 rounded-xl bg-white/20 border-2 border-white/30 focus:border-pink-400 focus:outline-none text-white" />
-              <button onClick={handleCalculate} className="w-full bg-gradient-to-r from-pink-500 to-purple-500 py-4 rounded-xl font-bold text-xl hover:scale-105 transition-all">✨ Calcola il Mio Angelo ✨</button>
-            </div>
-          </div>
-        )}
-
-        {angelResult && (
-          <div className="space-y-8">
-            <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-lg rounded-3xl p-10 border-4 border-yellow-400/50 relative overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
-                <Star className="w-96 h-96" />
-              </div>
-              <div className="relative z-10">
-                <div className="text-center mb-8">
-                  <div className="text-8xl font-bold text-yellow-300 mb-2 animate-pulse">{angelResult.nome}</div>
-                  <div className="text-3xl font-semibold text-pink-200 mb-1">N. {angelResult.num}</div>
-                  <div className="inline-block bg-purple-500/50 px-6 py-2 rounded-full text-xl font-bold mb-2">CORO: {angelResult.coro}</div>
-                  <div className="text-2xl text-yellow-200 font-semibold">ESSENZA: {angelResult.essenza}</div>
-                </div>
-                <div className="bg-white/20 rounded-2xl p-6 mb-6 text-center">
-                  <p className="text-2xl font-bold">Angelo Custode di: {formData.nome} {formData.cognome}</p>
-                  <p className="text-lg text-purple-200 mt-2">Data di Nascita: {new Date(formData.dataNascita).toLocaleDateString('it-IT')}</p>
-                </div>
-
-                {selectedPlan === 'free' && (
-                  <div className="bg-gradient-to-br from-purple-600/30 to-pink-600/30 rounded-2xl p-8 mb-6">
-                    <h3 className="text-2xl font-bold mb-4 text-center">✨ Versione Gratuita ✨</h3>
-                    <p className="text-lg leading-relaxed text-center">Questo e il tuo Angelo Custode! Per scoprire la preghiera completa e i rituali personalizzati, scegli uno dei piani premium.</p>
-                  </div>
-                )}
-
-                {(selectedPlan === 'light' || selectedPlan === 'full' || selectedPlan === 'platinum') && (
-                  <div className="space-y-6">
-                    <div className="bg-white/20 rounded-2xl p-6">
-                      <h3 className="text-2xl font-bold mb-4">🙏 Preghiera Angelica</h3>
-                      <p className="text-xl italic leading-relaxed">"{angelResult.preghiera}"</p>
-                      <p className="mt-4 text-lg">Recita questa preghiera ogni mattina per entrare in sintonia con il tuo Angelo Custode.</p>
-                    </div>
-                    <div className="bg-white/20 rounded-2xl p-6">
-                      <h3 className="text-2xl font-bold mb-4">💎 Qualita Angeliche</h3>
-                      <ul className="space-y-2 text-lg">
-                        <li>✨ Protezione spirituale costante</li>
-                        <li>✨ Guida nelle decisioni importanti</li>
-                        <li>✨ Supporto nei momenti difficili</li>
-                        <li>✨ Sviluppo essenza: {angelResult.essenza}</li>
-                      </ul>
-                    </div>
-                  </div>
-                )}
-
-                {(selectedPlan === 'full' || selectedPlan === 'platinum') && (
-                  <div className="mt-6 space-y-6">
-                    <h3 className="text-3xl font-bold text-center mb-6">🕯️ Rituali Personalizzati</h3>
-                    {generateRituals().map((ritual, idx) => (
-                      <div key={idx} className="bg-gradient-to-br from-indigo-600/40 to-purple-600/40 rounded-2xl p-6">
-                        <h4 className="text-2xl font-bold mb-3">{idx + 1}. {ritual.title}</h4>
-                        <p className="text-lg leading-relaxed">{ritual.description}</p>
-                      </div>
-                    ))}
-                  </div>
-                )}
-
-                {selectedPlan === 'platinum' && (
-                  <div className="mt-6 bg-gradient-to-br from-yellow-500/30 to-orange-500/30 rounded-2xl p-8 border-2 border-yellow-400">
-                    <h3 className="text-3xl font-bold text-center mb-4">👼 ATTIVAZIONE ANGELO CUSTODE</h3>
-                    <p className="text-xl text-center leading-relaxed">Riceverai attivazione energetica del tuo Angelo {angelResult.nome} entro 3 giorni dal pagamento. Sarai contattato via email per concordare il momento piu propizio.</p>
-                    <p className="text-lg text-center mt-4 text-yellow-200">⭐ Questa attivazione apre un canale diretto con il tuo Angelo Custode ⭐</p>
-                  </div>
-                )}
-
-                <div className="flex gap-4 mt-8">
-                  <button onClick={handlePrint} className="flex-1 bg-blue-600 hover:bg-blue-700 py-3 rounded-xl font-bold flex items-center justify-center gap-2">
-                    <Printer className="w-5 h-5" />Stampa Report
-                  </button>
-                  <button onClick={() => setAngelResult(null)} className="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-xl font-bold">Nuova Ricerca</button>
-                </div>
-              </div>
-            </div>
-
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-8">🌟 Scopri i Nostri Servizi Angelici! 🌟</h2>
-              <div className="grid md:grid-cols-4 gap-6">
-                {plans.map((plan) => (
-                  <div key={plan.id} className={`bg-white/10 backdrop-blur-lg rounded-2xl p-6 border-2 transition-all hover:scale-105 ${selectedPlan === plan.id ? 'border-yellow-400 shadow-2xl' : 'border-white/20 hover:border-pink-400'}`}>
-                    <div className="text-center mb-4">
-                      <div className="text-6xl mb-2">{plan.icon}</div>
-                      <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
-                      <div className="text-4xl font-bold text-pink-300">{plan.price === 0 ? 'GRATIS' : `€${plan.price}`}</div>
-                    </div>
-                    <ul className="space-y-2 mb-6 text-sm">
-                      {plan.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start gap-2">
-                          <span className="text-green-400">✓</span><span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    {plan.id === 'free' ? (
-                      <button onClick={() => setSelectedPlan('free')} disabled={selectedPlan === 'free'} className="w-full bg-gray-600 py-3 rounded-xl font-bold">{selectedPlan === 'free' ? 'Attivo' : 'Seleziona'}</button>
-                    ) : (
-                      <button onClick={() => handleCheckout(plan)} className="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 py-3 rounded-xl font-bold flex items-center justify-center gap-2">
-                        <CreditCard className="w-5 h-5" />Acquista
-                      </button>
-                    )}
-                  </div>
-                ))}
-              </div>
-              <div className="mt-8 bg-blue-500/20 border-2 border-blue-400 rounded-2xl p-6">
-                <h3 className="text-2xl font-bold mb-4 text-center">💡 Come Funziona</h3>
-                <div className="grid md:grid-cols-3 gap-6 text-center">
-                  <div><div className="text-4xl mb-2">1️⃣</div><p className="font-semibold">Scegli il tuo piano</p></div>
-                  <div><div className="text-4xl mb-2">2️⃣</div><p className="font-semibold">Pagamento sicuro PayPal</p></div>
-                  <div><div className="text-4xl mb-2">3️⃣</div><p className="font-semibold">Ricevi report via email</p></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
-
-export default AngelCalculator;
+    { num: 72,
