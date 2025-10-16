@@ -305,4 +305,394 @@ const AngelCalculator = () => {
     { num: 69, nome: 'ROCHEL', coro: 'ANGELI', essenza: 'RESTITUZIONE', inizio: '03-01', fine: '03-05', preghiera: 'Dio che vede tutto' },
     { num: 70, nome: 'JABAMIAH', coro: 'ANGELI', essenza: 'ALCHIMIA', inizio: '03-06', fine: '03-10', preghiera: 'Verbo che produce tutto' },
     { num: 71, nome: 'HAIAIEL', coro: 'ANGELI', essenza: 'ARMI', inizio: '03-11', fine: '03-15', preghiera: 'Dio padrone universo' },
-    { num: 72,
+    { num: 72, nome: 'MUMIAH', coro: 'ANGELI', essenza: 'FINE E RINASCITA', inizio: '03-16', fine: '03-20', preghiera: 'Dio fine di tutte le cose' }
+  ];
+
+  const plans = [
+    { 
+      id: 'free', 
+      name: 'GRATUITO', 
+      price: 0, 
+      features: ['Nome Angelo', 'Coro di Appartenenza', 'Essenza Angelica'], 
+      icon: '✨' 
+    },
+    { 
+      id: 'light', 
+      name: 'LIGHT', 
+      price: 4.99, 
+      features: ['Tutto Gratuito', 'Scheda Completa', 'Preghiera Angelo', 'PDF Download'], 
+      icon: '🌙' 
+    },
+    { 
+      id: 'full', 
+      name: 'FULL', 
+      price: 19.99, 
+      features: ['Tutto Light', '3 Rituali Personalizzati', 'Meditazioni Guidate', 'Supporto 24h'], 
+      icon: '⭐' 
+    },
+    { 
+      id: 'platinum', 
+      name: 'PLATINUM', 
+      price: 49.99, 
+      features: ['Tutto Full', 'Attivazione Angelo a Distanza', 'Consegna entro 3 giorni', 'Consulenza Personale'], 
+      icon: '👼' 
+    }
+  ];
+
+  // CONFIGURAZIONE PAYPAL
+  // Email PayPal Business: gaiamadreterra@gmail.com
+  const PAYPAL_EMAIL = 'gaiamadreterra@gmail.com';
+  
+  // Opzione 1: Button ID (compila DOPO aver creato i pulsanti su PayPal)
+  const paypalButtonIds = {
+    light: '',    // Lascia vuoto per ora, compilerai dopo
+    full: '',     // Lascia vuoto per ora, compilerai dopo
+    platinum: ''  // Lascia vuoto per ora, compilerai dopo
+  };
+
+  const handlePayPalCheckout = (plan) => {
+    // Se hai già i Button ID, usa quelli (più sicuro)
+    if (paypalButtonIds[plan.id] && paypalButtonIds[plan.id] !== '') {
+      const paypalUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=${paypalButtonIds[plan.id]}`;
+      window.open(paypalUrl, '_blank');
+    } else {
+      // Altrimenti usa il metodo diretto con email
+      const paypalUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${PAYPAL_EMAIL}&item_name=Angel Calculator ${plan.name}&amount=${plan.price}&currency_code=EUR&return=${window.location.origin}/success&cancel_return=${window.location.origin}`;
+      window.open(paypalUrl, '_blank');
+    }
+  };
+
+  const findAngel = (date) => {
+    const [year, month, day] = date.split('-');
+    const birthDate = `${month}-${day}`;
+    return angelsDB.find(angel => birthDate >= angel.inizio && birthDate <= angel.fine);
+  };
+
+  const handleCalculate = () => {
+    if (!formData.nome || !formData.cognome || !formData.email || !formData.dataNascita) {
+      alert(t.fillRequired);
+      return;
+    }
+    const angel = findAngel(formData.dataNascita);
+    if (angel) {
+      setAngelResult(angel);
+      setSelectedPlan('free');
+    }
+  };
+
+  const handlePrint = () => window.print();
+
+  const generateRituals = () => [
+    { 
+      title: 'Rituale del Mantra Sacro', 
+      description: `Accendi una candela bianca e incenso. Ripeti "${angelResult.nome}" 108 volte come mantra, visualizzando luce dorata. Recita: "${angelResult.preghiera}" e formula le tue richieste.` 
+    },
+    { 
+      title: 'Rituale della Luna Piena', 
+      description: `Scrivi su foglio bianco ${angelResult.nome} e la tua richiesta. Piegalo 3 volte, tienilo sotto il cuscino per 3 notti consecutive recitando la preghiera angelica.` 
+    },
+    { 
+      title: 'Rituale dell\'Alba', 
+      description: `All'alba verso est, accendi candela oro e pronuncia 7 volte: "Angelo ${angelResult.nome}, guida la mia ${angelResult.essenza}". Lascia bruciare completamente.` 
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 text-white py-12 px-4">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex justify-end mb-4">
+          <div className="flex gap-2 bg-white/10 backdrop-blur-lg rounded-xl p-2">
+            {languages.map((lang) => (
+              <button
+                key={lang.code}
+                onClick={() => setLanguage(lang.code)}
+                className={`px-4 py-2 rounded-lg font-semibold transition-all ${
+                  language === lang.code 
+                    ? 'bg-pink-500 text-white' 
+                    : 'bg-transparent text-white/70 hover:text-white hover:bg-white/10'
+                }`}
+                title={lang.name}
+              >
+                {lang.flag} {lang.code.toUpperCase()}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="text-center mb-12">
+          <h1 className="text-6xl font-bold mb-4 animate-pulse">✨ {t.title} ✨</h1>
+          <p className="text-2xl text-purple-200">{t.subtitle}</p>
+        </div>
+
+        {!angelResult && (
+          <div className="max-w-2xl mx-auto bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
+            <div className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-4">
+                <input 
+                  type="text" 
+                  placeholder={`${t.firstName} *`} 
+                  value={formData.nome} 
+                  onChange={(e) => setFormData({...formData, nome: e.target.value})} 
+                  className="px-4 py-3 rounded-xl bg-white/20 border-2 border-white/30 focus:border-pink-400 focus:outline-none text-white placeholder-white/50" 
+                />
+                <input 
+                  type="text" 
+                  placeholder={`${t.lastName} *`} 
+                  value={formData.cognome} 
+                  onChange={(e) => setFormData({...formData, cognome: e.target.value})} 
+                  className="px-4 py-3 rounded-xl bg-white/20 border-2 border-white/30 focus:border-pink-400 focus:outline-none text-white placeholder-white/50" 
+                />
+              </div>
+              <input 
+                type="email" 
+                placeholder={`${t.email} *`} 
+                value={formData.email} 
+                onChange={(e) => setFormData({...formData, email: e.target.value})} 
+                className="w-full px-4 py-3 rounded-xl bg-white/20 border-2 border-white/30 focus:border-pink-400 focus:outline-none text-white placeholder-white/50" 
+              />
+              <div className="grid grid-cols-12 gap-3">
+                <select 
+                  value={formData.prefisso} 
+                  onChange={(e) => setFormData({...formData, prefisso: e.target.value})} 
+                  className="col-span-4 px-3 py-3 rounded-xl bg-white/20 border-2 border-white/30 text-white"
+                >
+                  {prefissi.map(p => (
+                    <option key={p.code} value={p.code} className="bg-purple-900">
+                      {p.flag} {p.code}
+                    </option>
+                  ))}
+                </select>
+                <input 
+                  type="tel" 
+                  placeholder={t.phone} 
+                  value={formData.cellulare} 
+                  onChange={(e) => setFormData({...formData, cellulare: e.target.value})} 
+                  className="col-span-8 px-4 py-3 rounded-xl bg-white/20 border-2 border-white/30 focus:border-pink-400 focus:outline-none text-white placeholder-white/50" 
+                />
+              </div>
+              <label className="flex items-start gap-3 bg-white/10 rounded-xl p-4 cursor-pointer">
+                <input 
+                  type="checkbox" 
+                  checked={formData.accettoPromo} 
+                  onChange={(e) => setFormData({...formData, accettoPromo: e.target.checked})} 
+                  className="mt-1 w-5 h-5" 
+                />
+                <span className="text-sm">{t.promo}</span>
+              </label>
+              <input 
+                type="date" 
+                value={formData.dataNascita} 
+                onChange={(e) => setFormData({...formData, dataNascita: e.target.value})} 
+                className="w-full px-4 py-3 rounded-xl bg-white/20 border-2 border-white/30 focus:border-pink-400 focus:outline-none text-white" 
+              />
+              <button 
+                onClick={handleCalculate} 
+                className="w-full bg-gradient-to-r from-pink-500 to-purple-500 py-4 rounded-xl font-bold text-xl hover:scale-105 transition-all"
+              >
+                ✨ {t.calculate} ✨
+              </button>
+            </div>
+          </div>
+        )}
+
+        {angelResult && (
+          <div className="space-y-8">
+            <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-lg rounded-3xl p-10 border-4 border-yellow-400/50 relative overflow-hidden">
+              <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+                <Star className="w-96 h-96" />
+              </div>
+              <div className="relative z-10">
+                <div className="text-center mb-8">
+                  <div className="text-8xl font-bold text-yellow-300 mb-2 animate-pulse">{angelResult.nome}</div>
+                  <div className="text-3xl font-semibold text-pink-200 mb-1">N. {angelResult.num}</div>
+                  <div className="inline-block bg-purple-500/50 px-6 py-2 rounded-full text-xl font-bold mb-2">
+                    {t.choir}: {angelResult.coro}
+                  </div>
+                  <div className="text-2xl text-yellow-200 font-semibold">
+                    {t.essence}: {angelResult.essenza}
+                  </div>
+                </div>
+                <div className="bg-white/20 rounded-2xl p-6 mb-6 text-center">
+                  <p className="text-2xl font-bold">
+                    {t.guardianOf}: {formData.nome} {formData.cognome}
+                  </p>
+                  <p className="text-lg text-purple-200 mt-2">
+                    {t.birthDate}: {new Date(formData.dataNascita).toLocaleDateString(language === 'en' ? 'en-US' : 'it-IT')}
+                  </p>
+                </div>
+
+                {selectedPlan === 'free' && (
+                  <div className="bg-gradient-to-br from-purple-600/30 to-pink-600/30 rounded-2xl p-8 mb-6">
+                    <h3 className="text-2xl font-bold mb-4 text-center">✨ {t.freeVersion} ✨</h3>
+                    <p className="text-lg leading-relaxed text-center">{t.freeText}</p>
+                  </div>
+                )}
+
+                {(selectedPlan === 'light' || selectedPlan === 'full' || selectedPlan === 'platinum') && (
+                  <div className="space-y-6">
+                    <div className="bg-white/20 rounded-2xl p-6">
+                      <h3 className="text-2xl font-bold mb-4">🙏 {t.angelicPrayer}</h3>
+                      <p className="text-xl italic leading-relaxed">"{angelResult.preghiera}"</p>
+                      <p className="mt-4 text-lg">{t.prayerInstruction}</p>
+                    </div>
+                    <div className="bg-white/20 rounded-2xl p-6">
+                      <h3 className="text-2xl font-bold mb-4">💎 {t.angelicQualities}</h3>
+                      <ul className="space-y-2 text-lg">
+                        <li>✨ {t.quality1}</li>
+                        <li>✨ {t.quality2}</li>
+                        <li>✨ {t.quality3}</li>
+                        <li>✨ {t.quality4}: {angelResult.essenza}</li>
+                      </ul>
+                    </div>
+                  </div>
+                )}
+
+                {(selectedPlan === 'full' || selectedPlan === 'platinum') && (
+                  <div className="mt-6 space-y-6">
+                    <h3 className="text-3xl font-bold text-center mb-6">🕯️ {t.personalRituals}</h3>
+                    {generateRituals().map((ritual, idx) => (
+                      <div key={idx} className="bg-gradient-to-br from-indigo-600/40 to-purple-600/40 rounded-2xl p-6">
+                        <h4 className="text-2xl font-bold mb-3">{idx + 1}. {ritual.title}</h4>
+                        <p className="text-lg leading-relaxed">{ritual.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {selectedPlan === 'platinum' && (
+                  <div className="mt-6 bg-gradient-to-br from-yellow-500/30 to-orange-500/30 rounded-2xl p-8 border-2 border-yellow-400">
+                    <h3 className="text-3xl font-bold text-center mb-4">👼 {t.activation}</h3>
+                    <p className="text-xl text-center leading-relaxed">
+                      {t.activationText} {angelResult.nome} entro 3 giorni dal pagamento. 
+                      Sarai contattato via email per concordare il momento più propizio.
+                    </p>
+                    <p className="text-lg text-center mt-4 text-yellow-200">⭐ {t.activationNote} ⭐</p>
+                  </div>
+                )}
+
+                <div className="flex gap-4 mt-8">
+                  <button 
+                    onClick={handlePrint} 
+                    className="flex-1 bg-blue-600 hover:bg-blue-700 py-3 rounded-xl font-bold flex items-center justify-center gap-2"
+                  >
+                    <Printer className="w-5 h-5" />{t.print}
+                  </button>
+                  <button 
+                    onClick={() => setAngelResult(null)} 
+                    className="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-xl font-bold"
+                  >
+                    {t.newSearch}
+                  </button>
+                </div>
+
+                {/* FOOTER CONSULENZE NEL REPORT */}
+                <div className="mt-8 bg-gradient-to-r from-purple-600/40 to-pink-600/40 rounded-2xl p-6 border-2 border-purple-400 text-center">
+                  <p className="text-lg mb-3 font-semibold">
+                    ✨ Per avere informazioni su tutte le altre Consulenze Angeliche adatte a te visita:
+                  </p>
+                  <a 
+                    href="https://iltuoangelo.it/consulenze/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block bg-gradient-to-r from-yellow-400 to-orange-400 text-purple-900 px-8 py-3 rounded-xl font-bold text-xl hover:scale-105 transition-all shadow-lg"
+                  >
+                    🌟 iltuoangelo.it/consulenze 🌟
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-4xl font-bold text-center mb-8">🌟 {t.services} 🌟</h2>
+              <div className="grid md:grid-cols-4 gap-6">
+                {plans.map((plan) => (
+                  <div 
+                    key={plan.id} 
+                    className={`bg-white/10 backdrop-blur-lg rounded-2xl p-6 border-2 transition-all hover:scale-105 ${
+                      selectedPlan === plan.id 
+                        ? 'border-yellow-400 shadow-2xl' 
+                        : 'border-white/20 hover:border-pink-400'
+                    }`}
+                  >
+                    <div className="text-center mb-4">
+                      <div className="text-6xl mb-2">{plan.icon}</div>
+                      <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
+                      <div className="text-4xl font-bold text-pink-300">
+                        {plan.price === 0 ? t.free : `€${plan.price.toFixed(2)}`}
+                      </div>
+                    </div>
+                    <ul className="space-y-2 mb-6 text-sm">
+                      {plan.features.map((feature, idx) => (
+                        <li key={idx} className="flex items-start gap-2">
+                          <span className="text-green-400">✓</span>
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    {plan.id === 'free' ? (
+                      <button 
+                        onClick={() => setSelectedPlan('free')} 
+                        disabled={selectedPlan === 'free'} 
+                        className="w-full bg-gray-600 py-3 rounded-xl font-bold"
+                      >
+                        {selectedPlan === 'free' ? t.active : t.select}
+                      </button>
+                    ) : (
+                      <button 
+                        onClick={() => handlePayPalCheckout(plan)} 
+                        className="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 py-3 rounded-xl font-bold flex items-center justify-center gap-2"
+                      >
+                        <CreditCard className="w-5 h-5" />{t.buy}
+                      </button>
+                    )}
+                  </div>
+                ))}
+              </div>
+              <div className="mt-8 bg-blue-500/20 border-2 border-blue-400 rounded-2xl p-6">
+                <h3 className="text-2xl font-bold mb-4 text-center">{t.howItWorks}</h3>
+                <div className="grid md:grid-cols-3 gap-6 text-center">
+                  <div>
+                    <div className="text-4xl mb-2">1️⃣</div>
+                    <p className="font-semibold">{t.step1}</p>
+                  </div>
+                  <div>
+                    <div className="text-4xl mb-2">2️⃣</div>
+                    <p className="font-semibold">{t.step2}</p>
+                  </div>
+                  <div>
+                    <div className="text-4xl mb-2">3️⃣</div>
+                    <p className="font-semibold">{t.step3}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* FOOTER PERMANENTE IN BASSO */}
+        <div className="mt-12 bg-gradient-to-r from-indigo-800/60 to-purple-800/60 backdrop-blur-lg rounded-3xl p-8 border-2 border-purple-400/50 text-center">
+          <div className="mb-4">
+            <Globe className="w-12 h-12 mx-auto mb-3 text-yellow-300" />
+            <p className="text-2xl font-bold mb-2">✨ Scopri Tutte le Consulenze Angeliche ✨</p>
+            <p className="text-lg text-purple-200 mb-4">
+              Per avere informazioni su tutte le altre Consulenze Angeliche adatte a te visita:
+            </p>
+          </div>
+          <a 
+            href="https://iltuoangelo.it/consulenze/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-400 text-purple-900 px-10 py-4 rounded-2xl font-bold text-2xl hover:scale-110 transition-all shadow-2xl animate-pulse"
+          >
+            🌟 iltuoangelo.it/consulenze 🌟
+          </a>
+          <div className="mt-6 text-sm text-purple-200/70">
+            © 2025 The Angels Calculator - Tutti i diritti riservati
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AngelCalculator;
