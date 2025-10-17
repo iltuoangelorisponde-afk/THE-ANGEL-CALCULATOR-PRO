@@ -342,6 +342,74 @@ const AngelCalculator = () => {
       marketingDesc: 'Personalisierte Werbung'
     }
   };
+
+  const translations = {
+    it: {
+      title: '🍪 Utilizzo dei Cookie',
+      description: 'Utilizziamo cookie per migliorare la tua esperienza. Puoi scegliere quali accettare.',
+      acceptAll: 'Accetta Tutti',
+      rejectAll: 'Solo Necessari',
+      savePreferences: 'Salva',
+      necessary: 'Cookie Necessari',
+      necessaryDesc: 'Essenziali per il funzionamento',
+      analytics: 'Cookie Analitici',
+      analyticsDesc: 'Analisi utilizzo sito',
+      marketing: 'Cookie Marketing',
+      marketingDesc: 'Annunci personalizzati'
+    },
+    en: {
+      title: '🍪 Cookie Usage',
+      description: 'We use cookies to improve your experience. You can choose which to accept.',
+      acceptAll: 'Accept All',
+      rejectAll: 'Only Necessary',
+      savePreferences: 'Save',
+      necessary: 'Necessary Cookies',
+      necessaryDesc: 'Essential for functionality',
+      analytics: 'Analytics Cookies',
+      analyticsDesc: 'Site usage analysis',
+      marketing: 'Marketing Cookies',
+      marketingDesc: 'Personalized ads'
+    },
+    fr: {
+      title: '🍪 Utilisation des Cookies',
+      description: 'Nous utilisons des cookies pour améliorer votre expérience. Choisissez lesquels accepter.',
+      acceptAll: 'Tout Accepter',
+      rejectAll: 'Nécessaires Seuls',
+      savePreferences: 'Sauvegarder',
+      necessary: 'Cookies Nécessaires',
+      necessaryDesc: 'Essentiels au fonctionnement',
+      analytics: 'Cookies Analytiques',
+      analyticsDesc: 'Analyse utilisation',
+      marketing: 'Cookies Marketing',
+      marketingDesc: 'Publicités personnalisées'
+    },
+    es: {
+      title: '🍪 Uso de Cookies',
+      description: 'Usamos cookies para mejorar tu experiencia. Elige cuáles aceptar.',
+      acceptAll: 'Aceptar Todo',
+      rejectAll: 'Solo Necesarias',
+      savePreferences: 'Guardar',
+      necessary: 'Cookies Necesarias',
+      necessaryDesc: 'Esenciales para funcionar',
+      analytics: 'Cookies Analíticas',
+      analyticsDesc: 'Análisis de uso',
+      marketing: 'Cookies Marketing',
+      marketingDesc: 'Anuncios personalizados'
+    },
+    de: {
+      title: '🍪 Cookie-Nutzung',
+      description: 'Wir verwenden Cookies zur Verbesserung. Wählen Sie, welche Sie akzeptieren.',
+      acceptAll: 'Alle Akzeptieren',
+      rejectAll: 'Nur Notwendige',
+      savePreferences: 'Speichern',
+      necessary: 'Notwendige Cookies',
+      necessaryDesc: 'Wesentlich für Funktionalität',
+      analytics: 'Analytische Cookies',
+      analyticsDesc: 'Nutzungsanalyse',
+      marketing: 'Marketing Cookies',
+      marketingDesc: 'Personalisierte Werbung'
+    }
+  };
     it: {
       free: ['Nome Angelo', 'Coro', 'Essenza'],
       light: ['Tutto Gratuito', 'Scheda Completa', 'Preghiera'],
