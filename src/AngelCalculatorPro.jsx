@@ -1,4 +1,214 @@
-import React, { useState } from 'react';
+        <div className="mt-12 bg-gradient-to-r from-indigo-800/60 to-purple-800/60 backdrop-blur-lg rounded-3xl p-8 border-2 border-purple-400/50 text-center">
+          <Globe className="w-12 h-12 mx-auto mb-3 text-yellow-300" />
+          <p className="text-2xl font-bold mb-2">✨ {t.footerDiscover} ✨</p>
+          <p className="text-lg text-purple-200 mb-4">{t.footerText}</p>
+          <a href="https://iltuoangelo.it/consulenze/" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-400 text-purple-900 px-10 py-4 rounded-2xl font-bold text-2xl hover:scale-110 transition-all shadow-2xl animate-pulse">
+            🌟 iltuoangelo.it/consulenze 🌟
+          </a>
+          <div className="mt-6 text-sm text-purple-200/70">
+            © 2025 The Angels Calculator
+            <div className="flex justify-center gap-4 mt-2">
+              <button onClick={() => setShowPrivacyPolicy(true)} className="hover:text-yellow-300 transition-all">
+                <Shield className="w-4 h-4 inline mr-1" />{t.privacyPolicy}
+              </button>
+              <button onClick={() => setShowTerms(true)} className="hover:text-yellow-300 transition-all">
+                📋 {t.termsConditions}
+              </button>
+              <button onClick={() => setShowCookieBanner(true)} className="hover:text-yellow-300 transition-all">
+                🍪 Cookie
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Cookie Banner */}
+        {showCookieBanner && (
+          <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-end md:items-center justify-center p-4">
+            <div className="bg-gradient-to-br from-indigo-900 to-purple-900 rounded-3xl p-6 md:p-8 max-w-2xl w-full shadow-2xl border-2 border-purple-400">
+              <div className="flex justify-between items-start mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold">{tc.title}</h2>
+                <button onClick={() => setShowCookieBanner(false)} className="text-white/70 hover:text-white">
+                  <X className="w-6 h-6" />
+                </button>
+              </div>
+              
+              <p className="text-base md:text-lg mb-6 opacity-90">{tc.description}</p>
+
+              <div className="space-y-3 mb-6">
+                <div className="bg-white/10 rounded-xl p-3 md:p-4">
+                  <label className="flex items-center justify-between cursor-pointer">
+                    <div>
+                      <p className="font-bold text-sm md:text-base">{tc.necessary}</p>
+                      <p className="text-xs md:text-sm opacity-70">{tc.necessaryDesc}</p>
+                    </div>
+                    <input type="checkbox" checked={cookieConsent.necessary} disabled className="w-5 h-5 md:w-6 md:h-6" />
+                  </label>
+                </div>
+
+                <div className="bg-white/10 rounded-xl p-3 md:p-4">
+                  <label className="flex items-center justify-between cursor-pointer">
+                    <div>
+                      <p className="font-bold text-sm md:text-base">{tc.analytics}</p>
+                      <p className="text-xs md:text-sm opacity-70">{tc.analyticsDesc}</p>
+                    </div>
+                    <input
+                      type="checkbox"
+                      checked={cookieConsent.analytics}
+                      onChange={(e) => setCookieConsent({...cookieConsent, analytics: e.target.checked})}
+                      className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
+                    />
+                  </label>
+                </div>
+
+                <div className="bg-white/10 rounded-xl p-3 md:p-4">
+                  <label className="flex items-center justify-between cursor-pointer">
+                    <div>
+                      <p className="font-bold text-sm md:text-base">{tc.marketing}</p>
+                      <p className="text-xs md:text-sm opacity-70">{tc.marketingDesc}</p>
+                    </div>
+                    <input
+                      type="checkbox"
+                      checked={cookieConsent.marketing}
+                      onChange={(e) => setCookieConsent({...cookieConsent, marketing: e.target.checked})}
+                      className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
+                    />
+                  </label>
+                </div>
+              </div>
+
+              <div className="flex flex-col md:flex-row gap-3">
+                <button
+                  onClick={handleAcceptAllCookies}
+                  className="flex-1 bg-gradient-to-r from-green-500 to-green-600 py-3 rounded-xl font-bold hover:scale-105 transition-all text-sm md:text-base"
+                >
+                  {tc.acceptAll}
+                </button>
+                <button
+                  onClick={handleSaveCookiePreferences}
+                  className="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 py-3 rounded-xl font-bold hover:scale-105 transition-all text-sm md:text-base"
+                >
+                  {tc.savePreferences}
+                </button>
+                <button
+                  onClick={handleRejectAllCookies}
+                  className="flex-1 bg-gradient-to-r from-gray-500 to-gray-600 py-3 rounded-xl font-bold hover:scale-105 transition-all text-sm md:text-base"
+                >
+                  {tc.rejectAll}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Privacy Policy Modal */}
+        {showPrivacyPolicy && (
+          <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 overflow-y-auto p-4">
+            <div className="max-w-4xl mx-auto my-8">
+              <div className="bg-gradient-to-br from-indigo-900 to-purple-900 rounded-3xl p-6 md:p-8 shadow-2xl border-2 border-blue-400">
+                <div className="flex justify-between items-start mb-6">
+                  <div>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-2">{t.privacyPolicy}</h2>
+                    <p className="text-sm opacity-70">Ultimo aggiornamento: 17 Ottobre 2025</p>
+                  </div>
+                  <button onClick={() => setShowPrivacyPolicy(false)} className="text-white/70 hover:text-white">
+                    <X className="w-6 h-6 md:w-8 md:h-8" />
+                  </button>
+                </div>
+
+                <div className="space-y-4 text-left max-h-96 overflow-y-auto pr-2">
+                  <div className="bg-white/10 rounded-xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-3">2. Servizio</h3>
+                    <p className="text-sm md:text-base">The Angels Calculator fornisce calcolo Angelo Custode basato su data di nascita. Disponibile in versione gratuita e piani premium.</p>
+                  </div>
+                  <div className="bg-white/10 rounded-xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-3">3. Piani e Pagamenti</h3>
+                    <p className="text-sm md:text-base">LIGHT: €4.99 | FULL: €19.99 | PLATINUM: €49.99<br/>Pagamenti via PayPal. Non effettuiamo rimborsi salvo casi eccezionali.</p>
+                  </div>
+                  <div className="bg-white/10 rounded-xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-3">4. Proprietà Intellettuale</h3>
+                    <p className="text-sm md:text-base">Tutti i contenuti sono protetti dalle leggi sul copyright.</p>
+                  </div>
+                  <div className="bg-white/10 rounded-xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-3">5. Limitazione Responsabilità</h3>
+                    <p className="text-sm md:text-base">Servizio fornito "così com'è". Non garantiamo servizio ininterrotto o privo di errori.</p>
+                  </div>
+                  <div className="bg-white/10 rounded-xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-3">6. Legge Applicabile</h3>
+                    <p className="text-sm md:text-base">Questi termini sono regolati dalla legge italiana. Controversie sottoposte a tribunali italiani.</p>
+                  </div>
+                  <div className="bg-white/10 rounded-xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-3">7. Contatti</h3>
+                    <p className="text-sm md:text-base">Per domande: gaiamadreterra@gmail.com</p>
+                  </div>
+                </div>
+
+                <button
+                  onClick={() => setShowTerms(false)}
+                  className="w-full mt-6 bg-gradient-to-r from-purple-500 to-pink-600 py-3 md:py-4 rounded-xl font-bold text-lg md:text-xl hover:scale-105 transition-all"
+                >
+                  Chiudi
+                </button>
+              </div>
+            </div>
+          </div>
+        )}="bg-white/10 rounded-xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-3">1. Titolare del Trattamento</h3>
+                    <p className="text-sm md:text-base">The Angels Calculator<br/>Email: gaiamadreterra@gmail.com<br/>Sede: Italia</p>
+                  </div>
+                  <div className="bg-white/10 rounded-xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-3">2. Dati Raccolti</h3>
+                    <p className="text-sm md:text-base">Raccogliamo: Nome, Cognome, Email, Telefono (opzionale), Data di Nascita, IP, Cookie.</p>
+                  </div>
+                  <div className="bg-white/10 rounded-xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-3">3. Finalità</h3>
+                    <p className="text-sm md:text-base">Fornire il servizio, inviarti informazioni (con consenso), migliorare esperienza utente, adempiere obblighi legali.</p>
+                  </div>
+                  <div className="bg-white/10 rounded-xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-3">4. I Tuoi Diritti</h3>
+                    <p className="text-sm md:text-base">Hai diritto ad: accedere, rettificare, cancellare, limitare, portabilità dati, opporti, revocare consenso.</p>
+                  </div>
+                  <div className="bg-white/10 rounded-xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-3">5. Conservazione</h3>
+                    <p className="text-sm md:text-base">Dati conservati massimo 24 mesi dall'ultima interazione.</p>
+                  </div>
+                  <div className="bg-white/10 rounded-xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-3">6. Contatti</h3>
+                    <p className="text-sm md:text-base">Per esercitare i tuoi diritti: gaiamadreterra@gmail.com</p>
+                  </div>
+                </div>
+
+                <button
+                  onClick={() => setShowPrivacyPolicy(false)}
+                  className="w-full mt-6 bg-gradient-to-r from-blue-500 to-blue-600 py-3 md:py-4 rounded-xl font-bold text-lg md:text-xl hover:scale-105 transition-all"
+                >
+                  Chiudi
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Terms Modal */}
+        {showTerms && (
+          <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 overflow-y-auto p-4">
+            <div className="max-w-4xl mx-auto my-8">
+              <div className="bg-gradient-to-br from-purple-900 to-pink-900 rounded-3xl p-6 md:p-8 shadow-2xl border-2 border-purple-400">
+                <div className="flex justify-between items-start mb-6">
+                  <div>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-2">{t.termsConditions}</h2>
+                    <p className="text-sm opacity-70">Ultimo aggiornamento: 17 Ottobre 2025</p>
+                  </div>
+                  <button onClick={() => setShowTerms(false)} className="text-white/70 hover:text-white">
+                    <X className="w-6 h-6 md:w-8 md:h-8" />
+                  </button>
+                </div>
+
+                <div className="space-y-4 text-left max-h-96 overflow-y-auto pr-2">
+                  <div className="bg-white/10 rounded-xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-3">1. Accettazione</h3>
+                    <p className="text-sm md:text-base">Utilizzando questo servizio, accetti questi Termini e la Privacy Policy.</p>
+                  </div>
+                  <div classNameimport React, { useState } from 'react';
 import { CreditCard, Printer, Globe } from 'lucide-react';
 
 const AngelCalculator = () => {
@@ -65,6 +275,105 @@ const AngelCalculator = () => {
     }
   };
 
+  const cookieBannerTranslations = {
+    it: {
+      title: '🍪 Utilizzo dei Cookie',
+      description: 'Utilizziamo cookie per migliorare la tua esperienza. Puoi scegliere quali accettare.',
+      acceptAll: 'Accetta Tutti',
+      rejectAll: 'Solo Necessari',
+      savePreferences: 'Salva',
+      necessary: 'Cookie Necessari',
+      necessaryDesc: 'Essenziali per il funzionamento',
+      analytics: 'Cookie Analitici',
+      analyticsDesc: 'Analisi utilizzo sito',
+      marketing: 'Cookie Marketing',
+      marketingDesc: 'Annunci personalizzati'
+    },
+    en: {
+      title: '🍪 Cookie Usage',
+      description: 'We use cookies to improve your experience. You can choose which to accept.',
+      acceptAll: 'Accept All',
+      rejectAll: 'Only Necessary',
+      savePreferences: 'Save',
+      necessary: 'Necessary Cookies',
+      necessaryDesc: 'Essential for functionality',
+      analytics: 'Analytics Cookies',
+      analyticsDesc: 'Site usage analysis',
+      marketing: 'Marketing Cookies',
+      marketingDesc: 'Personalized ads'
+    },
+    fr: {
+      title: '🍪 Utilisation des Cookies',
+      description: 'Nous utilisons des cookies pour améliorer votre expérience. Choisissez lesquels accepter.',
+      acceptAll: 'Tout Accepter',
+      rejectAll: 'Nécessaires Seuls',
+      savePreferences: 'Sauvegarder',
+      necessary: 'Cookies Nécessaires',
+      necessaryDesc: 'Essentiels au fonctionnement',
+      analytics: 'Cookies Analytiques',
+      analyticsDesc: 'Analyse utilisation',
+      marketing: 'Cookies Marketing',
+      marketingDesc: 'Publicités personnalisées'
+    },
+    es: {
+      title: '🍪 Uso de Cookies',
+      description: 'Usamos cookies para mejorar tu experiencia. Elige cuáles aceptar.',
+      acceptAll: 'Aceptar Todo',
+      rejectAll: 'Solo Necesarias',
+      savePreferences: 'Guardar',
+      necessary: 'Cookies Necesarias',
+      necessaryDesc: 'Esenciales para funcionar',
+      analytics: 'Cookies Analíticas',
+      analyticsDesc: 'Análisis de uso',
+      marketing: 'Cookies Marketing',
+      marketingDesc: 'Anuncios personalizados'
+    },
+    de: {
+      title: '🍪 Cookie-Nutzung',
+      description: 'Wir verwenden Cookies zur Verbesserung. Wählen Sie, welche Sie akzeptieren.',
+      acceptAll: 'Alle Akzeptieren',
+      rejectAll: 'Nur Notwendige',
+      savePreferences: 'Speichern',
+      necessary: 'Notwendige Cookies',
+      necessaryDesc: 'Wesentlich für Funktionalität',
+      analytics: 'Analytische Cookies',
+      analyticsDesc: 'Nutzungsanalyse',
+      marketing: 'Marketing Cookies',
+      marketingDesc: 'Personalisierte Werbung'
+    }
+  };
+    it: {
+      free: ['Nome Angelo', 'Coro', 'Essenza'],
+      light: ['Tutto Gratuito', 'Scheda Completa', 'Preghiera'],
+      full: ['Tutto Light', '3 Rituali', 'Supporto 24h'],
+      platinum: ['Tutto Full', 'Attivazione Angelo', 'Consulenza']
+    },
+    en: {
+      free: ['Angel Name', 'Choir', 'Essence'],
+      light: ['All Free', 'Complete Card', 'Prayer'],
+      full: ['All Light', '3 Rituals', '24h Support'],
+      platinum: ['All Full', 'Angel Activation', 'Consultation']
+    },
+    fr: {
+      free: ['Nom Ange', 'Choeur', 'Essence'],
+      light: ['Tout Gratuit', 'Fiche Complète', 'Prière'],
+      full: ['Tout Light', '3 Rituels', 'Support 24h'],
+      platinum: ['Tout Full', 'Activation Ange', 'Consultation']
+    },
+    es: {
+      free: ['Nombre Ángel', 'Coro', 'Esencia'],
+      light: ['Todo Gratis', 'Ficha Completa', 'Oración'],
+      full: ['Todo Light', '3 Rituales', 'Soporte 24h'],
+      platinum: ['Todo Full', 'Activación Ángel', 'Consulta']
+    },
+    de: {
+      free: ['Engelname', 'Chor', 'Essenz'],
+      light: ['Alles Kostenlos', 'Vollständige Karte', 'Gebet'],
+      full: ['Alles Light', '3 Rituale', '24h Support'],
+      platinum: ['Alles Full', 'Engel Aktivierung', 'Beratung']
+    }
+  };
+
   const translations = {
     it: { 
       title: 'The Angels Calculator', 
@@ -89,7 +398,13 @@ const AngelCalculator = () => {
       free: 'GRATIS',
       buy: 'Acquista',
       active: 'Attivo',
-      select: 'Seleziona'
+      select: 'Seleziona',
+      privacyConsent: 'Accetto l\'Informativa Privacy e i Termini e Condizioni',
+      privacyPolicy: 'Privacy Policy',
+      termsConditions: 'Termini e Condizioni',
+      viewPrivacy: 'Leggi Privacy',
+      viewTerms: 'Leggi Termini',
+      privacyRequired: 'Devi accettare la Privacy Policy per continuare'
     },
     en: { 
       title: 'The Angels Calculator', 
@@ -114,7 +429,13 @@ const AngelCalculator = () => {
       free: 'FREE',
       buy: 'Buy',
       active: 'Active',
-      select: 'Select'
+      select: 'Select',
+      privacyConsent: 'I accept the Privacy Policy and Terms and Conditions',
+      privacyPolicy: 'Privacy Policy',
+      termsConditions: 'Terms and Conditions',
+      viewPrivacy: 'Read Privacy',
+      viewTerms: 'Read Terms',
+      privacyRequired: 'You must accept the Privacy Policy to continue'
     },
     fr: { 
       title: 'The Angels Calculator', 
@@ -139,7 +460,13 @@ const AngelCalculator = () => {
       free: 'GRATUIT',
       buy: 'Acheter',
       active: 'Actif',
-      select: 'Sélectionner'
+      select: 'Sélectionner',
+      privacyConsent: 'J\'accepte la Politique de Confidentialité et les Conditions',
+      privacyPolicy: 'Politique de Confidentialité',
+      termsConditions: 'Conditions Générales',
+      viewPrivacy: 'Lire Confidentialité',
+      viewTerms: 'Lire Conditions',
+      privacyRequired: 'Vous devez accepter la Politique de Confidentialité'
     },
     es: { 
       title: 'The Angels Calculator', 
@@ -164,7 +491,13 @@ const AngelCalculator = () => {
       free: 'GRATIS',
       buy: 'Comprar',
       active: 'Activo',
-      select: 'Seleccionar'
+      select: 'Seleccionar',
+      privacyConsent: 'Acepto la Política de Privacidad y los Términos y Condiciones',
+      privacyPolicy: 'Política de Privacidad',
+      termsConditions: 'Términos y Condiciones',
+      viewPrivacy: 'Leer Privacidad',
+      viewTerms: 'Leer Términos',
+      privacyRequired: 'Debes aceptar la Política de Privacidad para continuar'
     },
     de: { 
       title: 'The Angels Calculator', 
@@ -189,11 +522,18 @@ const AngelCalculator = () => {
       free: 'KOSTENLOS',
       buy: 'Kaufen',
       active: 'Aktiv',
-      select: 'Wählen'
+      select: 'Wählen',
+      privacyConsent: 'Ich akzeptiere die Datenschutzerklärung und die Bedingungen',
+      privacyPolicy: 'Datenschutzerklärung',
+      termsConditions: 'Allgemeine Geschäftsbedingungen',
+      viewPrivacy: 'Datenschutz Lesen',
+      viewTerms: 'Bedingungen Lesen',
+      privacyRequired: 'Sie müssen die Datenschutzerklärung akzeptieren'
     }
   };
 
   const t = translations[language];
+  const tc = cookieBannerTranslations[language];
   const translateChoir = (choir) => choirTranslations[language][choir] || choir;
   const translateEssence = (essence) => language === 'it' ? essence : (essenceTranslations[language][essence] || essence);
 
@@ -314,6 +654,10 @@ const AngelCalculator = () => {
       alert(t.fillRequired);
       return;
     }
+    if (!formData.accettoPrivacy) {
+      alert(t.privacyRequired);
+      return;
+    }
     const angel = findAngel(formData.dataNascita);
     if (angel) {
       setAngelResult(angel);
@@ -362,6 +706,21 @@ const AngelCalculator = () => {
               <label className="flex items-start gap-3 bg-white/10 rounded-xl p-4 cursor-pointer hover:bg-white/15 transition-all">
                 <input type="checkbox" checked={formData.accettoPromo} onChange={(e) => setFormData({...formData, accettoPromo: e.target.checked})} className="mt-1 w-5 h-5 cursor-pointer" />
                 <span className="text-sm">{t.promo}</span>
+              </label>
+
+              <label className="flex items-start gap-3 bg-pink-500/20 border-2 border-pink-400 rounded-xl p-4 cursor-pointer hover:bg-pink-500/30 transition-all">
+                <input type="checkbox" checked={formData.accettoPrivacy} onChange={(e) => setFormData({...formData, accettoPrivacy: e.target.checked})} className="mt-1 w-5 h-5 cursor-pointer" required />
+                <span className="text-sm">
+                  {t.privacyConsent} *
+                  <div className="mt-2 flex gap-3">
+                    <button type="button" onClick={() => setShowPrivacyPolicy(true)} className="text-yellow-300 hover:text-yellow-100 underline text-xs">
+                      📄 {t.viewPrivacy}
+                    </button>
+                    <button type="button" onClick={() => setShowTerms(true)} className="text-yellow-300 hover:text-yellow-100 underline text-xs">
+                      📋 {t.viewTerms}
+                    </button>
+                  </div>
+                </span>
               </label>
 
               <button onClick={handleCalculate} className="w-full bg-gradient-to-r from-pink-500 to-purple-500 py-4 rounded-xl font-bold text-xl hover:scale-105 transition-all">
