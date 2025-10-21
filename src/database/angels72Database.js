@@ -1,16 +1,4 @@
-    giorni: '15 maggio, 29 luglio, 11 ottobre, 22 dicembre, 3 marzo. Ora: 18.00-18.20',
-    invocazione: 'Tramite l\'invocazione è possibile ottenere: lucidità mentale, moralità elevata, fecondità spirituale, consolazione nelle pene.',
-    description: 'Angelo della lucidità intellettuale. Dona chiarezza mentale e moralità. Favorisce la fecondità e consola. Protegge dalla confusione mentale.',
-    prayer: `MEBAHIAH, Angelo della Lucidità,
-illumina la mia mente
-con chiarezza.
-Dona moralità elevata
-e fecondità spirituale.
-Consola nelle pene
-e proteggi dalla confusione.
-Che la lucidità
-regni sovrana.`,
-    message: 'La lucidità mentale è un dono. Pensa con chiarezza e moralità.'
+
   },
 
   {
@@ -23,22 +11,21 @@ regni sovrana.`,
     dateRange: 'dal 27 al 31 Dicembre',
     dateStart: '12-27',
     dateEnd: '12-31',
-    essenza: 'FORTUNA',
+    essenza: 'FORTUNA, RICCHEZZA, BELLEZZA',
     qualita: 'fortuna, sostegno, modestia, talenti',
     difetti: 'ambizione smodata, orgoglio, sfortuna',
-    giorni: '16 maggio, 30 luglio, 12 ottobre, 23 dicembre, 4 marzo. Ora: 18.20-18.40',
+    giorni: '16 maggio, 30 e 31 luglio, 12 ottobre, 23 dicembre, 4 marzo. Ora: 18.20-18.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: fortuna duratura, sostegno nelle imprese, modestia, sviluppo dei talenti.',
-    description: 'Angelo della fortuna. Dona fortuna e sostegno. Favorisce lo sviluppo dei talenti con modestia. Protegge dall\'ambizione smodata e dalla sfortuna.',
-    prayer: `POYEL, Angelo della Fortuna,
-donami fortuna
-nelle imprese.
-Sostieni i miei progetti
-con grazia divina.
-Insegna la modestia
-e sviluppa i talenti.
-Che la fortuna
-sia meritata.`,
-    message: 'La vera fortuna è meritata. Lavora con umiltà e riceverai abbondanza.'
+    description: 'Angelo della fortuna. Dona fortuna e sostegno. Favorisce lo sviluppo dei talenti con modestia. Protegge dall\'ambizione smodata e dalla sfortuna. Elargisce una pioggia di Ricchezze, Bellezza e Armonia attraverso i sentimenti',
+    prayer: `Angelo POYEL, voglio ricevere da te
+la gioia di vivere, che accompagna
+i tuoi doni e i tuoi poteri, cosi come
+questo slancio potente che la tua grazia conferisce,
+e che allontana preoccupazioni e contrarietà .
+Con l’aiuto della tua essenza, potrò
+abbracciare la realtà  e riuscire a nutrire bene
+il mio  corpo, per ben nutrire il mondo.`,
+    message: 'La vera fortuna è la grazia nel dare che fa fiorire la ricchezza e la bellezza intorno a te.'
   },
 
   // ========================================
@@ -58,18 +45,11 @@ sia meritata.`,
     essenza: 'DISCERNIMENTO',
     qualita: 'discernimento, prosperità, liberazione dei prigionieri, cause giuste',
     difetti: 'tradimento, calunnia, prigionia ingiusta',
-    giorni: '17 maggio, 31 luglio, 13 ottobre, 24 dicembre, 5 marzo. Ora: 18.40-19.00',
+    giorni: '17 maggio, 1 Agosto, 13 ottobre, 24 dicembre, 5 marzo. Ora: 18.40-19.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: discernimento nelle scelte, prosperità, liberazione dalle prigioni, vittoria nelle cause giuste.',
     description: 'Angelo del discernimento. Dona capacità di giudizio e prosperità. Libera i prigionieri innocenti e fa vincere le cause giuste. Protegge dalle calunnie.',
-    prayer: `NEMAMIAH, Angelo del Discernimento,
-illumina le mie scelte
-con saggezza.
-Dona prosperità
-e liberazione.
-Fa trionfare
-le cause giuste.
-Che il discernimento
-sia perfetto.`,
+    prayer: `Angelo Nemamiah, dammi la serenità, la dolcezza, la gentilizza, che non ci sia mai in me né malevolenza, né gelosia, perché desidero comprendere il mondo che mi circonda, 
+ed essere compreso, e per questo bisogna amare. Si, spero di amare e di essere amato, ossia riuscire nella vita, nel rispetto dei Valori Eterni che vivono in me. Amen`,
     message: 'Il discernimento guida le scelte. Giudica con saggezza e giustizia.'
   },
 
@@ -86,18 +66,10 @@ sia perfetto.`,
     essenza: 'FORZA MENTALE',
     qualita: 'forza mentale, coraggio, guarigione, viaggi fortunati',
     difetti: 'debolezza mentale, malattie, viaggi sfortunati',
-    giorni: '18 maggio, 1 agosto, 14 ottobre, 25 dicembre, 6 marzo. Ora: 19.00-19.20',
+    giorni: '18 maggio, 2 agosto, 14 ottobre, 25 dicembre, 6 marzo. Ora: 19.00-19.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: forza mentale, coraggio nelle avversità, guarigione dalle malattie, protezione nei viaggi.',
     description: 'Angelo della forza mentale. Dona coraggio e resistenza psicologica. Favorisce la guarigione e protegge nei viaggi. Rinforza la mente e lo spirito.',
-    prayer: `YEIALEL, Angelo della Forza,
-rinforza la mia mente
-e il mio spirito.
-Dona coraggio
-nelle avversità.
-Favorisci la guarigione
-e proteggi nei viaggi.
-Che la forza mentale
-sia incrollabile.`,
+    prayer: `Yeialel, Angelo-Arcangelo della stabilità, ti chiedo di concedermi una pacifica sicurezza, e una calma attività, senza vana eccitazione né inquietudine per il tempo a venire; un’ attività tuttavia utile a me stesso e a chi mi circonda, così come l’opera divina del mondo. Che la tua saggezza illumini il mio intimo, perché il mio avvenire sia pieno d’amore, di tenerezza, di buon lavoro, di felicità!`,
     message: 'La forza mentale supera ogni ostacolo. Sii forte e coraggioso.'
   },
 
@@ -114,18 +86,13 @@ sia incrollabile.`,
     essenza: 'RICCHEZZA INTELLETTUALE',
     qualita: 'ricchezza intellettuale, successo finanziario, fecondità, amore filiale',
     difetti: 'sterilità, perdite finanziarie, disobbedienza',
-    giorni: '19 maggio, 2 agosto, 15 ottobre, 26 dicembre, 7 marzo. Ora: 19.20-19.40',
+    giorni: '19 maggio, 3 agosto, 15 ottobre, 26 dicembre, 7 marzo. Ora: 19.20-19.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: ricchezza intellettuale, successo negli affari, fecondità, amore per i genitori.',
     description: 'Angelo della ricchezza intellettuale. Dona successo finanziario e intellettuale. Favorisce la fecondità e l\'amore filiale. Protegge dalle perdite.',
-    prayer: `HARAHEL, Angelo della Ricchezza,
-arricchisci la mia mente
-e la mia vita.
-Dona successo
-negli affari e nelle finanze.
-Favorisci la fecondità
-e l'amore filiale.
-Che la ricchezza
-sia completa.`,
+    prayer: `Mio amato Harael! Se le mie azioni sono degne del Tuo rispetto e delle Tue attenzioni, desidero ricevere la Tua benedizione ed essere investito della tua inesauribile saggezza. 
+Offrimi, Angelo Harael, la consapevolezza e la forza per far conoscere la Tua Parola, affinché la mia Vita diventi un modello per tutti colore che aspirano alla Tua grandezza. 
+Concedimi, Angelo, la forza di poterti servire in eterno! Concedimi, Angelo, il desiderio di amarti per sempre. Concedimi la volontà, irremovibile e decisa, per portare nel mondo la Tua Bontà, 
+tra gli uomini, cosicché la Tua Luce rischiari le tenebre della crudeltà. Sarò sempre il Tuo servo e protettore. Amen!`,
     message: 'La vera ricchezza è intellettuale e spirituale. Arricchisci la mente.'
   },
 
@@ -142,18 +109,11 @@ sia completa.`,
     essenza: 'RIPARAZIONE',
     qualita: 'riparazione, guarigione mentale, obbedienza, longevità',
     difetti: 'malattie mentali, ribellione, persecuzioni',
-    giorni: '20 maggio, 3 agosto, 16 ottobre, 27 dicembre, 8 marzo. Ora: 19.40-20.00',
+    giorni: '20 maggio, 4 agosto, 16 ottobre, 27 dicembre, 8 marzo. Ora: 19.40-20.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: riparazione degli errori, guarigione mentale, obbedienza saggia, longevità.',
     description: 'Angelo della riparazione. Ripara gli errori e guarisce le malattie mentali. Dona obbedienza saggia e longevità. Protegge dalle persecuzioni.',
-    prayer: `MITZRAEL, Angelo Riparatore,
-ripara gli errori
-del passato.
-Guarisci le malattie
-mentali e spirituali.
-Dona obbedienza saggia
-e longevità.
-Che la riparazione
-sia totale.`,
+    prayer: `Mitzrael, Angelo, concedimi la forza di dominare i miei desideri, i miei pensieri, i miei atti, perché è avendo quest’armonia interiore che arriverò a riparare i miei errori, 
+e ad aprire la grande porta che conduce alla felicità, attraverso la realizzazione di un lavoro utile. Aiutami a procedere in fretta verso il Mondo futuro,quello dell’amore nascente.Amen`,
     message: 'Ogni errore può essere riparato. Ripara con amore e pazienza.'
   },
 
@@ -170,18 +130,10 @@ sia totale.`,
     essenza: 'AFFINITA\'',
     qualita: 'affinità, amicizia, astronomia, fisica, insegnamento',
     difetti: 'solitudine, libertinaggio, egoismo',
-    giorni: '21 maggio, 4 agosto, 17 ottobre, 28 dicembre, 9 marzo. Ora: 20.00-20.20',
+    giorni: '21 maggio, 5 agosto, 17 ottobre, 28 dicembre, 9 marzo. Ora: 20.00-20.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: affinità nelle relazioni, amicizie sincere, successo in astronomia e fisica, talento nell\'insegnamento.',
     description: 'Angelo dell\'affinità. Favorisce le amicizie e le affinità. Dona talento in astronomia, fisica e insegnamento. Allontana la solitudine e l\'egoismo.',
-    prayer: `UMABEL, Angelo dell'Affinità,
-dona affinità
-nelle relazioni.
-Favorisci amicizie
-sincere e durature.
-Illumina le scienze
-e l'insegnamento.
-Che l'affinità
-regni ovunque.`,
+    prayer: `Umabel, Angelo dell’amicizia: guardami con la tua dolce e Divina Benevolenza; guida i miei passi con la tua luce calda, perché io cammini in pace verso una riuscita ( morale e materiale) frutto di un lavoro utile a me stesso, ai miei congiunti e ai miei amici, all’opera Divina del Mondo. Fá, Signore, che l’amicizia sia regina della mia esistenza.Amen`,
     message: 'L\'affinità crea legami duraturi. Cerca chi risuona con la tua anima.'
   },
 
@@ -198,18 +150,10 @@ regni ovunque.`,
     essenza: 'DESIDERIO DI SAPERE',
     qualita: 'desiderio di sapere, saggezza, filosofia, meditazione',
     difetti: 'ignoranza, scandali, difetti morali',
-    giorni: '22 maggio, 5 agosto, 18 ottobre, 29 dicembre, 10 marzo. Ora: 20.20-20.40',
+    giorni: '22 maggio, 6 agosto, 18 ottobre, 29 dicembre, 10 marzo. Ora: 20.20-20.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: desiderio di conoscenza, saggezza filosofica, successo nella meditazione, elevazione morale.',
     description: 'Angelo del desiderio di sapere. Accende la sete di conoscenza e dona saggezza filosofica. Favorisce la meditazione e l\'elevazione morale.',
-    prayer: `IAH-HEL, Angelo del Sapere,
-accendi in me
-il desiderio di conoscenza.
-Dona saggezza filosofica
-e profondità meditativa.
-Eleva la moralità
-e allontana l'ignoranza.
-Che il desiderio di sapere
-sia insaziabile.`,
+    prayer: `Iahhel, Angelo dell’amore e della salute! Ho fretta, non ho, come te, l’eternità davanti a me. Ti chiedo, dunque, di concedermi la tua Essenza: il raggio luminoso che permette di comprendere subito, che permette di riuscire nel Mondo Materiale. Angelo, Signore, ti chiedo di aiutarmi a raggiungere rapidamente i miei obiettivi.amen`,
     message: 'Il desiderio di sapere eleva l\'anima. Cerca sempre la conoscenza.'
   },
 
@@ -226,18 +170,11 @@ sia insaziabile.`,
     essenza: 'PERCEZIONE UNITA\'',
     qualita: 'percezione dell\'unità, successo commercio banche, guarigione',
     difetti: 'errori finanziari, perdite, malattie',
-    giorni: '23 maggio, 6 agosto, 19 ottobre, 30 dicembre, 11 marzo. Ora: 20.40-21.00',
+    giorni: '23 maggio, 7 agosto, 19 ottobre, 30 dicembre, 11 marzo. Ora: 20.40-21.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: percezione dell\'unità universale, successo in commercio e banche, guarigione, prosperità.',
     description: 'Angelo della percezione dell\'unità. Rivela l\'unità di tutte le cose. Favorisce il successo commerciale e bancario. Dona guarigione e prosperità.',
-    prayer: `ANAUEL, Angelo dell'Unità,
-rivelami l'unità
-di tutte le cose.
-Dona successo
-in commercio e finanza.
-Favorisci la guarigione
-e la prosperità.
-Che l'unità
-sia percepita.`,
+    prayer: `Anuel, Angelo dell’Intelligenza, ti chiedo di infondere in me la tua Divina Essenza, 
+perché voglio godere di più luce per cancellare i miei errori passati, per stabilire, definitivamente, l’armonia nel mio foro interiore, e poter così realizzare un lavoro utile al Mondo. Aiutami Signore ad avanzare e a prosperare spiritualmente e materialmente.Amen`,
     message: 'Tutto è uno. Percepisci l\'unità e vivi in armonia con il tutto.'
   },
 
@@ -254,18 +191,11 @@ sia percepita.`,
     essenza: 'VIVIFICAZIONE',
     qualita: 'vivificazione, ispirazione, protezione, successo letterario',
     difetti: 'odio, invidia, polemiche',
-    giorni: '24 maggio, 7 agosto, 20 ottobre, 31 dicembre, 12 marzo. Ora: 21.00-21.20',
+    giorni: '24 e 25 Maggio, 8 Agosto, 20 Ottobre, 31 Dicembre, 12 Marzo.   Ora: 21.00 – 21.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: vivificazione dello spirito, ispirazione artistica, protezione dagli attacchi, successo letterario.',
     description: 'Angelo della vivificazione. Vivifica lo spirito e dona ispirazione. Protegge dagli attacchi e favorisce il successo letterario. Allontana odio e invidia.',
-    prayer: `MEHIEL, Angelo Vivificante,
-vivifica il mio spirito
-con nuova energia.
-Dona ispirazione
-artistica e letteraria.
-Proteggi dagli attacchi
-e dall'invidia.
-Che la vivificazione
-sia costante.`,
+    prayer: `Mehiel, prendo alla lettera le tue affermazioni, le tue promesse e ti chiedo di far crescere la mia Vita. 
+Concedimi la grazia della tua essenza affinché il mio corpo e tutta la mia natura umana siano vivificati dalla fonte di Vita, e affinché la mia azione nel Mondo produca sempre risultati felici.Amen`,
     message: 'Lo spirito si rinnova sempre. Lasciati vivificare dall\'energia divina.'
   },
 
@@ -286,18 +216,11 @@ sia costante.`,
     essenza: 'FONTE DI SAGGEZZA',
     qualita: 'fonte di saggezza, successo marittimo, protezione viaggi acqua',
     difetti: 'naufragi, tempeste, fallimenti',
-    giorni: '25 maggio, 8 agosto, 21 ottobre, 1 gennaio, 13 marzo. Ora: 21.20-21.40',
+    giorni: '26 Maggio, 9 Agosto, 21 Ottobre, 1 Gennaio, 13 Marzo.   Ora: 21.20 – 21.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: saggezza profonda, successo nelle imprese marittime, protezione nei viaggi sull\'acqua.',
     description: 'Angelo della fonte di saggezza. Dona saggezza profonda come l\'oceano. Protegge nei viaggi marittimi e favorisce il successo nelle imprese legate all\'acqua.',
-    prayer: `DAMABIAH, Fonte di Saggezza,
-riversa su di me
-la tua saggezza profonda.
-Proteggi i viaggi
-sull'acqua e per mare.
-Dona successo
-nelle imprese marittime.
-Che la saggezza
-fluisca come acqua.`,
+    prayer: `Damabiah! Dammi la possibilità, Signore, di conoscere il segreto dell’Acqua. Donami la forza per costruire, erigere, creare, con l’aiuto dell’Acqua, secondo le Tue regole, un mondo più giusto e sereno. Desidero, 
+Angelo Damabiah, che la Tua conoscenza sia anche la mia. Damabiah, Signore, proteggimi dalle tempeste della passione e rendimi cittadino a pieno titolo del tuo universo di armonia. Amen`,
     message: 'La saggezza scorre come l\'acqua. Lasciala fluire in te liberamente.'
   },
 
@@ -314,19 +237,12 @@ fluisca come acqua.`,
     essenza: 'CONOSCENZA BENE E MALE',
     qualita: 'conoscenza del bene e del male, liberazione, dolcezza',
     difetti: 'ignoranza morale, incubi, malattie nervose',
-    giorni: '26 maggio, 9 agosto, 22 ottobre, 2 gennaio, 14 marzo. Ora: 21.40-22.00',
+    giorni: '27 Maggio, 10 Agosto, 22 Ottobre, 2 Gennaio, 14 Marzo.   Ora: 21.40 – 22.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: discernimento tra bene e male, liberazione dalle paure, dolcezza di carattere, pace interiore.',
     description: 'Angelo della conoscenza del bene e del male. Dona discernimento morale e libera dalle paure. Addolcisce il carattere e porta pace. Allontana gli incubi.',
-    prayer: `MANAKEL, Angelo del Discernimento,
-insegnami a distinguere
-il bene dal male.
-Liberami dalle paure
-e dagli incubi.
-Addolcisci il carattere
-e dona pace interiore.
-Che il discernimento
-sia chiaro.`,
-    message: 'Il discernimento morale guida la vita. Scegli sempre il bene.'
+    prayer: `Manakel, liberami da ogni preoccupazione.Trasforma dentro di me e intorno a me, il Male in Bene.Concedimi la Grazia della tua Essenza 
+che permette il chiaro discernimento delle situazioni e la scoperta dei momenti opportuni per agire e riuscire.Signore! Aiutami a fare sempre il Bene, e a non fare il Male`,
+    message: 'Il giusto discernimento guida la vita. Scegli sempre il bene.'
   },
 
   {
@@ -342,7 +258,7 @@ sia chiaro.`,
     essenza: 'TRASFORMAZIONE',
     qualita: 'trasformazione, longevità, filosofia, illuminazione',
     difetti: 'errori, illusioni, superstizione',
-    giorni: '27 maggio, 10 agosto, 23 ottobre, 3 gennaio, 15 marzo. Ora: 22.00-22.20',
+    giorni: '28 maggio, 11 agosto, 23 ottobre, 3 gennaio, 15 marzo. Ora: 22.00-22.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: trasformazione interiore, longevità, comprensione filosofica, illuminazione spirituale.',
     description: 'Angelo della trasformazione. Favorisce la metamorfosi interiore e dona longevità. Illumina la comprensione filosofica e porta illuminazione. Allontana le illusioni.',
     prayer: `EYAEL, Angelo della Trasformazione,
@@ -370,18 +286,12 @@ sia profonda.`,
     essenza: 'GUARIGIONE',
     qualita: 'guarigione, salute, fecondità, agricoltura',
     difetti: 'sterilità, carestia, pestilenza',
-    giorni: '28 maggio, 11 agosto, 24 ottobre, 4 gennaio, 16 marzo. Ora: 22.20-22.40',
+    giorni: '29 Maggio, 12 Agosto, 24 Ottobre, 4 Gennaio, 16 Marzo.   Ora: 22.20 – 22.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: guarigione dalle malattie, salute robusta, fecondità della terra, abbondanza nei raccolti.',
     description: 'Angelo della guarigione. Dona salute e guarisce le malattie. Favorisce la fecondità e i raccolti abbondanti. Protegge da pestilenze e carestie.',
-    prayer: `HABUHIAH, Angelo Guaritore,
-donami salute
-e guarigione completa.
-Benedici la terra
-con fertilità e raccolti.
-Allontana pestilenze
-e carestie.
-Che la guarigione
-sia totale.`,
+    prayer: `Habuhiah, Signore! Fa' che la Tua Luce risplenda in me, e grazie a essa io possa fare del bene per chi soffre. 
+Concedimi, Angelo Habuhiah, che le tentazioni servano a rafforzare la mia fede e ad aiutarmi ad acquisire una maggiore consapevolezza di me. Concedimi, Signore, la forza di osare, il coraggio di affrontare il pericolo! 
+Concedimi la Tua Luce per vincere le mie tenebre! Guidami verso i regni della Verità, della Spiritualità, della Trascendenza, e rendimi cittadino a pieno titolo del Tuo Mondo dove il dubbio non esiste più. Permetti, Angelo Habuhiah, di essere per gli altri e per me stesso una fonte di salute e di gioia. Amen.`,
     message: 'La guarigione è sempre possibile. Abbi fede e sarai guarito.'
   },
 
@@ -398,18 +308,17 @@ sia totale.`,
     essenza: 'RESTITUZIONE',
     qualita: 'restituzione, ritrovamento oggetti perduti, eredità, reputazione',
     difetti: 'perdite, furti, infamia',
-    giorni: '29 maggio, 12 agosto, 25 ottobre, 5 gennaio, 17 marzo. Ora: 22.40-23.00',
+    giorni: '30 Maggio, 13 Agosto, 25 Ottobre, 5 Gennaio, 17 Marzo.   Ora: 22.40 – 23.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: restituzione di ciò che è perduto, ritrovamento oggetti, eredità giuste, buona reputazione.',
     description: 'Angelo della restituzione. Fa ritrovare ciò che è perduto e restituisce eredità. Protegge la reputazione e allontana i furti. Ripristina la giustizia.',
-    prayer: `ROCHEL, Angelo della Restituzione,
-restituisci ciò che è perduto
-e fa ritrovare gli oggetti.
-Proteggi le eredità
-e la reputazione.
-Allontana furti
-e infamie.
-Che la restituzione
-sia giusta.`,
+    prayer: `Angelo Rochel, dammi una missione
+perché voglio servire il Re Creatore, Signore del mondo. Si voglio che
+l’opera divina conti anche su di me.
+Lavoratore volontario , io agirò per capire.
+Voglio mettere al servizio del mondo
+le mie capacità , le mie possibilità :
+impegnarmi nella creazione, spiritualmente,
+mentalmente, sentimentalmente e fisicamente. Con il tuo aiuto, posso realizzare questo auspicio. Amen..`,
     message: 'Ciò che è perduto sarà ritrovato. Abbi fede nella restituzione divina.'
   },
 
@@ -426,9 +335,9 @@ sia giusta.`,
     essenza: 'ALCHIMIA',
     qualita: 'alchimia, rigenerazione, trasformazione, creazione',
     difetti: 'ateismo, materialismo, distruzione',
-    giorni: '30 maggio, 13 agosto, 26 ottobre, 6 gennaio, 18 marzo. Ora: 23.00-23.20',
-    invocazione: 'Tramite l\'invocazione è possibile ottenere: conoscenza alchemica, rigenerazione spirituale, capacità di trasformazione, potere creativo.',
-    description: 'Angelo dell\'alchimia. Insegna la trasformazione alchemica e la rigenerazione. Dona potere creativo e capacità di trasformare il piombo in oro spirituale.',
+    giorni: '31 Maggio, 14 Agosto, 26 Ottobre, 6 Gennaio, 18 Marzo.   Ora: 23.00 – 23.20',
+    invocazione: 'Tramite l\'invocazione è possibile ottenere: Tutto! Conoscenza alchemica, rigenerazione spirituale, capacità di trasformazione, potere creativo, la Vivificazione, la trasformazione del male in bene',
+    description: 'Angelo dell\'alchimia. Il più potente dei 72 Angeli Custodi. Insegna la trasformazione alchemica e la rigenerazione. Dona potere creativo e capacità di trasformare il piombo in oro spirituale.',
     prayer: `JABAMIAH, Angelo Alchemico,
 insegnami l'arte
 della trasformazione.
@@ -438,7 +347,7 @@ Trasforma il piombo
 in oro spirituale.
 Che l'alchimia
 operi in me.`,
-    message: 'L\'alchimia trasforma tutto. Diventa l\'alchimista della tua vita.'
+    message: 'L\'alchimia trasforma tutto. Diventa l\'alchimista della tua vita e trasformerai il piombo in Oro!.'
   },
 
   {
@@ -454,18 +363,11 @@ operi in me.`,
     essenza: 'PROTEZIONE DIVINA',
     qualita: 'protezione divina, coraggio, vittoria, liberazione',
     difetti: 'tradimento, complotti, prigionia',
-    giorni: '31 maggio, 14 agosto, 27 ottobre, 7 gennaio, 19 marzo. Ora: 23.20-23.40',
+    giorni: ' 1 Giugno, 15 Agosto, 27 Ottobre, 7 Gennaio, 19 Marzo.   Ora: 23.20 – 23.40 ',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: protezione divina totale, coraggio nelle battaglie, vittoria sui nemici, liberazione da ogni vincolo.',
     description: 'Angelo della protezione divina. Offre protezione totale e dona coraggio. Favorisce la vittoria e libera da ogni vincolo. Smaschera tradimenti e complotti.',
-    prayer: `HAIAIEL, Angelo Protettore,
-avvolgimi nella protezione
-divina totale.
-Dona coraggio
-nelle battaglie della vita.
-Libera da ogni vincolo
-e svela i tradimenti.
-Che la protezione
-sia completa.`,
+    prayer: `Haiaiel, Signore! Che la mia mente e il mio corpo siano un tutt’uno, Che riesca a mettere da parte il passato e guardare il futuro con ottimismo. Fa’ sì che il mio cuore comprenda le ragione della mia testa, affinché sia libero e protetto da ogni violenza. Con i doni e i poteri che mi dai, aiutami, Angelo Haiaiel, a esprimere la doppia Verità dei desideri e della comprensione, in modo equilibrato, 
+utile agli altri e a me stesso. Sono un perfetto intermediario tra il Signore dei Cieli, Haiaiel, e l’uomo e i miei cari. Grazie al Tuo equilibrio e alla Tua  lucidità ce la farò! Amen.`,
     message: 'Sei sempre protetto dal divino. Cammina con coraggio e fiducia.'
   },
 
@@ -482,7 +384,7 @@ sia completa.`,
     essenza: 'RINASCITA - RIGENERAZIONE',
     qualita: 'andare fino in fondo ad ogni cosa con lungimiranza, perseveranza, coraggio, intensità sensoriale, protezione dei poveri e dei miseri',
     difetti: 'disperazione, tendenze suicide, negatività, totale abbandono',
-    giorni: '1 Giugno, 16 Agosto, 28 Ottobre, 8 Gennaio, 20 Marzo. Ora: 23.40 –24.00',
+    giorni: '2 Giugno, 16 Agosto, 28 Ottobre, 8 Gennaio, 20 Marzo. Ora: 23.40 –24.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: longevità serena, successo clamoroso nella professione medica, come nel campo della chimica e della chirurgia, fortuna e ottimi conseguimenti in ogni sfera.',
     description: 'Quest\'Angelo è il governatore delle energie lunari per eccellenza. E\' il principale collaboratore dell\'Arcangelo Gabriel, e concede ai suoi protetti la grazia e il potere di portare a termine ciò che hanno iniziato.',
     prayer: `MUMIAH, offrirmi la tua Divina Essenza
@@ -495,7 +397,7 @@ Ammettimi nella Compagnia
 dei costruttori del Nuovo Mondo
 che viene, portatore della Primavera Paradisiaca
 tanto attesa!`,
-    message: 'Ogni fine è un nuovo inizio. Rinasce e ricomincia con gioia.'
+    message: 'Ogni fine è un nuovo inizio. Rinasci allora e ricomincia con gioia.'
   }
 ];
 
@@ -626,16 +528,16 @@ export const planContents = {
       }
     ],
     activation: {
-      title: '👼 ATTIVAZIONE ANGELICA A DISTANZA',
-      description: 'Attivazione Energetica del tuo Angelo Custode a distanza: attivazione dei suoi doni, poteri e qualità.',
+      title: '👼 ATTIVAZIONE ANGELICA ON LINE DAL VIVO',
+      description: 'Attivazione Energetica del tuo Angelo Custode Live dal vivo: attivazione dei suoi doni, poteri e qualità LIVE.',
       includes: [
-        '✨ Attivazione energetica personalizzata',
-        '💫 Attivazione dei doni del tuo Angelo',
-        '🔥 Attivazione dei poteri del tuo Angelo',
-        '⭐ Attivazione delle qualità del tuo Angelo',
+        '✨ Attivazione energetica personalizzata LIVE',
+        '💫 Attivazione dei doni del tuo Angelo LIVE',
+        '🔥 Attivazione dei poteri del tuo Angelo LIVE',
+        '⭐ Attivazione delle qualità del tuo Angelo LIVE',
         '📧 Report dettagliato via email'
       ],
-      process: 'Dopo il pagamento del Piano Platinum, entro 3 giorni lavorativi riceverai la tua attivazione angelica a distanza con tutte le istruzioni nella mail con cui hai effettuato il pagamento.'
+      process: 'Consulenza da farsi entro 1 settimana dall'acquisto inviando email di conferma a iltuoangelorisponde@gmail.com con indicazione della ricevuta di pagamento proprio nome, cognome, data di nascita e numero cellulare. Consulenza solo in italiano e inglese.'
     },
     title: '👼 Piano PLATINUM 👼'
   })
@@ -762,6 +664,7 @@ PIANI DISPONIBILI:
 2. LIGHT: + preghiera completa + rituale base
 3. FULL: + 3 rituali dettagliati + invocazioni complete
 4. PLATINUM: + attivazione angelica a distanza
+5. DIAMOND: + attivazione angelica on line in diretta
 
 UTILIZZO:
 import { angels72Database, findAngelByDate, getAngelContent } from './angels72Database.js';
@@ -774,6 +677,7 @@ const freeContent = getAngelContent(1, 'free');
 const lightContent = getAngelContent(1, 'light');
 const fullContent = getAngelContent(1, 'full');
 const platinumContent = getAngelContent(1, 'platinum');
+const diamondContent = getAngelContent(1, 'diamond');
 
 // Cerca angeli per coro
 const serafini = getAngelsByCoro('SERAFINI');
@@ -795,7 +699,7 @@ console.log(`Cori: ${stats.coriList.join(', ')}`);
 FUNZIONALITÀ COMPLETE:
 ✅ 72 Angeli Custodi completi
 ✅ Tutte le preghiere originali dal PDF
-✅ 4 piani (FREE, LIGHT, FULL, PLATINUM)
+✅ 5 piani (FREE, LIGHT, FULL, PLATINUM, DIAMOND)
 ✅ Sistema di date con gestione cambio anno
 ✅ Ricerca per nome, coro, elemento, arcangelo
 ✅ Statistiche complete del database
@@ -817,7 +721,7 @@ Dona mezzi
 di sussistenza.
 Che il lavoro
 sia benedetto.`,
-    message: 'Il lavoro dignifica l\'uomo. Lavora con onestà e dedizione.'
+    message: 'Il lavoro nobilita l\'uomo. Lavora con onestà e dedizione.'
   },
 
   {
@@ -836,15 +740,9 @@ sia benedetto.`,
     giorni: '26 aprile, 9 luglio, 22 settembre, 4 dicembre, 14 febbraio. Ora: 12.00-12.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: liberazione dai vizi, rottura dei circoli viziosi, conversione spirituale, comprensione della natura.',
     description: 'Angelo della rottura del cerchio. Spezza i circoli viziosi e libera dalle dipendenze. Favorisce la conversione spirituale e rivela i segreti della natura.',
-    prayer: `ANIEL, Angelo Liberatore,
-spezza i circoli viziosi
-che mi imprigionano.
-Liberami dai vizi
-e dalle dipendenze.
-Favorisci la conversione
-e svela i segreti naturali.
-Che la libertà
-sia totale.`,
+    prayer: `Angelo Aniel, presta ascolto alla mia preghiera, Mostrami un segno tangibile della tua presenza. 
+Offrimi serenità e pace, creatività, fantasia e coraggio. Liberami dai inutili pesi, così da potermi innalzare e avvicinarmi alla tua luce eterna.
+Ti invoco perché possa trovare felicità, amore, pace interiore e spiritualità. Amen.`,
     message: 'Ogni cerchio vizioso può essere spezzato. Liberati e ricomincia.'
   },
 
@@ -870,7 +768,7 @@ in Amore, in abbondanza, in pienezza, in progresso,
 in ricchezza morale e materiale
 e in possibilità di azione
 nell'Opera Divina del Mondo.`,
-    message: 'I rituali sono ponti verso il divino. Pratica con cuore sincero.'
+    message: 'I rituali sono Ponti verso il Divino. Pratica con cuore sincero e ti si apriranno le Porte del Paradiso, sia in Cielo che in Terra!'
   },
 
   {
@@ -889,16 +787,10 @@ nell'Opera Divina del Mondo.`,
     giorni: '29 aprile, 13 luglio, 25 settembre, 6 dicembre, 15 febbraio. Ora: 12.40-13.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: amore per i genitori, salute e longevità dei genitori, rispetto filiale, obbedienza amorevole.',
     description: 'Angelo della sottomissione filiale. Favorisce l\'amore e il rispetto verso i genitori. Dona loro salute e longevità. Insegna l\'obbedienza amorevole.',
-    prayer: `REHAEL, Angelo Filiale,
-accresci l'amore
-verso i miei genitori.
-Dona loro salute
-e lunga vita.
-Insegna il rispetto
-e l'obbedienza amorevole.
-Che l'amore filiale
-sia perfetto.`,
-    message: 'Onora padre e madre. L\'amore filiale è sacro e benedetto.'
+    prayer: `Rehael, rendi potente il mio pensiero, perché  il mio desiderio è di sapere e di agire. 
+Conducimi, Signore, nel tuo mondo celeste,paradisiaco, felicità e di pace, di perpetua e di splendida luce, di vita piena. 
+Perché io possa , quaggiù , materializzare l’intensità felice di lassù. Concedimi ,Signore, la grazia  dei tuoi doni e poteri. Amen.`,
+    message: 'Onora il padre e la madre. L\'amore filiale è sacro e benedetto.'
   },
 
   {
@@ -916,16 +808,9 @@ sia perfetto.`,
     difetti: 'delusione, tradimento, infedeltà',
     giorni: '30 aprile, 14 luglio, 26 settembre, 7 dicembre, 16 febbraio. Ora: 13.00-13.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: consolazione nelle pene, liberazione dai nemici, fedeltà negli affetti, gioia del cuore.',
-    description: 'Angelo della consolazione. Consola nelle afflizioni e porta gioia. Libera dai nemici e favorisce la fedeltà. Trasforma il dolore in serenità.',
-    prayer: `YEIAZEL, Angelo Consolatore,
-porta conforto
-nelle mie afflizioni.
-Liberami dai nemici
-e dona fedeltà.
-Trasforma il dolore
-in gioia e serenità.
-Che la consolazione
-guarisca ogni pena.`,
+    description: 'Angelo della consolazione. Consola nelle afflizioni e porta gioia. Libera dai nemici e favorisce la fedeltà. Successo nella carriera a contatto con Mass Media (radio, tv, editoria, stampa).',
+    prayer: `Yezalel, potenza che regge gli avvenimenti quotidiani!Desidero amare, per essere così,o diventare, il migliore amico, il migliore sposo, 
+il miglior padre, il miglior cittadino, il miglior figlio, il miglior direttore, impiegato, il migliore, sempre, in tutto. Desidero amare ed essere amato; in una parola: desidero riuscire nella mia Vita. Aiutami, Signore!Amen.`,
     message: 'Ogni dolore trova consolazione. Apri il cuore e ricevi conforto.'
   },
 
@@ -947,17 +832,10 @@ guarisca ogni pena.`,
     qualita: 'vocazione missionaria, devozione, protezione dei missionari',
     difetti: 'ateismo, scandali religiosi, empietà',
     giorni: '1 maggio, 15 luglio, 27 settembre, 8 dicembre, 17 febbraio. Ora: 13.20-13.40',
-    invocazione: 'Tramite l\'invocazione è possibile ottenere: vocazione spirituale, protezione nelle missioni, devozione, fede sincera.',
+    invocazione: 'Tramite l\'invocazione è possibile ottenere: vocazione spirituale, grande energia, successo nella carriera ecclesiastica, fede sincera.',
     description: 'Angelo della vocazione spirituale. Dona la chiamata missionaria e protegge chi diffonde la fede. Favorisce la devozione e allontana l\'empietà.',
-    prayer: `HAHAHEL, Angelo della Vocazione,
-illumina il mio cammino
-spirituale e missionario.
-Proteggi chi diffonde
-la fede nel mondo.
-Dona devozione sincera
-e allontana l'empietà.
-Che la vocazione
-sia chiara e forte.`,
+    prayer: `Concedimi, Signore Hahahel, un supplemento di coraggio, per ringraziarti già dei benefici che riceverò da te. 
+Voglio che le mie deboli braccia ricevano la potenza della TUA Divina Essenza, per contribuire utilmente all’opera Divina del Mondo a venire. Ti chiedo di farmi partecipare all’edificazione,in corso, del nuovo mondo paradisiaco. Amen.`,
     message: 'Ogni anima ha una vocazione. Ascolta la chiamata divina nel tuo cuore.'
   },
 
@@ -971,21 +849,23 @@ sia chiara e forte.`,
     dateRange: 'dal 19 al 23 Ottobre',
     dateStart: '10-19',
     dateEnd: '10-23',
-    essenza: 'ORDINE POLITICO',
+    essenza: 'ORDINE POLITICO',ORGANIZZAZIONE
     qualita: 'ordine politico, sicurezza, scoperta di complotti, viaggi sicuri',
     difetti: 'tradimento politico, complotti, disordini',
     giorni: '2 maggio, 16 luglio, 28 settembre, 9 dicembre, 18 febbraio. Ora: 13.40-14.00',
-    invocazione: 'Tramite l\'invocazione è possibile ottenere: ordine politico, sicurezza nazionale, scoperta di trame, protezione in viaggio.',
+    invocazione: 'Tramite l\'invocazione è possibile ottenere: ordine politico, riuscita in campo politico e nella carriera diplomatica, protezione in viaggio.',
     description: 'Angelo dell\'ordine politico. Favorisce la stabilità e la sicurezza. Rivela i complotti e protegge nei viaggi. Dona ordine e struttura.',
-    prayer: `MIKAEL, Angelo dell'Ordine,
-porta stabilità
-e sicurezza.
-Svela i complotti
-e proteggi nei viaggi.
-Dona ordine
-alla società e alla vita.
-Che l'ordine
-regni ovunque.`,
+    prayer: `Angelo VEULIAH, vengo a dirti che accetto.
+Si accetto di agire senza contraddire la Legge Divina.
+Accetto la verità. Di essere portatore nel mio seno
+Di una scintilla divina, di una parte dell’unica vita
+Accetto di essere una goccia d’acqua
+nel grande oceano della vita divina, cosmica.
+Vengo a dirti anche che desidero prosperare
+in saggezza, e in possibilità  di azione: riuscire.
+Aiutami Signore, accompagnami con 
+il tuo amore, perché le mie opere possano essere amate
+dagli uomini e dal Creatore e Maestro dell’Universo.`,
     message: 'L\'ordine è la base della pace. Organizza con saggezza e giustizia.'
   },
 
@@ -1005,15 +885,17 @@ regni ovunque.`,
     giorni: '3 maggio, 17 luglio, 29 settembre, 10 dicembre, 19 febbraio. Ora: 14.00-14.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: prosperità materiale, abbondanza, liberazione da ogni forma di schiavitù, vittoria sui nemici.',
     description: 'Angelo della prosperità. Dona abbondanza e ricchezza. Libera dalla schiavitù fisica e mentale. Distrugge i nemici e porta benessere.',
-    prayer: `VEULIAH, Angelo della Prosperità,
-riversa abbondanza
-nella mia vita.
-Liberami da ogni schiavitù
-fisica e mentale.
-Distruggi i nemici
-e porta benessere.
-Che la prosperità
-sia duratura.`,
+    prayer: `Angelo VEULIAH, vengo a dirti che accetto.
+Si accetto di agire senza contraddire la Legge Divina.
+Accetto la verità. Di essere portatore nel mio seno
+Di una scintilla divina, di una parte dell’unica vita
+Accetto di essere una goccia d’acqua
+nel grande oceano della vita divina, cosmica.
+Vengo a dirti anche che desidero prosperare
+in saggezza, e in possibilità  di azione: riuscire.
+Aiutami Signore, accompagnami con 
+il tuo amore, perché le mie opere possano essere amate
+dagli uomini e dal Creatore e Maestro dell’Universo.`,
     message: 'La prosperità è un dono divino. Ricevila con gratitudine e condividila.'
   },
 
@@ -1033,15 +915,10 @@ sia duratura.`,
     giorni: '4 maggio, 18 luglio, 30 settembre, 11 dicembre, 20 febbraio. Ora: 14.20-14.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: coraggio nelle battaglie, vittoria militare, talento strategico, fortuna in guerra.',
     description: 'Angelo del talento guerriero. Dona coraggio e abilità militare. Favorisce la vittoria in battaglia e protegge i guerrieri. Allontana la codardia.',
-    prayer: `YELAHIAH, Angelo Guerriero,
-dona coraggio
-nelle battaglie della vita.
-Conferisci talento strategico
-e vittoria giusta.
-Proteggi i combattenti
-e allontana la codardia.
-Che il coraggio
-sia la mia forza.`,
+    prayer: `Yelahiah, Signore, aiutami ad affrontare ogni battaglia con il Tuo valore e la Tua forza. 
+Fa' che io ottenga il successo in ogni impresa; che la Tua Spada mi protegga e il Tuo Scudo mi difenda da ogni assalto dei nemici della Verità. 
+Liberami dalle insidie e dalle trappole. Concedimi di camminare sempre sul sentiero del dovere e della giustizia. 
+Fa' che io sia un esecutore fedele della Legge Divina e che la mia opera serva al bene della comunità. Grazie, Yelahiah.`,
     message: 'Il vero guerriero combatte per la giustizia. Sii coraggioso e giusto.'
   },
 
@@ -1055,21 +932,15 @@ sia la mia forza.`,
     dateRange: 'dal 3 al 7 Novembre',
     dateStart: '11-03',
     dateEnd: '11-07',
-    essenza: 'MOTIVAZIONE',
+    essenza: 'MOTIVAZIONE, VOLONTA' RITROVATA',
     qualita: 'motivazione, elevazione degli umili, confusione dei superbi',
-    difetti: 'superbia, caduta, umiliazione',
+    difetti: 'superbia, caduta, megalomania, dittatura',
     giorni: '5 maggio, 19 luglio, 1 ottobre, 12 dicembre, 21 febbraio. Ora: 14.40-15.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: motivazione interiore, elevazione spirituale, umiltà, confusione dei superbi.',
     description: 'Angelo della motivazione. Eleva gli umili e confonde i superbi. Dona motivazione e volontà. Insegna l\'umiltà e abbatte l\'orgoglio.',
-    prayer: `SEALIAH, Angelo Motivatore,
-accendi in me
-la fiamma della volontà.
-Eleva gli umili
-e confondi i superbi.
-Insegna l'umiltà
-e dona motivazione.
-Che la motivazione
-sia costante.`,
+    prayer: `Sehaliah, Signore, Ti prego di far sì che la mia volontà sia ferma e forte per compiere la Tua Opera e non disperarmi. 
+Aiutami a sollevare coloro che sono oppressi e disorientati, affinché possano ritrovare la gioia di vivere. Concedimi di motivare la speranza e di usare la mia energia per rigenerare e guarire. 
+Fa' che la Tua Luce risani in me ogni debolezza fisica e morale. Permettimi di non soccombere alla superbia e di essere sempre umile e laborioso. Grazie, Sehaliah`,
     message: 'La vera motivazione viene dall\'anima. Agisci con umiltà e determinazione.'
   },
 
@@ -1085,19 +956,11 @@ sia costante.`,
     dateEnd: '11-12',
     essenza: 'PERCEZIONE',
     qualita: 'percezione rivelante, scoperta di tesori, rivelazione di segreti naturali',
-    difetti: 'spirito debole, idee ridicole, imprudenza',
+    difetti: 'spirito debole, confusione mentale.',
     giorni: '6 maggio, 20 luglio, 2 ottobre, 13 dicembre, 22 febbraio. Ora: 15.00-15.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: percezione sottile, scoperta di tesori nascosti, rivelazione di segreti, prudenza.',
     description: 'Angelo della percezione. Rivela tesori nascosti e segreti della natura. Dona percezione sottile e intuizione. Protegge dall\'imprudenza.',
-    prayer: `ARIEL, Angelo della Percezione,
-affina i miei sensi
-e la mia intuizione.
-Rivela tesori nascosti
-e segreti naturali.
-Dona prudenza
-nelle azioni.
-Che la percezione
-sia chiara e vera.`,
+    prayer: `Ariel, Signore, Ti prego di illuminare il mio cammino con la Tua Luce. Permettimi di scoprire i Tuoi Segreti e di accedere alla conoscenza nascosta. Aiutami a trovare i ""tesori"" che il Destino mi ha riservato, non solo materiali, ma soprattutto spirituali e intellettuali. Infonde in me la saggezza per usare il mio intelletto nella ricerca della verità e della giustizia. Fa' che io porti avanti i miei progetti con successo, affinché la mia opera sia utile agli altri e glorifichi il Tuo Nome. Grazie, Ariel.`,
     message: 'La percezione sottile vede oltre l\'apparenza. Affina i tuoi sensi.'
   },
 
@@ -1116,16 +979,9 @@ sia chiara e vera.`,
     difetti: 'occultamento della verità, scandali, calunnie',
     giorni: '7 maggio, 21 luglio, 3 ottobre, 14 dicembre, 23 febbraio. Ora: 15.20-15.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: contemplazione della verità divina, elevazione spirituale, rivelazioni mistiche, protezione dalle calunnie.',
-    description: 'Angelo della contemplazione. Eleva verso Dio e rivela la verità. Favorisce la contemplazione mistica e protegge dalle calunnie. Dona visioni spirituali.',
-    prayer: `ASALIAH, Angelo Contemplativo,
-eleva il mio spirito
-verso la verità divina.
-Dona visioni mistiche
-e rivelazioni.
-Proteggimi dalle calunnie
-e dall'occultamento.
-Che la contemplazione
-sia profonda.`,
+    description: 'Signore ASALIAH vorrei ardentemente intrattenermi con te
+ma io non so che pregarti e lodarti, chiederti di aiutarmi o ringraziati del tuo aiuto. Molti, moltissimi vivono in atroce miseria, nella miseria spirituale e per tale motivo io vorrei entrare in possesso della ricchezza più vera, della ricchezza spirituale; ma io ti chiedo di accordarmi la ricchezza materiale perché questa mi serva a proclamare il valore immenso dello Spirito, della Forza che nobilita, che ci fa Nobili, Cavalieri, consanguinei degli Angeli Celesti.
+Grazie Angelo.`,
     message: 'Nella contemplazione trovi Dio. Medita in silenzio e riceverai rivelazioni.'
   },
 
@@ -1140,20 +996,13 @@ sia profonda.`,
     dateStart: '11-18',
     dateEnd: '11-22',
     essenza: 'FECONDITA\'',
-    qualita: 'fecondità, fertilità, amore coniugale, fedeltà',
+    qualita: 'difesa della famiglia, fertilità, amore coniugale, fedeltà',
     difetti: 'sterilità, discordia coniugale, lussuría',
     giorni: '8 maggio, 22 luglio, 4 ottobre, 15 dicembre, 24 febbraio. Ora: 15.40-16.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: fecondità, fertilità nella coppia, amore coniugale duraturo, fedeltà reciproca.',
     description: 'Angelo della fecondità. Dona fertilità alle coppie e favorisce la procreazione. Protegge l\'amore coniugale e la fedeltà. Allontana la sterilità.',
-    prayer: `MIHAEL, Angelo della Fecondità,
-benedici l'unione
-con fertilità e amore.
-Dona fecondità
-alla coppia.
-Proteggi la fedeltà
-e l'amore coniugale.
-Che la fecondità
-sia abbondante.`,
+    prayer: `Mihael, Signore dell'Amore e dell'Armonia, Ti prego di portare la pace e l'unità nel mio cuore e nella mia casa. 
+Fa' che io sia sempre circondato da amore e amicizia sinceri. Concedi che io possa vivere un amore stabile e duraturo, fondato sulla lealtà e sulla fedeltà. Aiutami a conciliare gli opposti e a trovare l'equilibrio tra il maschile e il femminile in me e nelle mie relazioni. Se è nella Tua Volontà, benedici il mio amore con la fecondità e la gioia. Permettimi di diffondere intorno a me la Tua Luce di Amore e Compassione. Grazie, Mihael.`,
     message: 'L\'amore fecondo genera vita. Ama con purezza e fedeltà.'
   },
 
@@ -1171,21 +1020,16 @@ sia abbondante.`,
     dateRange: 'dal 23 al 27 Novembre',
     dateStart: '11-23',
     dateEnd: '11-27',
-    essenza: 'GRANDEZZA',
+    essenza: 'GRANDEZZA, ELEVAZIONE',
     qualita: 'grandezza d\'animo, elevazione, saggezza, celebrità',
-    difetti: 'egoismo, ipocrisia, ingratitudine',
+    difetti: 'odio, egocentrismo, intolleranza',
     giorni: '9 maggio, 23 luglio, 5 ottobre, 16 dicembre, 25 febbraio. Ora: 16.00-16.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: grandezza d\'animo, elevazione spirituale, saggezza profonda, celebrità meritata.',
     description: 'Angelo della grandezza. Dona grandezza d\'animo e elevazione spirituale. Favorisce la saggezza e la celebrità meritata. Allontana egoismo e ipocrisia.',
-    prayer: `VEHUEL, Angelo della Grandezza,
-dona magnanimità
-al mio cuore.
-Eleva il mio spirito
-verso la saggezza.
-Concedi celebrità
-meritata e giusta.
-Che la grandezza
-sia umile.`,
+    prayer: ` Io, Essere Umano, sono anche il Mistero del Roveto Ardente: io sarò ciò che sarò.
+E per essere ciò che voglio essere ti chiedo, Angelo Vehuel, di dischiudere il mio cammino.
+Fa' che io sappia discernere con chiarezza l'amicizia e l'amore, il cuore e la ragione; fa che io sappia distinguere la mollezza dall'umiltà, la vanità dalla generosità. Che il mio contegno i miei progetti mi mostrino (a me stesso come a ogni altro) per ciò che io sono.
+Aiutami, Signore, a realizzare le mie alleanze. Angelo grazie per il tuo aiuto.`,
     message: 'La vera grandezza è nell\'umiltà. Sii grande di cuore e umile di spirito.'
   },
 
@@ -1205,15 +1049,8 @@ sia umile.`,
     giorni: '10 maggio, 24 luglio, 6 ottobre, 17 dicembre, 26 febbraio. Ora: 16.20-16.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: eloquenza nel parlare, decisioni sagge, consolazione, misericordia nelle azioni.',
     description: 'Angelo dell\'eloquenza. Dona la parola giusta al momento giusto. Favorisce decisioni sagge e misericordia. Consola e ispira il linguaggio.',
-    prayer: `DANIEL, Angelo dell'Eloquenza,
-dona grazia
-alla mia parola.
-Illumina le decisioni
-con saggezza.
-Insegna la misericordia
-e la consolazione.
-Che l'eloquenza
-sia al servizio del bene.`,
+    prayer: `Daniel, Signore, Ti ringrazio per la Tua Forza che consola e rigenera. Ti prego di riempire il mio cuore di compassione e di grazia. 
+Aiutami a superare ogni malinconia e a liberare il mio animo dall'oscurità. Concedimi il dono di un'eloquenza chiara e persuasiva, affinché io possa difendere le cause giuste e portare conforto a chi soffre. Fa' che io sia un portatore di speranza e un consolatore. Permettimi di diffondere intorno a me la Tua Armonia e la Tua Pace. Grazie, Daniel.`,
     message: 'Le parole hanno potere. Parla con eloquenza, saggezza e misericordia.'
   },
 
@@ -1227,21 +1064,14 @@ sia al servizio del bene.`,
     dateRange: 'dal 3 al 7 Dicembre',
     dateStart: '12-03',
     dateEnd: '12-07',
-    essenza: 'MEDICINA UNIVERSALE',
+    essenza: 'MEDICINA UNIVERSALE, PANACEA',
     qualita: 'medicina, chimica, fisica, scoperte scientifiche',
     difetti: 'ciarlataneria, veleni, ignoranza medica',
     giorni: '11 maggio, 25 luglio, 7 ottobre, 18 dicembre, 27 febbraio. Ora: 16.40-17.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: conoscenza medica, successo in chimica e fisica, scoperte scientifiche, guarigione.',
     description: 'Angelo della medicina universale. Rivela i segreti della guarigione e delle scienze. Protegge da veleni e ciarlatani. Favorisce le scoperte mediche.',
-    prayer: `HAHASIAH, Angelo Medico,
-rivelami i segreti
-della guarigione.
-Illumina la scienza
-medica e chimica.
-Proteggi dai veleni
-e dai ciarlatani.
-Che la medicina
-sia universale.`,
+    prayer: ` Hahasiah, Signore della Medicina e della Sapienza, Ti prego di riversare su di me il Tuo potere di guarigione e rigenerazione. 
+Permettimi di conoscere il segreto della pietra filosofale, cioè la verità nascosta dietro ogni apparenza e ogni male. Fa' che io sia in grado di comprendere e di applicare le leggi della natura per portare sollievo ai sofferenti. Illumina la mia mente con la Tua saggezza, affinché io possa vedere la radice di ogni problema e trovare la soluzione. Concedimi di usare la mia intelligenza e le mie capacità per la salute e il bene di tutti. Grazie, Hahasiah`,
     message: 'La vera medicina guarisce corpo e spirito. Cerca la guarigione olistica.'
   },
 
@@ -1255,22 +1085,16 @@ sia universale.`,
     dateRange: 'dall\'8 al 12 Dicembre',
     dateStart: '12-08',
     dateEnd: '12-12',
-    essenza: 'ESPIAZIONE',
+    essenza: 'ESPIAZIONE DEI PECCATI',
     qualita: 'espiazione degli errori, distruzione nemici, liberazione dai prigionieri',
     difetti: 'orgoglio, prigionia, nemici potenti',
     giorni: '12 maggio, 26 luglio, 8 ottobre, 19 dicembre, 28 febbraio. Ora: 17.00-17.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: espiazione dei peccati, liberazione dalle prigioni, distruzione dei nemici, umiltà.',
     description: 'Angelo dell\'espiazione. Favorisce il pentimento e l\'espiazione. Libera dalle prigioni fisiche e spirituali. Distrugge i nemici e dona umiltà.',
-    prayer: `IMAMIAH, Angelo dell'Espiazione,
-aiutami a espiare
-gli errori commessi.
-Liberami dalle prigioni
-e dai nemici.
-Dona umiltà
-al mio cuore.
-Che l'espiazione
-sia completa.`,
-    message: 'Ogni errore può essere espiato. Pentiti sinceramente e ricomincia.'
+    prayer: `Signore, fa' che i miei nemici comprendano che non faccio parte del loro mondo. Di' loro che sono arso dal Tuo Fuoco e che non posso mantenere le promesse fatte in passato dalla mia personalità materiale.
+Liberami, Angelo IMAMIAH, dagli impegni e dalle responsabilità assunti in passato.
+Aiutami a salire verso le Tue Dimore Celesti, perché, già in questo Mondo, io agisco secondo i Tuoi pesi e le Tue misure, spinto dai Tuoi doni e dai poteri che mi concedi. Voglio costruire, per me e per il mio prossimo (per tutti) un nuovo Paradiso; illuminami, affinché io possa riuscire in pieno`,
+    message: 'Ogni errore può essere espiato. Pentiti sinceramente e ricomincia a vivere.'
   },
 
   {
@@ -1289,15 +1113,7 @@ sia completa.`,
     giorni: '13 maggio, 27 luglio, 9 ottobre, 20 dicembre, 1 marzo. Ora: 17.20-17.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: comunicazione con il divino, meditazione profonda, comprensione delle scienze astratte.',
     description: 'Angelo della comunicazione spirituale. Favorisce la meditazione e la comunicazione con il divino. Dona comprensione delle scienze astratte. Apre la mente.',
-    prayer: `NANAEL, Angelo Comunicatore,
-apri i canali
-della comunicazione spirituale.
-Dona profondità
-alla meditazione.
-Illumina le scienze
-astratte e mistiche.
-Che la comunicazione
-col divino sia chiara.`,
+    prayer: `Nanael, principe solare, ti domando di diffondere dentro di me la tua Luce, affinché io sviluppi delle idee di giustizia, e dei sentimenti di Amore. Riversa su di me, e su chi mi è vicino, su tutte le donne e su tutti gli uomini la grazia della tua Acqua Viva.Voglio  partecipare, Angelo Nanael, alla costruzione del nuovo mondo, quello che sarà costruito secondo le regole divine, quelle che noi portiamo iscritte nella coscienza`,
     message: 'Il divino comunica sempre. Apri il cuore e ascolta in silenzio.'
   },
 
@@ -1311,22 +1127,15 @@ col divino sia chiara.`,
     dateRange: 'dal 17 al 21 Dicembre',
     dateStart: '12-17',
     dateEnd: '12-21',
-    essenza: 'ETERNA GIOVINEZZA',
+    essenza: 'EREDITA' SUCCESSORIA',
     qualita: 'giovinezza eterna, bellezza, longevità, stabilità dinastica',
     difetti: 'vecchiaia precoce, rovine, crolli dinastici',
     giorni: '14 maggio, 28 luglio, 10 ottobre, 21 dicembre, 2 marzo. Ora: 17.40-18.00',
-    invocazione: 'Tramite l\'invocazione è possibile ottenere: giovinezza dello spirito, bellezza duratura, longevità, stabilità familiare.',
-    description: 'Angelo dell\'eterna giovinezza. Mantiene giovane lo spirito e preserva la bellezza. Dona longevità e stabilità. Protegge le dinastie e le famiglie.',
-    prayer: `NITHAEL, Angelo della Giovinezza,
-conserva fresco
-il mio spirito.
-Dona bellezza
-e longevità.
-Proteggi la stabilità
-della famiglia.
-Che la giovinezza
-sia eterna nell'anima.`,
-    message: 'La vera giovinezza è dello spirito. Mantieni giovane il cuore.'
+    invocazione: 'Tramite l\'invocazione è possibile ottenere: fama attraverso le proprie opere scritte, reputazione nel mondo scientifico, benevolenza e favori accordati dalle massime autorità dello Stato, bellezza duratura, longevità, stabilità familiare.',
+    description: 'Angelo dell\'eterna giovinezza. Mantiene giovane lo spirito e preserva la bellezza. Ci riconnette al nostro bambino interiore. Dona longevità e stabilità. Protegge le dinastie e le famiglie.',
+    prayer: `Nithael, principe di ogni perfezione, eleva il destino della mia vita, perché voglio integrarmi all’opera divina, perché la tua luce brilli nel mio cuore, come uno sprazzo di verità e amore. 
+Aiutami Signore a coltivare, a far crescere questo fiume divino di eterna giovinezza chiamata volontà, perché essa emana il più delizioso e utile dei profumi, quello che è chiamato realizzazione. Amen`,
+    message: 'La vera giovinezza è dello spirito. Mantieni giovane il cuore e il tuo bimbo interiore sarà sempre felice'
   },
 
   {
@@ -1342,7 +1151,14 @@ sia eterna nell'anima.`,
     essenza: 'LUCIDITA\' INTELLETTUALE',
     qualita: 'lucidità intellettuale, moralità, fecondità, consolazione',
     difetti: 'immoralità, sterilità, turbamento mentale',
-    giorni: '15 maggio, 29 luglio, 11 ottobre, 22 // ============================================
+    giorni: '15 maggio, 29 luglio, 11 ottobre, 22 Dicembre, 3 Marzo. Ora: 18.00 – 18.20',
+    invocazione: 'Tramite l\'invocazione è possibile ottenere: prolificità, conseguimenti in campi diversi, vita agiata, placida e serena.',
+    description: 'Angelo dell\'eloquenza e della fecondità. Per chi si rivolge a lui niente è impossibile!',
+    prayer: `Mebabiah, concedimi la tua Luce perché possa beneficiare della Grazia provvidenziale dell’opportunità, madre di ogni successo utile all’Opera Divina del Mondo. Concedimi anche la lucidità che mi permetterebbe didiventare attore consapevole, nella grande avventura della Vita Universale . Sono impaziente di agire e di riuscire nel bene e nell’armonia. Amen`,
+    message: 'La vera Eloquenza non è parlare bene. È generare bellezza.'
+  },
+
+ // ============================================
 // DATABASE COMPLETO 72 ANGELI CUSTODI
 // CON PREGHIERE ORIGINALI DAL PDF
 // VERSIONE FINALE - PRONTA PER PRODUZIONE
@@ -1423,15 +1239,15 @@ Ti ringrazio Angelo Jeliel.`,
     giorni: '23 marzo, 5 giugno, 19 agosto, 31 ottobre, 11 gennaio. Ora: 00.40-01.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: protezione contro le avversità, capacità di costruire opere durevoli, forza per superare ostacoli, saggezza nell\'uso del potere.',
     description: 'Angelo della costruzione e dell\'edificazione. Conferisce nobiltà d\'animo e capacità di realizzare opere durevoli. Protegge contro le avversità e aiuta a superare gli ostacoli. Dona la forza per portare a termine grandi progetti.',
-    prayer: `SITAEL, Angelo costruttore,
-donami la forza di edificare
-opere durevoli e benefiche.
-Insegnami a usare il potere
-con saggezza e magnanimità.
-Proteggi le mie costruzioni
-materiali e spirituali,
-rendile solide come roccia
-e luminose come il sole.`,
+    prayer: `Tendo le mie mani, o SITAEL,
+per ricevere da te la pioggia benefica
+della tua Essenza, sul Fuoco del mio desiderio ardente
+di agire bene e riuscire.
+Ti prometto che le Acque Dolci, Celesti,
+serviranno a irrigare, e a far fruttificare
+delle azioni utili, che procurano ricchezza
+a me, a chi mi è vicino e
+all'Opera del Mondo.`,
     message: 'Costruisci con nobiltà d\'animo. Ogni tua opera sia duratura e benefica.'
   },
 
@@ -1451,15 +1267,15 @@ e luminose come il sole.`,
     giorni: '24 marzo, 6 giugno, 20 agosto, 1 novembre, 12 gennaio. Ora: 01.00-01.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: successo professionale, rivelazione di inganni, protezione in viaggio, pace interiore.',
     description: 'Angelo del potere divino. Rivela i tradimenti e protegge dalle congiure. Dona successo nelle imprese professionali e protegge durante i viaggi. Aiuta a trovare la pace interiore.',
-    prayer: `ELEMIAH, portatore del Potere Divino,
-illumina la mia strada
-e svela ogni inganno.
-Proteggi i miei passi
-ovunque io vada.
-Dona pace al mio spirito
-e successo alle mie imprese.
-Che il tuo potere mi guidi
-verso la verità e la giustizia.`,
+    prayer: `Angelo ELEMIAH! Torna verso di me!
+E' Attraverso la tua potenza che voglio elevarmi
+spiritualmente e materialmente;
+conciliare i miei pensieri
+con  i miei desideri e con i miei atti.
+Concedimi la tua Forza prodigiosa
+perchè sia capace di dare un vero senso
+alla mia Vita, e cosi di essere utile a me stesso,
+al mio prossimo, all'Opera Divina del Mondo`,
     message: 'Il potere divino ti protegge. Cammina nella verità senza paura.'
   },
 
@@ -1473,22 +1289,27 @@ verso la verità e la giustizia.`,
     dateRange: 'dal 10 al 14 Aprile',
     dateStart: '04-10',
     dateEnd: '04-14',
-    essenza: 'RETTIFICAZIONE',
+    essenza: 'PURIFICAZIONE RIGENERANTE',
     qualita: 'facilità di apprendimento, esami superati, vita serena, capacità di vivere in pace con tutti',
     difetti: 'ignoranza, difficoltà di apprendimento, carattere difficile',
     giorni: '25 marzo, 7 giugno, 21 agosto, 2 novembre, 13 gennaio. Ora: 01.20-01.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: successo negli studi, superamento esami, comprensione facilitata, armonia nelle relazioni.',
     description: 'Angelo della rettificazione e dell\'apprendimento. Facilita gli studi e fa superare gli esami. Dona la capacità di vivere in armonia con tutti. Corregge gli errori del passato.',
-    prayer: `MAHASIAH, Angelo rettificatore,
-illumina la mia mente
-affinché possa apprendere con facilità.
-Aiutami a superare ogni prova
-e a vivere in pace con tutti.
-Correggi i miei errori
-e guidami verso la saggezza.
-Che il tuo insegnamento
-sia luce sul mio cammino.`,
-    message: 'L\'apprendimento è la tua forza. Studia con gioia e vivi in armonia.'
+    prayer: `La verità splende perché abbia esito  felice
+il progetto delle persone che invocano la grazia dell'Angelo Mahasiah !
+I miei pensieri i miei desideri la mia
+condotta sono avviati lungo il tuo cammino angelico, o Signore!
+Il bene è il fine invisibile delle mie azioni.
+La mia coscienza è desta, intensamente attiva.
+Grazie a Te, io vedo chiaramente in me stesso.
+Voglio istruirmi, amare, realizzarmi  nella Vita,
+ascoltare la voce delle tue immagini sublimi,
+mentre al tempo stesso io dormo e veglio.
+Io tesso, Signore, le tue lodi
+e ti rendo Grazia!
+Il tuo Nome è fonte
+di gioia e di successo!`,
+    message: 'La vera purificazione non toglie solo il peso, ma aggiunge luce. Ritorna al tuo stato originale: più forte, più chiaro, completamente rinnovato.'
   },
 
   {
@@ -1507,15 +1328,18 @@ sia luce sul mio cammino.`,
     giorni: '26 marzo, 8 giugno, 22 agosto, 3 novembre, 14 gennaio. Ora: 01.40-02.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: guarigione dalle malattie, fama meritata, successo artistico e scientifico, amore sincero.',
     description: 'Angelo della luce guaritrice. Porta salute e guarigione. Concede fama meritata nelle arti e nelle scienze. Aiuta a trovare l\'amore vero e duraturo.',
-    prayer: `LELAHEL, Luce guaritrice,
-risana il mio corpo e il mio spirito.
-Illumina il mio talento
-perché possa brillare
-con merito e umiltà.
-Guida il mio cuore
-verso l'amore vero.
-Che la tua luce
-guarisca ogni mia ferita.`,
+    prayer: `Ascoltami , o LELAHEL!
+Messaggero Luminoso, trasparente, dell'avvenire,
+illumina, te ne supplico, il mio percorso di Vita.
+Guidami verso la strada migliore, la più breve,
+per arrivare alla realizzazione del mio progetto,
+del mio desiderio ardente
+di elevazione spirituale, morale e materiale.
+Concedimi la pace, allontanando da me
+l'angoscia, la paura, la tristezza, la sofferenza.
+Concedimi questa pace, Signore Onnipotente,
+anche ai miei congiunti, e soprattutto
+fa che l'Amore e il Bene regnino sul Mondo!`,
     message: 'La luce guarisce tutto. Brilla con umiltà e ama con purezza.'
   },
 
@@ -1535,14 +1359,14 @@ guarisca ogni mia ferita.`,
     giorni: '27 marzo, 9 giugno, 23 agosto, 4 novembre, 15 gennaio. Ora: 02.00-02.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: pazienza nelle difficoltà, comprensione dei segreti naturali, perseveranza nel lavoro.',
     description: 'Angelo della pazienza. Aiuta a scoprire i segreti della natura. Dona la forza di portare a termine lavori difficili con costanza. Insegna la virtù della pazienza.',
-    prayer: `ACHAIAH, Angelo della pazienza,
-insegnami a perseverare
-anche quando tutto sembra impossibile.
-Rivelami i segreti della natura
-e donami la forza
-di completare ogni opera iniziata.
-Che la tua pazienza
-diventi la mia virtù.`,
+    prayer: `Ti chiedo , ACHAIAH,
+Serafino della Suprema Intelligenza,
+la Benedizione della tua Luce
+e la Grazia della tua Essenza,
+perché con perseveranza possa compiere e vivere in pace, 
+circondato d'Amore, d'amicizia, di gentilezza e di cordialità, elementi di cui ho bisogno perché sono debole,
+per far riuscire spiritualmente e materialmente,
+il mio lavoro umano, nel seno dell'Opera Divina del Mondo.`,
     message: 'La pazienza è la chiave di ogni successo. Persevera con costanza.'
   },
 
@@ -1562,14 +1386,14 @@ diventi la mia virtù.`,
     giorni: '28 marzo, 10 giugno, 24 agosto, 5 novembre, 16 gennaio. Ora: 02.20-02.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: benedizione divina, prosperità materiale, protezione dagli spiriti negativi, gratitudine.',
     description: 'Angelo della benedizione divina. Benedice i raccolti e dona prosperità. Allontana gli spiriti maligni e protegge dalle negatività. Insegna la gratitudine verso Dio.',
-    prayer: `CAHETEL, Angelo della benedizione,
-riversa su di me la tua grazia divina.
-Benedici i frutti del mio lavoro
-e allontana ogni negatività.
-Insegnami la gratitudine
-verso il Creatore.
-Che la tua benedizione
-accompagni ogni mio passo.`,
+    prayer: `Dammi, CAHETEL, una missione da realizzare,
+un lavoro utile da compiere.
+Con fiducia, coraggio e Amore io avanzerò,
+con serenità, verso la Luce,
+sulla via degli atti quotidiani.
+Agirò all’unisono con la Legge del Creatore,
+per il più grande bene del mio prossimo
+e del mio avanzamento spirituale e materiale.`,
     message: 'Sii grato per ogni benedizione. La gratitudine moltiplica l\'abbondanza.'
   },
 
@@ -1593,15 +1417,16 @@ accompagni ogni mio passo.`,
     giorni: '29 marzo, 11 giugno, 25 agosto, 6 novembre, 17 gennaio. Ora: 02.40-03.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: perdono divino, riconciliazione, amicizie sincere, protezione dei potenti.',
     description: 'Angelo della misericordia divina. Concede il perdono e favorisce la riconciliazione. Dona amicizie sincere e la protezione delle persone influenti. Insegna la compassione.',
-    prayer: `HAZIEL, Angelo di Misericordia,
-insegnami il perdono
-e riempimi di compassione.
-Concedimi amici sinceri
-e la protezione di chi può aiutarmi.
-Che la tua misericordia
-guarisca ogni ferita
-e riconcili ogni conflitto.`,
-    message: 'La misericordia trasforma tutto. Perdona e sarai perdonato.'
+    prayer: `Tu abiti anche in me, Signore HAZIEL!
+Il mio intimo è il tuo palazzo
+E io sono attendo alla tua Divina Presenza.
+So che dalla tua sorgente sgorga inestinguibile
+l’Acqua dell’Amore, di giorno come di notte,
+fonte anche, nel mio cuore,
+alla quale possono dissetarsi ormai
+tutti coloro che hanno sete di dolcezza e di tenerezza.
+Che la Gioia illumini sempre i nostri cuori!`,
+    message: 'Io sono una generatore di Amore Divino: invocami e sarai benedetto subito.'
   },
 
   {
@@ -1620,16 +1445,15 @@ e riconcili ogni conflitto.`,
     giorni: '30 marzo, 12 giugno, 26 agosto, 7 novembre, 18 gennaio. Ora: 03.00-03.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: perdono per gli errori, salute rinnovata, successo negli affari, grazia divina.',
     description: 'Angelo della grazia divina. Concede il perdono dopo un errore e dona una nuova opportunità. Rigenera la salute fisica e porta successo negli affari.',
-    prayer: `ALADIAH, Angelo della Grazia,
-concedimi il perdono
-per i miei errori passati.
-Rigenera il mio corpo
-e rinnovami nello spirito.
-Benedici i miei affari
-e donami una nuova opportunità.
-Che la tua grazia
-cancelli ogni colpa.`,
-    message: 'La grazia divina ti rinnova. Ogni giorno è una nuova opportunità.'
+    prayer: `So che la Terra dipende dal Cielo,
+che il corpo dipende dallo Spirito,
+e che la riuscita dipende dalla nostra Volontà,
+dai nostri sforzi, e dalla Grazia di Dio.
+E’ questa grazia, questa benedizione
+Che ti chiedo, Angelo ALADIAH:
+il tuo Divino e onnipotente appoggio,
+per ottenere la mia riuscita spirituale,morale e materiale.`,
+    message: 'La grazia divina ti inonda. Ogni giorno è una meravigliosa opportunità.'
   },
 
   {
@@ -1648,15 +1472,15 @@ cancelli ogni colpa.`,
     giorni: '31 marzo, 13 giugno, 27 agosto, 8 novembre, 19 gennaio. Ora: 03.20-03.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: vittoria sui nemici, fama meritata, rivelazioni oniriche, comprensione scientifica.',
     description: 'Angelo della vittoria. Concede il trionfo sulle avversità e dona la fama. Invia rivelazioni attraverso i sogni e facilita la comprensione delle scienze.',
-    prayer: `LAUVIAH, Angelo della Vittoria,
-conduci al trionfo
-ogni mia giusta battaglia.
-Illuminami attraverso i sogni
-e donami comprensione.
-Che la mia fama
-sia meritata e umile,
-e la vittoria
-sempre al servizio del bene.`,
+    prayer: `Angelo Lauviah, io ti chiedo di accordarmi l'abbondanza!
+In tal modo sparirà, intorno a me, grazie alla mia azione generosa, ogni malcontento.
+Avevo sete e ho trovato l'acqua della tua sorgente.
+L'ho trovata in alto sulla montagna più ardua e ascesa.
+Da allora so che ogni cosa mira a ottenere il mio bene.
+Avevo sete ma avevo bevuto acqua malsana,
+fino al giorno in cui ho trovato la tua Fonte
+e tutto così si è convertito in gioia in bontà in progresso e in elevazione.
+Sia Gloria a te Angelo Lauviah!`,
     message: 'La vera vittoria è nell\'umiltà. Trionfa con saggezza e gratitudine.'
   },
 
@@ -1676,15 +1500,8 @@ sempre al servizio del bene.`,
     giorni: '1 aprile, 14 giugno, 28 agosto, 9 novembre, 20 gennaio. Ora: 03.40-04.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: rifugio sicuro, protezione dai pericoli, pensieri elevati, discrezione nelle azioni.',
     description: 'Angelo del rifugio. Offre protezione sicura nelle avversità. Eleva i pensieri e insegna la discrezione. Protegge da menzogne e tradimenti.',
-    prayer: `HAHAIAH, Angelo rifugio,
-sii il mio porto sicuro
-nelle tempeste della vita.
-Eleva i miei pensieri
-e insegnami la discrezione.
-Proteggimi da inganni
-e tradimenti.
-Che il tuo rifugio
-sia sempre aperto per me.`,
+    prayer: `Haaiah Signore, tu che appiani i contrasti, che risolvi le lotte, che allontani le preoccupazioni, ti chiedo di calmare e unificare le mie stesse inclinazioni interiori discordanti. 
+Ti chiedo anche di accordarmi la tua essenza Angelica, fatta di prudenza, perché possa avanzare verso il successo ( spirituale, morale,sentimentale e materiale) in un clima di pace e di gioia.Amen`,
     message: 'Nel rifugio divino trovi pace. Cerca sempre la protezione dell\'Angelo.'
   },
 
@@ -1704,15 +1521,7 @@ sia sempre aperto per me.`,
     giorni: '2 aprile, 15 giugno, 29 agosto, 10 novembre, 21 gennaio. Ora: 04.00-04.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: fedeltà nel matrimonio, riconciliazione tra sposi, memoria eccellente, facilità di apprendimento.',
     description: 'Angelo della fedeltà. Protegge il matrimonio e favorisce la fedeltà coniugale. Facilita la riconciliazione e dona buona memoria e capacità di apprendimento.',
-    prayer: `IEZALEL, Angelo della fedeltà,
-custodisci il vincolo sacro
-dell'amore e del matrimonio.
-Favorisci la riconciliazione
-e dona fedeltà ai cuori.
-Illumina la mia mente
-con memoria e sapienza.
-Che la fedeltà
-sia la mia virtù.`,
+    prayer: `Yezalel, potenza che regge gli avvenimenti quotidiani!Desidero amare, per essere così,o diventare, il migliore amico, il migliore sposo, il miglior padre, il miglior cittadino, il miglior figlio, il miglior direttore, impiegato, il migliore, sempre, in tutto. Desidero amare ed essere amato; in una parola: desidero riuscire nella mia Vita. Aiutami, Signore!Amen`,
     message: 'La fedeltà è il fondamento dell\'amore. Sii fedele e sarai amato.'
   },
 
@@ -1732,15 +1541,7 @@ sia la mia virtù.`,
     giorni: '3 aprile, 16 giugno, 30 agosto, 11 novembre, 22 gennaio. Ora: 04.20-04.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: trionfo della verità, libertà dall\'oppressione, giustizia, protezione degli innocenti.',
     description: 'Angelo della verità e della libertà. Fa trionfare la verità e libera dagli oppressori. Protegge gli innocenti e fa rendere giustizia.',
-    prayer: `MEBAHEL, Angelo di Verità,
-libera il mio spirito
-da ogni oppressione.
-Fa trionfare la verità
-e proteggi gli innocenti.
-Dona giustizia
-a chi è stato offeso.
-Che la libertà
-sia il mio canto.`,
+    prayer: `Mebahel, Angelo dell’amore divino, saggio protettore, avvocato difensore permanente, consigliere ineguagliato, sii presente in tutti gli atti della mia vita. Che la giustizia e la libertà fioriscano in me, e che il mio cuore trabocchi di tenerezza verso quelli che amo, verso i miei amici, verso tutti gli esseri della creazione, in modo che diventi con te, l’avvocato difensore di tutti…Amen`,
     message: 'La verità ti renderà libero. Cammina sempre nella verità.'
   },
 
@@ -1760,15 +1561,8 @@ sia il mio canto.`,
     giorni: '4 aprile, 17 giugno, 31 agosto, 12 novembre, 23 gennaio. Ora: 04.40-05.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: purificazione dello spirito, scoperte utili, innovazione, liberazione da superstizioni.',
     description: 'Angelo della purificazione. Purifica i sentimenti e lo spirito. Favorisce le scoperte e le invenzioni utili all\'umanità. Libera dalle superstizioni.',
-    prayer: `HARIEL, Angelo purificatore,
-purifica il mio cuore
-da ogni sentimento impuro.
-Illumina la mia mente
-con scoperte benefiche.
-Liberami da superstizioni
-e falsi credi.
-Che la purezza
-sia il mio stato.`,
+    prayer: `Allontana da me , Angelo Hariel, lo scoraggiamento. Concedimi la forza che sveglia in me un interesse intenso, per tutto e tutti. 
+Sono un chicco di grano che vuole diventare pane che dona nutrimento. Concedimi la grazia del fuoco del coraggio, dell’acqua, dell’amore purifica la mia volontà e conducimi al successo…Amen`,
     message: 'La purezza apre la mente all\'innovazione. Sii puro di cuore.'
   },
 
@@ -1788,15 +1582,7 @@ sia il mio stato.`,
     giorni: '5 aprile, 18 giugno, 1 settembre, 13 novembre, 24 gennaio. Ora: 05.00-05.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: lealtà nelle amicizie, vittoria sui nemici, protezione dai tradimenti, nobiltà di spirito.',
     description: 'Angelo della lealtà. Dona nobiltà d\'animo e fedeltà. Protegge dai tradimenti e dalle congiure. Concede vittoria mantenendo l\'onore.',
-    prayer: `HEKAMIAH, Angelo della lealtà,
-insegnami la nobiltà d'animo
-e la fedeltà incondizionata.
-Proteggimi dai traditori
-e dalle false amicizie.
-Dona vittoria
-mantenendo l'onore.
-Che la lealtà
-sia il mio carattere.`,
+    prayer: `Angelo Hekamiah, Signore della perfezione, signore delle opportunità, desidero essere affascinante , delicato, studioso, colto, amabile, pacifico, vero. Ti chiedo di riempire tutto il mio essere della tua grazia, perché io possa realizzare un lavoro utile all’opera divina del Mondo…Amen`,
     message: 'La lealtà è la virtù dei nobili. Sii sempre fedele e leale.'
   },
 
@@ -1820,15 +1606,8 @@ sia il mio carattere.`,
     giorni: '6 aprile, 19 giugno, 2 settembre, 14 novembre, 25 gennaio. Ora: 05.20-05.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: rivelazione della verità, successo scientifico, fama meritata, pace interiore.',
     description: 'Angelo della rivelazione. Rivela la verità nascosta e dona pace interiore. Favorisce il successo nelle scienze e porta fama meritata. Allontana tormenti e inquietudini.',
-    prayer: `LAUVIAH, Angelo rivelatore,
-svela la verità nascosta
-e dona pace al mio spirito.
-Illumina le mie ricerche
-e conduci al successo.
-Allontana tormenti
-e inquietudini.
-Che la rivelazione
-illumini il mio cammino.`,
+    prayer: `Lauviah, Angelo delle rivelazioni, ho sete di imparare, di sapere. Prendi la mia mano ,Signore, perché senza di te non so avanzare, né perfezionarmi, per perfezionare la mia opera umana. 
+Concedimi la tua benedizione e mi impegnerò a rivelare agli altri le tue rivelazioni di felicità, di successo, di gioia e di pace. Amen`,
     message: 'La verità si rivela a chi la cerca con cuore puro. Cerca e troverai.'
   },
 
@@ -1848,15 +1627,9 @@ illumini il mio cammino.`,
     giorni: '7 aprile, 20 giugno, 3 settembre, 15 novembre, 26 gennaio. Ora: 05.40-06.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: giustizia veloce, verità che emerge, aiuto nelle cause legali, protezione dagli scandali.',
     description: 'Angelo della giustizia. Fa trionfare la verità rapidamente e aiuta nelle cause legali. Protegge dagli scandali e porta giustizia immediata.',
-    prayer: `CALIEL, Angelo di Giustizia,
-fa trionfare la verità
-rapidamente e senza indugio.
-Aiutami nelle cause
-e proteggi il mio nome.
-Svela ogni inganno
-e porta giustizia.
-Che la verità
-sia sempre al mio fianco.`,
+    prayer: `Nobile Angelo Caliel, spirito radice della Vita, motore del mondo, liberami dai gravi pesi materiali, e dalle regole e misure limitanti.
+Cancella le conseguenze dei miei errori, purifica i miei sentimenti e i miei pensieri. Fa scendere su di me la tua Essenza Divina. 
+E così che potrei vivere più intensamente ed essere più utile ai miei compagni di vita, a me stesso e all’ opera Divina del Mondo…Amen`,
     message: 'La giustizia divina è rapida e certa. Confida e attendi con fede.'
   },
 
@@ -1874,18 +1647,19 @@ sia sempre al mio fianco.`,
     qualita: 'intelligenza espansa, memoria prodigiosa, gioia, amabilità',
     difetti: 'tristezza, malinconia, memoria debole',
     giorni: '8 aprile, 21 giugno, 4 settembre, 16 novembre, 27 gennaio. Ora: 06.00-06.20',
-    invocazione: 'Tramite l\'invocazione è possibile ottenere: espansione dell\'intelligenza, memoria eccellente, gioia di vivere, amabilità nei rapporti.',
+    invocazione: 'Tramite l\'invocazione è possibile ottenere: proprio tutto, espansione dell\'intelligenza, memoria eccellente, gioia di vivere, amabilità nei rapporti.',
     description: 'Angelo dell\'intelligenza espansa. Dona memoria prodigiosa e facilità di comprensione. Porta gioia e amabilità. Allontana tristezza e malinconia.',
-    prayer: `LEUVIAH, Angelo dell'Intelligenza,
-espandi la mia mente
-e potenzia la memoria.
-Riempi il mio cuore di gioia
-e rendimi amabile.
-Allontana tristezza
-e malinconia.
-Che l'intelligenza divina
-illumini ogni mio pensiero.`,
-    message: 'L\'intelligenza divina è in te. Usala con gioia e generosità.'
+    prayer: `"ogno un mondo di splendore, dove l’Amore,
+la pace e la gioia di vivere,
+saranno Legge di Vita, logica, evidente, naturale.
+Tu hai messo il Fuoco della speranza nel mio cuore.
+E io so che attraverso di te questo sogno
+può diventare fin da ora realtà.
+Dimmi, LEUVIAH, Angelo onnipotente,
+che posso far parte, ormai
+e per sempre, dell’Opera mirabile
+della costruzione del Mondo a venire. Amen!`,
+    message: 'L\'intelligenza divina è in te. Usala con gioia e generosità e tutto potrai realizzare.'
   },
 
   {
@@ -1904,15 +1678,8 @@ illumini ogni mio pensiero.`,
     giorni: '9 aprile, 22 giugno, 5 settembre, 17 novembre, 28 gennaio. Ora: 06.20-06.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: redenzione dai peccati, vocazione spirituale, purezza di intenti, castità.',
     description: 'Angelo della redenzione. Dona vocazione religiosa e purezza. Favorisce la castità e la redenzione. Allontana l\'apostasia e protegge la fede.',
-    prayer: `PAHALIAH, Angelo della Redenzione,
-purifica il mio spirito
-e dona vocazione alla mia vita.
-Redimi i miei errori
-e guidami verso la purezza.
-Custodisci la mia fede
-e allontana ogni dubbio.
-Che la redenzione
-sia la mia grazia.`,
+    prayer: `Pahaliah, la creazione, è seduta, grazie alla tua forza, su delle basi, inalterabili. Il tuo fuoco, alimentato dall’aria e dalla terra, illuminerà e riscalderà le nostre vie. 
+Concedimi la grazia della tua essenza, in modo che possa comprendere l’ amore che fa muovere gli astri e gli esseri; questo amore divino, provvidenziale, in cui spero tanto! Aiutami, Signore, a perfezionarmi e a crescere spiritualmente e materialmente.Amen`,
     message: 'La redenzione è sempre possibile. Pentiti con cuore sincero.'
   },
 
@@ -1932,15 +1699,9 @@ sia la mia grazia.`,
     giorni: '10 aprile, 23 giugno, 6 settembre, 18 novembre, 29 gennaio. Ora: 06.40-07.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: successo negli studi, comprensione della matematica, talento poetico, amore per il sapere.',
     description: 'Angelo del desiderio di apprendere. Favorisce lo studio delle scienze e delle arti. Dona talento in matematica, poesia e letteratura. Corregge gli errori di calcolo.',
-    prayer: `NELCHAEL, Angelo del Sapere,
-accendi in me il desiderio
-di apprendere e comprendere.
-Illumina la matematica
-e ispira la poesia.
-Correggi i miei errori
-e guida verso la verità.
-Che il sapere
-sia la mia ricchezza.`,
+    prayer: `Nelchael, Trono solare, ti chiedo di versare su di me le tue divine Essenze fatte di costanza e di pazienza. 
+Voglio che il mondo opaco che vedo divenga chiaro e trasparente, per comprendere che cosa il Creatore si aspetta da me, perché voglio agire in modo che in Terra come in Cielo 
+sia fatta la sua Volontà. Aiutami, Signore, a diventare operaio dell’opera divina del Mondo.Amen`,
     message: 'Il desiderio di apprendere è divino. Studia con passione e umiltà.'
   },
 
@@ -1960,15 +1721,8 @@ sia la mia ricchezza.`,
     giorni: '11 aprile, 24 giugno, 7 settembre, 19 novembre, 30 gennaio. Ora: 07.00-07.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: fama duratura, fortuna negli affari, successo diplomatico, protezione in viaggio.',
     description: 'Angelo della fama. Concede celebrità meritata e fortuna duratura. Protegge nei viaggi e favorisce il commercio. Dona abilità diplomatiche.',
-    prayer: `YEIAYEL, Angelo della Fama,
-concedimi riconoscimento
-per i miei meriti.
-Proteggi i miei viaggi
-e benedici gli affari.
-Dona diplomazia
-nelle relazioni.
-Che la fama
-sia frutto di virtù.`,
+    prayer: `Yeiayel, intensifica il mio desiderio di fiorire. Aiuta la mia volontà a divenire forte e decisa. Attiva il fuoco ardente delle mie braci interiori perchè possa forgiare con te, 
+Fabbro Divino, tutti gli utensili necessari alla riuscita della mia avventura umana, che è anche la tua, e quella del Creatore e Signore dei Mondi.Amen`,
     message: 'La vera fama nasce dal merito. Lavora con onestà e sarai riconosciuto.'
   },
 
@@ -1982,22 +1736,22 @@ sia frutto di virtù.`,
     dateRange: 'dal 12 al 16 Luglio',
     dateStart: '07-12',
     dateEnd: '07-16',
-    essenza: 'GUARIGIONE',
+    essenza: 'GUARIGIONE, CAPACITA' DI GUARIRE',
     qualita: 'guarigione con erbe e acque, talento botanico, abbondanza nei raccolti',
     difetti: 'malattie, carestia, siccità, insetti nocivi',
     giorni: '12 aprile, 25 giugno, 8 settembre, 20 novembre, 31 gennaio. Ora: 07.20-07.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: guarigione naturale, conoscenza delle erbe, raccolti abbondanti, salute.',
     description: 'Angelo della guarigione naturale. Insegna l\'uso delle erbe medicinali e delle acque curative. Dona abbondanza nei raccolti e protegge dalle malattie.',
-    prayer: `MELAHEL, Angelo Guaritore,
-insegnami i segreti
-delle erbe e delle acque.
-Guarisci le malattie
-e benedici i raccolti.
-Dona abbondanza
-e salute.
-Che la guarigione
-fluisca attraverso la natura.`,
-    message: 'La natura guarisce tutto. Rispettala e usa i suoi doni con saggezza.'
+    prayer: `MELAHEL, Angelo dell’Intelligenza pratica,
+adorabile, adorata fonte di salute e di longevità,
+ti prego di annientare il Male, la malattia,
+attraverso la Potenza della tua Essenza, che ti chiedo
+di riversare su di me e sui miei parenti
+con prodigalità.
+Ristabilisci dentro di me l’armonia
+Perchè possa spanderla intorno a me
+e al tuo Santo Nome, Trono Onnipotente e Benevolente!`,
+    message: 'Mentre la mia Natura guarisce tutto, la Natura elargisce tutto. Rispettala e avrai tutti i suoi e miei doni in abbondanza.'
   },
 
   {
@@ -2016,15 +1770,15 @@ fluisca attraverso la natura.`,
     giorni: '13 aprile, 26 giugno, 9 settembre, 21 novembre, 1 febbraio. Ora: 07.40-08.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: protezione totale, sicurezza dai pericoli, allontanamento nemici, difesa spirituale.',
     description: 'Angelo della protezione. Protegge dai criminali, dalle bestie feroci e dagli spiriti maligni. Difende da tradimenti e inganni. Dona sicurezza totale.',
-    prayer: `HAHEUIAH, Angelo Protettore,
-avvolgimi nel tuo scudo
-di luce divina.
-Proteggimi dai pericoli
-visibili e invisibili.
-Allontana nemici
-e spiriti maligni.
-Che la protezione
-sia sempre con me.`,
+    prayer: `HAHEUIAH, Angelo-Re Protettore,
+allontana da me le cattive intenzione e l’errore,
+il Male e il pericolo. Soffia nel mio intimo
+il profumo della tua essenza sacra,
+che protegge da ogni contrattempo,
+e che conduce, con dolcezza,
+verso un nuovo paradiso terrestre,
+dove scorrono dei fiumi di acqua viva,
+e dove l’amore è Re!`,
     message: 'Sei sempre protetto. Cammina senza paura sotto lo scudo angelico.'
   },
 
@@ -2048,15 +1802,8 @@ sia sempre con me.`,
     giorni: '14 aprile, 27 giugno, 10 settembre, 22 novembre, 2 febbraio. Ora: 08.00-08.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: saggezza nascosta, rivelazioni mistiche, protezione dalla magia nera, comprensione esoterica.',
     description: 'Angelo della saggezza occulta. Rivela i misteri e dona comprensione esoterica. Protegge dalla magia nera e insegna la magia bianca. Favorisce le rivelazioni mistiche.',
-    prayer: `NITH-HAIAH, Angelo della Saggezza,
-rivelami i misteri
-celati alla vista comune.
-Proteggimi dalla magia oscura
-e illumina il sentiero esoterico.
-Dona comprensione
-dei segreti divini.
-Che la saggezza
-sia la mia guida.`,
+    prayer: `Nithaiah, essenza gloriosa di Santità! Verbo tangibile coperto di luce! Musicista celeste delle sfere cosmiche!
+Concedimi l’armonia e la gioia , nel mio intimo e inoltre il sapere e la saggezza, in me e attorno a me, perché possa realizzare pienamente il mio destino, la mia missione su questa : riuscire nel mio progetto di vita…Amen`,
     message: 'I misteri si rivelano ai sapienti. Cerca la saggezza con cuore puro.'
   },
 
@@ -2076,15 +1823,8 @@ sia la mia guida.`,
     giorni: '15 aprile, 28 giugno, 11 settembre, 23 novembre, 3 febbraio. Ora: 08.20-08.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: successo in politica, abilità diplomatica, vittoria nelle cause legali, discrezione.',
     description: 'Angelo della politica e della diplomazia. Favorisce il successo politico e dona abilità diplomatiche. Fa vincere le cause legali e insegna la discrezione.',
-    prayer: `HAAIAH, Angelo Diplomatico,
-guidami nelle questioni politiche
-e dona saggezza nelle relazioni.
-Fa trionfare le giuste cause
-e insegna la discrezione.
-Proteggi da tradimenti
-e congiure.
-Che la diplomazia
-sia la mia arte.`,
+    prayer: `Haaiah Signore, tu che appiani i contrasti, che risolvi le lotte, che allontani le preoccupazioni, ti chiedo di calmare e unificare le mie stesse inclinazioni interiori discordanti. 
+Ti chiedo anche di accordarmi la tua essenza Angelica, fatta di prudenza, perché possa avanzare verso il successo ( spirituale, morale,sentimentale e materiale) in un clima di pace e di gioia…Amen`,
     message: 'La diplomazia risolve ogni conflitto. Parla con saggezza e ascolta con attenzione.'
   },
 
@@ -2104,15 +1844,8 @@ sia la mia arte.`,
     giorni: '16 aprile, 29 giugno, 12 settembre, 24 novembre, 4 febbraio. Ora: 08.40-09.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: missione di insegnamento, diffusione della luce, libertà dall\'ignoranza, civilizzazione.',
     description: 'Angelo della propagazione della luce. Favorisce la diffusione della conoscenza e della civiltà. Porta libertà e combatte l\'ignoranza. Dona una missione divina.',
-    prayer: `YERATHEL, Angelo di Luce,
-rendimi portatore
-di conoscenza e libertà.
-Illumina l'ignoranza
-e diffondi la civiltà.
-Dona una missione
-al mio cammino.
-Che la luce
-si espanda ovunque.`,
+    prayer: `Yeratel, padre delle ricchezze morali e materiali, del benessere, della gloria, dell’affluenza! Vieni a me , Signore e maestro del corno dell’abbondanza!
+Aiutami con la tua essenza, perché è con quella che potrei, finalmente, diventare (attraverso i miei atti) attore, operaio, costruttore dell’Opera Divina del mondo per spandere, con te, luce, amore, saggezza, prosperità! Amen`,
     message: 'Sei portatore di luce. Illumina il mondo con la tua conoscenza.'
   },
 
@@ -2132,15 +1865,15 @@ si espanda ovunque.`,
     giorni: '17 aprile, 30 giugno, 13 settembre, 25 novembre, 5 febbraio. Ora: 09.00-09.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: lunga vita, salute robusta, protezione dagli incidenti, prudenza nelle azioni.',
     description: 'Angelo della longevità. Concede lunga vita e salute robusta. Protegge da incidenti e malattie improvvise. Dona prudenza e saggezza.',
-    prayer: `SEHEIAH, Angelo della Longevità,
-concedimi lunga vita
-e salute robusta.
-Proteggimi da incidenti
-e pericoli improvvisi.
-Dona prudenza
-alle mie azioni.
-Che la longevità
-sia benedetta.`,
+    prayer: `Potenza, forza e vigore, giovinezza,
+tu concedi con larghezza , SEHEIAH!
+Ti chiedo di vivificare il mio corpo
+di equilibrare  i miei sentimenti,
+di fortificare i miei pensieri.
+Imprimi su me il sacro sigillo della tua essenza;
+e concedimi la grazia di una felice longevità,
+in un processo spirituale,
+sentimentale e materiale utile e continuo.`,
     message: 'La vita è un dono prezioso. Custodiscila con prudenza e gratitudine.'
   },
 
@@ -2160,15 +1893,15 @@ sia benedetta.`,
     giorni: '18 aprile, 1 luglio, 14 settembre, 26 novembre, 6 febbraio. Ora: 09.20-09.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: liberazione da nemici visibili e invisibili, comprensione della verità divina, devozione spirituale.',
     description: 'Angelo della liberazione. Libera dai nemici e dalle oppressioni. Dona comprensione della verità divina e favorisce la devozione religiosa. Protegge dal fanatismo.',
-    prayer: `REIYEL, Angelo Liberatore,
-liberami da ogni oppressione
-e da ogni nemico.
-Rivelami la verità divina
-e accendi la devozione.
-Proteggimi dal fanatismo
-e dall'empietà.
-Che la liberazione
-sia totale.`,
+    prayer: `REIYEL, Angelo della Luce Perpetua
+sii mio avvocato, perchè ti chiedo
+di concedermi sapienza e saggezza.
+Liberami dalle mie passioni e dai miei vizi,
+perchè possa crescere, progredire, 
+lavorando al servizio di cause giuste,
+utili agli altri e a me stesso;
+al servizio dell'evoluzione del Mondo
+verso il Nuovo Paradiso a venire.`,
     message: 'La libertà spirituale è la vera libertà. Liberati e libera gli altri.'
   },
 
@@ -2188,15 +1921,16 @@ sia totale.`,
     giorni: '19 aprile, 2 luglio, 15 settembre, 27 novembre, 7 febbraio. Ora: 09.40-10.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: fertilità, successo in medicina e chirurgia, comprensione dell\'anatomia, pazienza.',
     description: 'Angelo della moltiplicazione. Favorisce la fertilità e la procreazione. Dona talento in medicina, chirurgia e anatomia. Aiuta chi desidera avere figli.',
-    prayer: `OMAEL, Angelo della Moltiplicazione,
-benedici con fertilità
-e dona prosperità.
-Illumina la scienza medica
-e guida le mani dei chirurghi.
-Moltiplica i beni
-e dona pazienza.
-Che la vita
-si moltiplichi.`,
+    prayer: `OMAEL, Angelo che concedi la Bellezza perfetta
+al corpo e allo spirito,
+fonte di abbondanza inesauribile,
+ti chiedo di instillare nel mio cuore
+il desiderio di elevarmi sempre
+verso il Fuoco e la Luce Celeste.
+Fammi riuscire, affinchè io possa servire
+e amare il mio prossimo come me stesso.
+Mi auguro di divenire, come te, 
+un operaio dell'Opera Divina del Mondo`,
     message: 'La vita si moltiplica con l\'amore. Genera con responsabilità e gioia.'
   },
 
@@ -2216,15 +1950,9 @@ si moltiplichi.`,
     giorni: '20 aprile, 3 luglio, 16 settembre, 28 novembre, 8 febbraio. Ora: 10.00-10.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: sviluppo dei talenti, successo in astronomia e matematica, precisione, fortuna duratura.',
     description: 'Angelo del talento. Sviluppa i doni naturali e dona precisione. Favorisce astronomia, matematica e geometria. Protegge dalla sfortuna e dall\'avidità.',
-    prayer: `LECABEL, Angelo del Talento,
-sviluppa i doni
-che hai posto in me.
-Dona precisione
-e comprensione.
-Illumina le scienze
-e proteggi dalla sfortuna.
-Che il talento
-fiorisca pienamente.`,
+    prayer: `Lecabel, fà penetrare in me il flusso delle tue divine energie, affinché i miei progetti diventino degli atti concreti. 
+Signore fonte di ricchezza mentale, grande protettore delle donne e degli uomini che agiscono, che lavorano energicamente. 
+Concedimi i tuoi doni e i tuoi poteri, affinché, nella mia vita reale, possa riuscire spiritualmente e materialmente , per vivere, così, nella Luce…Amen`,
     message: 'Ogni talento è un dono divino. Sviluppalo con dedizione e umiltà.'
   },
 
@@ -2244,16 +1972,8 @@ fiorisca pienamente.`,
     giorni: '21 aprile, 4 luglio, 17 settembre, 29 novembre, 9 febbraio. Ora: 10.20-10.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: clemenza nei giudizi, giustizia temperata dalla misericordia, eloquenza, memoria eccellente.',
     description: 'Angelo della clemenza. Tempera la giustizia con la misericordia. Dona eloquenza e buona memoria. Fa trionfare la giustizia umana e comprensiva.',
-    prayer: `VASARIAH, Angelo di Clemenza,
-tempera la giustizia
-con la misericordia.
-Dona eloquenza
-alla mia parola.
-Rinforza la memoria
-e porta giustizia umana.
-Che la clemenza
-addolcisca ogni giudizio.`,
-    message: 'La vera giustizia è temperata dalla clemenza. Giudica con misericordia.'
+    prayer: `Angelo Vasariah, ti affido tre domande: concedimi prudenza e fermezza, e fà che l’armonia regni in te e attorno a me .
+Coprimi con il mantello della tua sapienza, affinché le mie risoluzioni siano sempre, per tutti utili e piacevoli come fiori belli e profumati senza spine.Perché è così, amorosamente, che spero di riuscire nel mio lavoro, nei miei progetti, nel mio destino di vita.'
   },
 
   // ========================================
@@ -2276,16 +1996,7 @@ addolcisca ogni giudizio.`,
     giorni: '22 aprile, 5 luglio, 18 settembre, 30 novembre, 10 febbraio. Ora: 10.40-11.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: obbedienza al bene, protezione dai traditori, lealtà, scoperta di complotti.',
     description: 'Angelo della subordinazione al bene. Insegna l\'obbedienza saggia e protegge dai traditori. Rivela i complotti e favorisce la lealtà.',
-    prayer: `YEHUIAH, Angelo di Subordinazione,
-insegnami l'obbedienza
-al bene supremo.
-Proteggimi dai traditori
-e svela i complotti.
-Dona lealtà
-ai miei rapporti.
-Che la subordinazione
-al bene sia volontaria.`,
-    message: 'Obbedire al bene è libertà. Sottomettiti solo alla volontà divina.'
+    prayer: `Yehuiah, principe delle potenze concedimi le tue Essenze, affinché, dal luogo che nell’Universo corrisponde alla mia esistenza, io possa assolvere il mio compito umano, e vivere in pace, nella gioia, nella riuscita morale e materiale, per scoprire la spiritualità profonda del mio animo, che è la forza essenziale della Vita…Amen'
   },
 
   {
@@ -2303,16 +2014,8 @@ al bene sia volontaria.`,
     difetti: 'collera, ambizione smodata, tradimento',
     giorni: '23 aprile, 6 luglio, 19 settembre, 1 dicembre, 11 febbraio. Ora: 11.00-11.20',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: disciplina interiore, calma nelle situazioni difficili, talento diplomatico, obbedienza saggia.',
-    description: 'Angelo dell\'obbedienza. Calma la collera e insegna la disciplina. Dona talento diplomatico e favorisce l\'obbedienza saggia. Protegge dall\'ambizione smodata.',
-    prayer: `LEHAHIAH, Angelo dell'Obbedienza,
-calma la collera
-e dona disciplina.
-Insegna la diplomazia
-e l'obbedienza saggia.
-Proteggi dall'ambizione
-smodata e dal tradimento.
-Che l'obbedienza
-sia consapevole.`,
+    description: 'Angelo Lehahiah, fai di me il tuo braccio destro Insegnami l'obbedienza e la forza per affrontare qualsiasi situazione. 
+Aiutami a controllare le mie emozioni e a dosare le mie energie. Guidami verso nuovi orizzonti. Liberami dalla paura della solitudine, Mostrami la strada da percorrere, Donami serenità e pace, Amen.`,
     message: 'La disciplina porta alla maestria. Obbedisci con saggezza e coscienza.'
   },
 
@@ -2332,16 +2035,8 @@ sia consapevole.`,
     giorni: '24 aprile, 7 luglio, 20 settembre, 2 dicembre, 12 febbraio. Ora: 11.20-11.40',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: riconciliazione familiare, eredità favorevoli, gioia in famiglia, testamenti giusti.',
     description: 'Angelo della riconciliazione. Riporta pace nelle famiglie e favorisce le eredità. Rende giusti i testamenti e dona gioia familiare. Risolve i dissensi.',
-    prayer: `CHAVAKIAH, Angelo della Riconciliazione,
-riporta pace
-nella mia famiglia.
-Risolvi i dissensi
-e dona gioia.
-Rendi giusti
-i testamenti e le eredità.
-Che la riconciliazione
-regni sovrana.`,
-    message: 'La riconciliazione guarisce le ferite. Perdona e fai pace con tutti.'
+    prayer: `Chavaquiah, fammi progredire, attraverso la tua grazia, nel cammino della riconciliazione affinché il tuo fiume di amore, e di gioia di vivere scorra, potente, 
+nel mio cuore e si spanda intorno a me. Voglio vivere in pace con tutti, vivere in armonia. Per agire con potenza a servizio dell’opera divina. Aiutami, Signore, a riuscire nei miei progetti, aiutami a progredire moralmente e materialmente. Amen'
   },
 
   {
@@ -2359,10 +2054,14 @@ regni sovrana.`,
     difetti: 'disoccupazione, prigionia, esilio',
     giorni: '25 aprile, 8 luglio, 21 settembre, 3 dicembre, 13 febbraio. Ora: 11.40-12.00',
     invocazione: 'Tramite l\'invocazione è possibile ottenere: lavoro stabile, mezzi di sussistenza, liberazione dalle prigionie fisiche e mentali.',
-    description: 'Angelo del lavoro. Dona impiego e mezzi di sussistenza. Libera i prigionieri e gli esiliati. Protegge dalla disoccupazione e favorisce il sostentamento.',
-    prayer: `MENADEL, Angelo del Lavoro,
-concedimi un impiego
-degno e stabile.
-Libera chi è prigioniero
-di corpo o di mente.
-Dona mez
+    description: 'Angelo del lavoro. Dona impiego e mezzi di sussistenza. Libera i prigionieri e gli esiliati. Protegge dalla disoccupazione e favorisce il sostentamento. Con la preghiera a Mendadel puoi risolvere tutte le difficoltà inerenti al lavoro e all'impiego.',
+    prayer: `Io ti chiedo Signore di aiutarmi a capire
+ciò che non comprendo del tuo amore per me.
+Il mio cuore è fonte di Fuoco e di pura Gioia,
+ma la mia mente è debole, e così pure la mia volontà.
+Rafforza Menadel la mia volontà: rafforzala o Angelo Celeste: é questo il dono meraviglioso che ti prego di accordarmi
+come una grazia senza la quale io non sono nulla.
+Aiutami Signore a riuscire nella vita affinché mi sia dato di servirti.
+Grazie Angelo.'
+message: 'Il lavoro nobilita l\'uomo. Lavora come se tutto dipendesse da te, prega come se tutto dipendesse da Dio.'
+  },
