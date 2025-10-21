@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
-import { CreditCard, Printer } from 'lucide-react';
+import { Calendar, CreditCard, Download, Printer, Sparkles, Star, Globe } from 'lucide-react';
+import { findAngelByDate as findAngelIT } from './database/angels72Database';
+import { findAngelByDate as findAngelEN } from './database/angels72Database_EN';
+import { findAngelByDate as findAngelFR } from './database/angels72Database_FR';
+import { findAngelByDate as findAngelES } from './database/angels72Database_ES';
+import { findAngelByDate as findAngelDE } from './database/angels72Database_DE';
 
 const AngelCalculator = () => {
   const [formData, setFormData] = useState({
@@ -19,15 +24,19 @@ const AngelCalculator = () => {
 
   const languages = [
     { code: 'IT', flag: '🇮🇹', name: 'Italiano' },
-    { code: 'EN', flag: '🇺🇸', name: 'English' },
-    { code: 'FR', flag: '🇫🇷', name: 'Français' }
+    { code: 'EN', flag: '🇬🇧', name: 'English' },
+    { code: 'FR', flag: '🇫🇷', name: 'Français' },
+    { code: 'ES', flag: '🇪🇸', name: 'Español' },
+    { code: 'DE', flag: '🇩🇪', name: 'Deutsch' }
   ];
 
   const prefissi = [
     { code: '+39', flag: '🇮🇹', country: 'Italia' },
     { code: '+1', flag: '🇺🇸', country: 'USA' },
     { code: '+44', flag: '🇬🇧', country: 'UK' },
-    { code: '+33', flag: '🇫🇷', country: 'France' }
+    { code: '+33', flag: '🇫🇷', country: 'France' },
+    { code: '+49', flag: '🇩🇪', country: 'Germany' },
+    { code: '+34', flag: '🇪🇸', country: 'España' }
   ];
 
   const translations = {
@@ -99,6 +108,52 @@ const AngelCalculator = () => {
       active: 'Actif',
       fillFields: 'Remplir tous les champs obligatoires',
       acceptPrivacy: 'Vous devez accepter la Politique de Confidentialité'
+    },
+    ES: {
+      title: 'The Angels Calculator',
+      subtitle: 'Descubre Tu Ángel Guardián',
+      name: 'Nombre',
+      surname: 'Apellido',
+      email: 'Email',
+      phone: 'Teléfono',
+      birthdate: 'Fecha de Nacimiento',
+      promo: 'Autorizo ser contactado para ofertas promocionales sobre Ángeles',
+      privacy: 'Acepto la Política de Privacidad y los Términos de Servicio',
+      calculate: 'Calcular Mi Ángel',
+      printReport: 'Imprimir Informe',
+      newSearch: 'Nueva Búsqueda',
+      plans: '¡Descubre Nuestros Servicios Angélicos!',
+      free: 'GRATIS',
+      light: 'LIGHT',
+      full: 'FULL',
+      platinum: 'PLATINUM',
+      buy: 'Comprar',
+      active: 'Activo',
+      fillFields: 'Completa todos los campos obligatorios',
+      acceptPrivacy: 'Debes aceptar la Política de Privacidad'
+    },
+    DE: {
+      title: 'The Angels Calculator',
+      subtitle: 'Entdecke Deinen Schutzengel',
+      name: 'Name',
+      surname: 'Nachname',
+      email: 'Email',
+      phone: 'Telefon',
+      birthdate: 'Geburtsdatum',
+      promo: 'Ich erlaube kontaktiert zu werden für Werbeangebote über Engel',
+      privacy: 'Ich akzeptiere die Datenschutzerklärung und Nutzungsbedingungen',
+      calculate: 'Meinen Engel Berechnen',
+      printReport: 'Bericht Drucken',
+      newSearch: 'Neue Suche',
+      plans: 'Entdecken Sie Unsere Engeldienste!',
+      free: 'KOSTENLOS',
+      light: 'LIGHT',
+      full: 'FULL',
+      platinum: 'PLATINUM',
+      buy: 'Kaufen',
+      active: 'Aktiv',
+      fillFields: 'Alle Pflichtfelder ausfüllen',
+      acceptPrivacy: 'Sie müssen die Datenschutzerklärung akzeptieren'
     }
   };
 
@@ -106,62 +161,63 @@ const AngelCalculator = () => {
 
   const plans = {
     IT: [
-      { id: 'free', name: 'GRATUITO', price: 0, features: ['Nome Angelo', 'Coro di Appartenenza', 'Essenza Angelica', 'Messaggio Personale'], icon: '✨', color: 'from-purple-500 to-pink-500' },
-      { id: 'light', name: 'LIGHT', price: 4.99, features: ['Tutto Gratuito', 'Scheda Completa', 'Preghiera Angelo', 'Qualità e Difetti', 'Rituale Base'], icon: '🌙', color: 'from-blue-500 to-indigo-500' },
-      { id: 'full', name: 'FULL', price: 19.99, features: ['Tutto Light', '3 Rituali Completi', 'Giorni di Reggenza', 'Invocazione Completa', 'PDF Download'], icon: '⭐', color: 'from-purple-500 to-pink-500' },
-      { id: 'platinum', name: 'PLATINUM', price: 49.99, features: ['Tutto Full', 'Attivazione Angelo a Distanza', 'Report via Email', 'Consegna entro 3 giorni'], icon: '👼', color: 'from-gray-400 to-gray-600' },
-      { id: 'diamond', name: '👼 DIAMOND 👼', price: 79.99, originalPrice: 100, features: ['✅ Tutto Piano PLATINUM', '⚡ ATTIVAZIONE LIVE Zoom/Meet', '💫 Attivazione DONI Angelo LIVE', '🔥 Attivazione POTERI Angelo LIVE', '⭐ Attivazione QUALITÀ Angelo LIVE', '🎁 Integrazione Completa', '👤 Consulenza Personalizzata LIVE', '⏰ Entro 7 Giorni Lavorativi'], icon: '💎', color: 'from-yellow-400 to-yellow-600', note: 'Consulenza da prenotare entro 1 settimana via email a iltuoangelorisponde@gmail.com con ricevuta, nome, cognome, data nascita e cellulare. Lingue: IT, EN, ES.' }
+      { id: 'free', name: 'GRATUITO', price: 0, features: ['Nome Angelo', 'Coro di Appartenenza', 'Essenza Angelica', 'Messaggio Personale'], icon: '✨' },
+      { id: 'light', name: 'LIGHT', price: 4.99, features: ['Tutto Gratuito', 'Scheda Completa', 'Preghiera Angelo', 'Qualità e Difetti', 'Rituale Base'], icon: '🌙' },
+      { id: 'full', name: 'FULL', price: 19.99, features: ['Tutto Light', '3 Rituali Completi', 'Giorni di Reggenza', 'Invocazione Completa', 'PDF Download'], icon: '⭐' },
+      { id: 'platinum', name: 'PLATINUM', price: 49.99, features: ['Tutto Full', 'Attivazione Angelo a Distanza', 'Report via Email', 'Consegna entro 3 giorni'], icon: '👼' }
     ],
     EN: [
-      { id: 'free', name: 'FREE', price: 0, features: ['Angel Name', 'Choir', 'Essence', 'Personal Message'], icon: '✨', color: 'from-purple-500 to-pink-500' },
-      { id: 'light', name: 'LIGHT', price: 4.99, features: ['All Free', 'Complete Profile', 'Angel Prayer', 'Qualities & Defects', 'Basic Ritual'], icon: '🌙', color: 'from-blue-500 to-indigo-500' },
-      { id: 'full', name: 'FULL', price: 19.99, features: ['All Light', '3 Complete Rituals', 'Regency Days', 'Full Invocation', 'PDF Download'], icon: '⭐', color: 'from-purple-500 to-pink-500' },
-      { id: 'platinum', name: 'PLATINUM', price: 49.99, features: ['All Full', 'Remote Angel Activation', 'Email Report', 'Delivery within 3 days'], icon: '👼', color: 'from-gray-400 to-gray-600' },
-      { id: 'diamond', name: '👼 DIAMOND 👼', price: 79.99, originalPrice: 100, features: ['✅ All PLATINUM Plan', '⚡ LIVE ACTIVATION Zoom/Meet', '💫 Angel GIFTS Activation LIVE', '🔥 Angel POWERS Activation LIVE', '⭐ Angel QUALITIES Activation LIVE', '🎁 Complete Integration', '👤 Personalized Consultation LIVE', '⏰ Within 7 Working Days'], icon: '💎', color: 'from-yellow-400 to-yellow-600', note: 'Book consultation within 1 week via email to iltuoangelorisponde@gmail.com with receipt, name, surname, birth date and phone. Languages: IT, EN, ES.' }
+      { id: 'free', name: 'FREE', price: 0, features: ['Angel Name', 'Choir', 'Essence', 'Personal Message'], icon: '✨' },
+      { id: 'light', name: 'LIGHT', price: 4.99, features: ['All Free', 'Complete Profile', 'Angel Prayer', 'Qualities & Defects', 'Basic Ritual'], icon: '🌙' },
+      { id: 'full', name: 'FULL', price: 19.99, features: ['All Light', '3 Complete Rituals', 'Regency Days', 'Full Invocation', 'PDF Download'], icon: '⭐' },
+      { id: 'platinum', name: 'PLATINUM', price: 49.99, features: ['All Full', 'Remote Angel Activation', 'Email Report', 'Delivery within 3 days'], icon: '👼' }
     ],
     FR: [
-      { id: 'free', name: 'GRATUIT', price: 0, features: ['Nom Ange', 'Chœur', 'Essence', 'Message Personnel'], icon: '✨', color: 'from-purple-500 to-pink-500' },
-      { id: 'light', name: 'LIGHT', price: 4.99, features: ['Tout Gratuit', 'Profil Complet', 'Prière Ange', 'Qualités & Défauts', 'Rituel Base'], icon: '🌙', color: 'from-blue-500 to-indigo-500' },
-      { id: 'full', name: 'FULL', price: 19.99, features: ['Tout Light', '3 Rituels Complets', 'Jours Régence', 'Invocation Complète', 'PDF Télécharger'], icon: '⭐', color: 'from-purple-500 to-pink-500' },
-      { id: 'platinum', name: 'PLATINUM', price: 49.99, features: ['Tout Full', 'Activation Ange Distance', 'Rapport Email', 'Livraison sous 3 jours'], icon: '👼', color: 'from-gray-400 to-gray-600' },
-      { id: 'diamond', name: '👼 DIAMOND 👼', price: 79.99, originalPrice: 100, features: ['✅ Tout Plan PLATINUM', '⚡ ACTIVATION EN DIRECT Zoom/Meet', '💫 Activation DONS Ange EN DIRECT', '🔥 Activation POUVOIRS Ange EN DIRECT', '⭐ Activation QUALITÉS Ange EN DIRECT', '🎁 Intégration Complète', '👤 Consultation Personnalisée EN DIRECT', '⏰ Sous 7 Jours Ouvrables'], icon: '💎', color: 'from-yellow-400 to-yellow-600', note: 'Réserver consultation sous 1 semaine via email à iltuoangelorisponde@gmail.com avec reçu, nom, prénom, date naissance et téléphone. Langues: IT, EN, ES.' }
+      { id: 'free', name: 'GRATUIT', price: 0, features: ['Nom Ange', 'Chœur', 'Essence', 'Message Personnel'], icon: '✨' },
+      { id: 'light', name: 'LIGHT', price: 4.99, features: ['Tout Gratuit', 'Profil Complet', 'Prière Ange', 'Qualités & Défauts', 'Rituel Base'], icon: '🌙' },
+      { id: 'full', name: 'FULL', price: 19.99, features: ['Tout Light', '3 Rituels Complets', 'Jours Régence', 'Invocation Complète', 'PDF Télécharger'], icon: '⭐' },
+      { id: 'platinum', name: 'PLATINUM', price: 49.99, features: ['Tout Full', 'Activation Ange Distance', 'Rapport Email', 'Livraison sous 3 jours'], icon: '👼' }
+    ],
+    ES: [
+      { id: 'free', name: 'GRATIS', price: 0, features: ['Nombre Ángel', 'Coro', 'Esencia', 'Mensaje Personal'], icon: '✨' },
+      { id: 'light', name: 'LIGHT', price: 4.99, features: ['Todo Gratis', 'Perfil Completo', 'Oración Ángel', 'Cualidades y Defectos', 'Ritual Básico'], icon: '🌙' },
+      { id: 'full', name: 'FULL', price: 19.99, features: ['Todo Light', '3 Rituales Completos', 'Días Regencia', 'Invocación Completa', 'PDF Descarga'], icon: '⭐' },
+      { id: 'platinum', name: 'PLATINUM', price: 49.99, features: ['Todo Full', 'Activación Ángel Distancia', 'Informe Email', 'Entrega en 3 días'], icon: '👼' }
+    ],
+    DE: [
+      { id: 'free', name: 'KOSTENLOS', price: 0, features: ['Engel Name', 'Chor', 'Essenz', 'Persönliche Nachricht'], icon: '✨' },
+      { id: 'light', name: 'LIGHT', price: 4.99, features: ['Alles Kostenlos', 'Vollständiges Profil', 'Engel Gebet', 'Qualitäten & Mängel', 'Basis Ritual'], icon: '🌙' },
+      { id: 'full', name: 'FULL', price: 19.99, features: ['Alles Light', '3 Vollständige Rituale', 'Regenztage', 'Vollständige Anrufung', 'PDF Download'], icon: '⭐' },
+      { id: 'platinum', name: 'PLATINUM', price: 49.99, features: ['Alles Full', 'Fern Engel Aktivierung', 'Email Bericht', 'Lieferung in 3 Tagen'], icon: '👼' }
     ]
   };
 
-  // Database angeli integrato
-  const angelsDatabase = {
-    IT: [
-      { num: 1, nome: 'VEHUIAH', coro: 'Serafini', essenza: 'Volontà di Dio', dateRange: '21-25 Marzo', message: 'Porta illuminazione e nuovi inizi', prayer: 'Angelo Vehuiah, ti invoco per ricevere la tua luce divina...', qualita: 'Coraggio, leadership, iniziativa', difetti: 'Impulsività, aggressività' },
-      { num: 2, nome: 'JELIEL', coro: 'Serafini', essenza: 'Amore di Dio', dateRange: '26-30 Marzo', message: 'Porta pace e amore nelle relazioni', prayer: 'Angelo Jeliel, ti invoco per trovare l\'armonia...', qualita: 'Fedeltà, calma, saggezza', difetti: 'Pigrizia, passività' },
-      { num: 3, nome: 'SITAEL', coro: 'Serafini', essenza: 'Dio della Speranza', dateRange: '31 Marzo - 4 Aprile', message: 'Costruisce e protegge', prayer: 'Angelo Sitael, aiutami a costruire il mio futuro...', qualita: 'Costruttività, protezione', difetti: 'Ostinazione' }
-    ],
-    EN: [
-      { num: 1, nome: 'VEHUIAH', coro: 'Seraphim', essenza: 'Will of God', dateRange: 'March 21-25', message: 'Brings illumination and new beginnings', prayer: 'Angel Vehuiah, I invoke you to receive your divine light...', qualita: 'Courage, leadership, initiative', difetti: 'Impulsiveness, aggressiveness' },
-      { num: 2, nome: 'JELIEL', coro: 'Seraphim', essenza: 'Love of God', dateRange: 'March 26-30', message: 'Brings peace and love in relationships', prayer: 'Angel Jeliel, I invoke you to find harmony...', qualita: 'Fidelity, calmness, wisdom', difetti: 'Laziness, passivity' },
-      { num: 3, nome: 'SITAEL', coro: 'Seraphim', essenza: 'God of Hope', dateRange: 'March 31 - April 4', message: 'Builds and protects', prayer: 'Angel Sitael, help me build my future...', qualita: 'Constructiveness, protection', difetti: 'Stubbornness' }
-    ],
-    FR: [
-      { num: 1, nome: 'VEHUIAH', coro: 'Séraphins', essenza: 'Volonté de Dieu', dateRange: '21-25 Mars', message: 'Apporte illumination et nouveaux départs', prayer: 'Ange Vehuiah, je t\'invoque pour recevoir ta lumière divine...', qualita: 'Courage, leadership, initiative', difetti: 'Impulsivité, agressivité' },
-      { num: 2, nome: 'JELIEL', coro: 'Séraphins', essenza: 'Amour de Dieu', dateRange: '26-30 Mars', message: 'Apporte paix et amour dans les relations', prayer: 'Ange Jeliel, je t\'invoque pour trouver l\'harmonie...', qualita: 'Fidélité, calme, sagesse', difetti: 'Paresse, passivité' },
-      { num: 3, nome: 'SITAEL', coro: 'Séraphins', essenza: 'Dieu de l\'Espoir', dateRange: '31 Mars - 4 Avril', message: 'Construit et protège', prayer: 'Ange Sitael, aide-moi à construire mon avenir...', qualita: 'Constructivité, protection', difetti: 'Obstination' }
-    ]
-  };
+  
+const findAngelByDate = (date, angels) => {
+  const [year, month, day] = date.split('-').map(Number);
+  const dateNumber = month * 100 + day; // es. 3 maggio => 305
 
-  const findAngel = (date) => {
-    const [year, month, day] = date.split('-');
-    const m = parseInt(month);
-    const d = parseInt(day);
-    
-    // Logica semplificata - ritorna sempre il primo angelo come esempio
-    // In produzione, qui andrebbe la logica completa di calcolo basata su data
-    const angels = angelsDatabase[language];
-    
-    if (m === 3 && d >= 21 && d <= 25) return angels[0];
-    if (m === 3 && d >= 26 && d <= 30) return angels[1];
-    if ((m === 3 && d === 31) || (m === 4 && d <= 4)) return angels[2];
-    
-    // Default: ritorna primo angelo
-    return angels[0];
+  for (let angel of angels) {
+    const [startMonth, startDay] = angel.dateStart.split('-').map(Number);
+    const [endMonth, endDay] = angel.dateEnd.split('-').map(Number);
+    const startNumber = startMonth * 100 + startDay;
+    const endNumber = endMonth * 100 + endDay;
+
+    if (startNumber <= endNumber) {
+      // Intervallo normale (es. 03-21 to 03-25)
+      if (dateNumber >= startNumber && dateNumber <= endNumber) {
+        return angel;
+      }
+    } else {
+      // Intervallo che supera l'anno (es. 12-27 to 01-04)
+      if (dateNumber >= startNumber || dateNumber <= endNumber) {
+        return angel;
+      }
+    }
+  }
+  return null; // Nessun angelo trovato
+};
+
   };
 
   const handleCalculate = () => {
@@ -173,7 +229,7 @@ const AngelCalculator = () => {
       alert(t.acceptPrivacy);
       return;
     }
-    const angel = findAngel(formData.dataNascita);
+    const angel = findAngelByDate(formData.dataNascita);
     if (angel) {
       setAngelResult(angel);
       setSelectedPlan('free');
