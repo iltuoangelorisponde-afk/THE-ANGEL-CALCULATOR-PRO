@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Il Tuo Angelo Custode</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,serif;background:linear-gradient(135deg,#b4c8e6,#e6d2be);min-height:100vh;padding:20px}
+.container{max-width:1200px;margin:20px auto}
+.back-btn{display:inline-block;padding:12px 24px;background:rgba(255,255,255,.9);color:#4a90e2;text-decoration:none;border-radius:10px;font-weight:bold;margin-bottom:20px;transition:all .3s}
+.back-btn:hover{background:#fff;transform:translateY(-2px)}
+.angel-header{background:#fff;border:4px solid #d4af37;border-radius:25px;padding:30px;text-align:center;margin-bottom:30px;box-shadow:0 10px 40px rgba(0,0,0,.2)}
+.angel-name{font-size:2.5em;color:#4a90e2;margin-bottom:10px;font-weight:bold}
+.angel-info{font-size:1.2em;color:#666;margin:5px 0}
+.plans-title{text-align:center;font-size:2.5em;color:#fff;text-shadow:2px 2px 4px rgba(0,0,0,.3);margin:40px 0 30px}
+.plans-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;margin-bottom:40px}
+.plan-card{background:#fff;border-radius:20px;padding:30px;box-shadow:0 10px 30px rgba(0,0,0,.2);transition:transform .3s}
+.plan-card:hover{transform:translateY(-5px)}
+.plan-header{text-align:center;margin-bottom:20px}
+.plan-title{font-size:1.8em;font-weight:bold;margin-bottom:10px}
+.plan-price{font-size:2em;font-weight:bold;margin:15px 0;padding:15px;border-radius:10px}
+.free-price{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff}
+.light-price{background:linear-gradient(135deg,#4facfe,#00f2fe);color:#fff}
+.full-price{background:linear-gradient(135deg,#fa709a,#fee140);color:#fff}
+.platinum-price{background:linear-gradient(135deg,#ffeaa7,#fdcb6e);color:#333}
+.diamond-price{background:linear-gradient(135deg,#a29bfe,#6c5ce7);color:#fff}
+.plan-description{font-size:.95em;color:#666;margin-bottom:20px;line-height:1.6;font-style:italic}
+.features-list{list-style:none;margin:20px 0}
+.features-list li{padding:10px 0;border-bottom:1px solid #eee;font-size:.95em}
+.features-list li:last-child{border-bottom:none}
+.buy-btn{display:block;width:100%;padding:15px;margin-top:20px;background:linear-gradient(135deg,#ff8a00,#da1b60);color:#fff;text-align:center;text-decoration:none;border-radius:12px;font-size:1.1em;font-weight:bold;transition:all .3s;border:none;cursor:pointer}
+.buy-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(218,27,96,.4)}
+.ritual-box{background:#f9f9f9;padding:20px;border-radius:10px;margin:15px 0;border-left:4px solid #4a90e2}
+.ritual-box h4{color:#4a90e2;margin-bottom:10px}
+.ritual-steps{list-style:none}
+.ritual-steps li{padding:8px 0;font-size:.9em}
+.activation-box{background:linear-gradient(135deg,#fff9e6,#ffe6cc);padding:20px;border-radius:10px;margin:15px 0;border:2px solid #d4af37}
+.activation-box h4{color:#d4af37;margin-bottom:10px}
+.special-badge{display:inline-block;background:#e74c3c;color:#fff;padding:5px 15px;border-radius:20px;font-size:.85em;margin:10px 0}
+@media(max-width:768px){.plans-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<a href="index.html" class="back-btn">← Torna al Form</a>
+<div id="content"></div>
+</div>
+<script>
+const D={"01 Gen":{"number":"57","name":"NEMAMIAH"},"02 Gen":{"number":"57","name":"NEMAMIAH"},"03 Gen":{"number":"57","name":"NEMAMIAH"},"04 Gen":{"number":"57","name":"NEMAMIAH"},"05 Gen":{"number":"57","name":"NEMAMIAH"},"06 Gen":{"number":"58","name":"YEIAIEL"},"07 Gen":{"number":"58","name":"YEIAIEL"},"08 Gen":{"number":"58","name":"YEIAIEL"},"09 Gen":{"number":"58","name":"YEIAIEL"},"10 Gen":{"number":"58","name":"YEIAIEL"},"11 Gen":{"number":"59","name":"HARAHEL"},"12 Gen":{"number":"59","name":"HARAHEL"},"13 Gen":{"number":"59","name":"HARAHEL"},"14 Gen":{"number":"59","name":"HARAHEL"},"15 Gen":{"number":"59","name":"HARAHEL"},"16 Gen":{"number":"60","name":"LIZRAEL"},"17 Gen":{"number":"60","name":"LIZRAEL"},"18 Gen":{"number":"60","name":"LIZRAEL"},"19 Gen":{"number":"60","name":"LIZRAEL"},"20 Gen":{"number":"60","name":"LIZRAEL"},"21 Gen":{"number":"61","name":"UMABEL"},"22 Gen":{"number":"61","name":"UMABEL"},"23 Gen":{"number":"61","name":"UMABEL"},"24 Gen":{"number":"61","name":"UMABEL"},"25 Gen":{"number":"61","name":"UMABEL"},"26 Gen":{"number":"62","name":"IAH-HEL"},"27 Gen":{"number":"62","name":"IAH-HEL"},"28 Gen":{"number":"62","name":"IAH-HEL"},"29 Gen":{"number":"62","name":"IAH-HEL"},"30 Gen":{"number":"62","name":"IAH-HEL"},"31 Gen":{"number":"63","name":"ANAUEL"},"01 Feb":{"number":"63","name":"ANAUEL"},"02 Feb":{"number":"63","name":"ANAUEL"},"03 Feb":{"number":"63","name":"ANAUEL"},"04 Feb":{"number":"63","name":"ANAUEL"},"05 Feb":{"number":"64","name":"MEHIEL"},"06 Feb":{"number":"64","name":"MEHIEL"},"07 Feb":{"number":"64","name":"MEHIEL"},"08 Feb":{"number":"64","name":"MEHIEL"},"09 Feb":{"number":"64","name":"MEHIEL"},"10 Feb":{"number":"65","name":"DAMABIAH"},"11 Feb":{"number":"65","name":"DAMABIAH"},"12 Feb":{"number":"65","name":"DAMABIAH"},"13 Feb":{"number":"65","name":"DAMABIAH"},"14 Feb":{"number":"65","name":"DAMABIAH"},"15 Feb":{"number":"66","name":"MANAKEL"},"16 Feb":{"number":"66","name":"MANAKEL"},"17 Feb":{"number":"66","name":"MANAKEL"},"18 Feb":{"number":"66","name":"MANAKEL"},"19 Feb":{"number":"66","name":"MANAKEL"},"20 Feb":{"number":"67","name":"EYAEL"},"21 Feb":{"number":"67","name":"EYAEL"},"22 Feb":{"number":"67","name":"EYAEL"},"23 Feb":{"number":"67","name":"EYAEL"},"24 Feb":{"number":"67","name":"EYAEL"},"25 Feb":{"number":"68","name":"HABUIAH"},"26 Feb":{"number":"68","name":"HABUIAH"},"27 Feb":{"number":"68","name":"HABUIAH"},"28 Feb":{"number":"68","name":"HABUIAH"},"29 Feb":{"number":"68","name":"HABUIAH"},"01 Mar":{"number":"69","name":"ROCHEL"},"02 Mar":{"number":"69","name":"ROCHEL"},"03 Mar":{"number":"69","name":"ROCHEL"},"04 Mar":{"number":"69","name":"ROCHEL"},"05 Mar":{"number":"69","name":"ROCHEL"},"06 Mar":{"number":"70","name":"JAMABIAH"},"07 Mar":{"number":"70","name":"JAMABIAH"},"08 Mar":{"number":"70","name":"JAMABIAH"},"09 Mar":{"number":"70","name":"JAMABIAH"},"10 Mar":{"number":"70","name":"JAMABIAH"},"11 Mar":{"number":"71","name":"HAIAIEL"},"12 Mar":{"number":"71","name":"HAIAIEL"},"13 Mar":{"number":"71","name":"HAIAIEL"},"14 Mar":{"number":"71","name":"HAIAIEL"},"15 Mar":{"number":"71","name":"HAIAIEL"},"16 Mar":{"number":"72","name":"MUMIAH"},"17 Mar":{"number":"72","name":"MUMIAH"},"18 Mar":{"number":"72","name":"MUMIAH"},"19 Mar":{"number":"72","name":"MUMIAH"},"20 Mar":{"number":"72","name":"MUMIAH"},"21 Mar":{"number":"1","name":"VEHUIAH"},"22 Mar":{"number":"1","name":"VEHUIAH"},"23 Mar":{"number":"1","name":"VEHUIAH"},"24 Mar":{"number":"1","name":"VEHUIAH"},"25 Mar":{"number":"1","name":"VEHUIAH"},"26 Mar":{"number":"2","name":"JELIEL"},"27 Mar":{"number":"2","name":"JELIEL"},"28 Mar":{"number":"2","name":"JELIEL"},"29 Mar":{"number":"2","name":"JELIEL"},"30 Mar":{"number":"2","name":"JELIEL"},"31 Mar":{"number":"3","name":"SITAEL"},"01 Apr":{"number":"3","name":"SITAEL"},"02 Apr":{"number":"3","name":"SITAEL"},"03 Apr":{"number":"3","name":"SITAEL"},"04 Apr":{"number":"3","name":"SITAEL"},"05 Apr":{"number":"4","name":"ELEMIAH"},"06 Apr":{"number":"4","name":"ELEMIAH"},"07 Apr":{"number":"4","name":"ELEMIAH"},"08 Apr":{"number":"4","name":"ELEMIAH"},"09 Apr":{"number":"4","name":"ELEMIAH"},"10 Apr":{"number":"5","name":"MAHASIAH"},"11 Apr":{"number":"5","name":"MAHASIAH"},"12 Apr":{"number":"5","name":"MAHASIAH"},"13 Apr":{"number":"5","name":"MAHASIAH"},"14 Apr":{"number":"5","name":"MAHASIAH"},"15 Apr":{"number":"6","name":"LELAHEL"},"16 Apr":{"number":"6","name":"LELAHEL"},"17 Apr":{"number":"6","name":"LELAHEL"},"18 Apr":{"number":"6","name":"LELAHEL"},"19 Apr":{"number":"6","name":"LELAHEL"},"20 Apr":{"number":"6","name":"LELAHEL"},"21 Apr":{"number":"7","name":"ACHAIAH"},"22 Apr":{"number":"7","name":"ACHAIAH"},"23 Apr":{"number":"7","name":"ACHAIAH"},"24 Apr":{"number":"7","name":"ACHAIAH"},"25 Apr":{"number":"7","name":"ACHAIAH"},"26 Apr":{"number":"8","name":"CAHETEL"},"27 Apr":{"number":"8","name":"CAHETEL"},"28 Apr":{"number":"8","name":"CAHETEL"},"29 Apr":{"number":"8","name":"CAHETEL"},"30 Apr":{"number":"8","name":"CAHETEL"},"01 Mag":{"number":"9","name":"HAZIEL"},"02 Mag":{"number":"9","name":"HAZIEL"},"03 Mag":{"number":"9","name":"HAZIEL"},"04 Mag":{"number":"9","name":"HAZIEL"},"05 Mag":{"number":"9","name":"HAZIEL"},"06 Mag":{"number":"10","name":"ALADIAH"},"07 Mag":{"number":"10","name":"ALADIAH"},"08 Mag":{"number":"10","name":"ALADIAH"},"09 Mag":{"number":"10","name":"ALADIAH"},"10 Mag":{"number":"10","name":"ALADIAH"},"11 Mag":{"number":"11","name":"LAUVIAH"},"12 Mag":{"number":"11","name":"LAUVIAH"},"13 Mag":{"number":"11","name":"LAUVIAH"},"14 Mag":{"number":"11","name":"LAUVIAH"},"15 Mag":{"number":"11","name":"LAUVIAH"},"16 Mag":{"number":"12","name":"HAHAIAH"},"17 Mag":{"number":"12","name":"HAHAIAH"},"18 Mag":{"number":"12","name":"HAHAIAH"},"19 Mag":{"number":"12","name":"HAHAIAH"},"20 Mag":{"number":"12","name":"HAHAIAH"},"21 Mag":{"number":"13","name":"YEZAEL"},"22 Mag":{"number":"13","name":"YEZAEL"},"23 Mag":{"number":"13","name":"YEZAEL"},"24 Mag":{"number":"13","name":"YEZAEL"},"25 Mag":{"number":"13","name":"YEZAEL"},"26 Mag":{"number":"14","name":"MEBAHEL"},"27 Mag":{"number":"14","name":"MEBAHEL"},"28 Mag":{"number":"14","name":"MEBAHEL"},"29 Mag":{"number":"14","name":"MEBAHEL"},"30 Mag":{"number":"14","name":"MEBAHEL"},"31 Mag":{"number":"14","name":"MEBAHEL"},"01 Giu":{"number":"15","name":"HARIEL"},"02 Giu":{"number":"15","name":"HARIEL"},"03 Giu":{"number":"15","name":"HARIEL"},"04 Giu":{"number":"15","name":"HARIEL"},"05 Giu":{"number":"15","name":"HARIEL"},"06 Giu":{"number":"16","name":"HAKAMIAH"},"07 Giu":{"number":"16","name":"HAKAMIAH"},"08 Giu":{"number":"16","name":"HAKAMIAH"},"09 Giu":{"number":"16","name":"HAKAMIAH"},"10 Giu":{"number":"16","name":"HAKAMIAH"},"11 Giu":{"number":"17","name":"LAUVIAH"},"12 Giu":{"number":"17","name":"LAUVIAH"},"13 Giu":{"number":"17","name":"LAUVIAH"},"14 Giu":{"number":"17","name":"LAUVIAH"},"15 Giu":{"number":"17","name":"LAUVIAH"},"16 Giu":{"number":"18","name":"CALIEL"},"17 Giu":{"number":"18","name":"CALIEL"},"18 Giu":{"number":"18","name":"CALIEL"},"19 Giu":{"number":"18","name":"CALIEL"},"20 Giu":{"number":"18","name":"CALIEL"},"21 Giu":{"number":"18","name":"CALIEL"},"22 Giu":{"number":"19","name":"LEUVIAH"},"23 Giu":{"number":"19","name":"LEUVIAH"},"24 Giu":{"number":"19","name":"LEUVIAH"},"25 Giu":{"number":"19","name":"LEUVIAH"},"26 Giu":{"number":"19","name":"LEUVIAH"},"27 Giu":{"number":"20","name":"PAHALIAH"},"28 Giu":{"number":"20","name":"PAHALIAH"},"29 Giu":{"number":"20","name":"PAHALIAH"},"30 Giu":{"number":"20","name":"PAHALIAH"},"01 Lug":{"number":"20","name":"PAHALIAH"},"02 Lug":{"number":"21","name":"NELKHAEL"},"03 Lug":{"number":"21","name":"NELKHAEL"},"04 Lug":{"number":"21","name":"NELKHAEL"},"05 Lug":{"number":"21","name":"NELKHAEL"},"06 Lug":{"number":"21","name":"NELKHAEL"},"07 Lug":{"number":"22","name":"YEIAYEL"},"08 Lug":{"number":"22","name":"YEIAYEL"},"09 Lug":{"number":"22","name":"YEIAYEL"},"10 Lug":{"number":"22","name":"YEIAYEL"},"11 Lug":{"number":"22","name":"YEIAYEL"},"12 Lug":{"number":"23","name":"MELAHEL"},"13 Lug":{"number":"23","name":"MELAHEL"},"14 Lug":{"number":"23","name":"MELAHEL"},"15 Lug":{"number":"23","name":"MELAHEL"},"16 Lug":{"number":"23","name":"MELAHEL"},"17 Lug":{"number":"24","name":"HAYUIAH"},"18 Lug":{"number":"24","name":"HAYUIAH"},"19 Lug":{"number":"24","name":"HAYUIAH"},"20 Lug":{"number":"24","name":"HAYUIAH"},"21 Lug":{"number":"24","name":"HAYUIAH"},"22 Lug":{"number":"24","name":"HAYUIAH"},"23 Lug":{"number":"25","name":"NITH-HAIAH"},"24 Lug":{"number":"25","name":"NITH-HAIAH"},"25 Lug":{"number":"25","name":"NITH-HAIAH"},"26 Lug":{"number":"25","name":"NITH-HAIAH"},"27 Lug":{"number":"25","name":"NITH-HAIAH"},"28 Lug":{"number":"26","name":"AHAYAH"},"29 Lug":{"number":"26","name":"AHAYAH"},"30 Lug":{"number":"26","name":"AHAYAH"},"31 Lug":{"number":"26","name":"AHAYAH"},"01 Ago":{"number":"26","name":"AHAYAH"},"02 Ago":{"number":"27","name":"YERATEL"},"03 Ago":{"number":"27","name":"YERATEL"},"04 Ago":{"number":"27","name":"YERATEL"},"05 Ago":{"number":"27","name":"YERATEL"},"06 Ago":{"number":"27","name":"YERATEL"},"07 Ago":{"number":"28","name":"SEHEIAH"},"08 Ago":{"number":"28","name":"SEHEIAH"},"09 Ago":{"number":"28","name":"SEHEIAH"},"10 Ago":{"number":"28","name":"SEHEIAH"},"11 Ago":{"number":"28","name":"SEHEIAH"},"12 Ago":{"number":"28","name":"SEHEIAH"},"13 Ago":{"number":"29","name":"REUEL"},"14 Ago":{"number":"29","name":"REUEL"},"15 Ago":{"number":"29","name":"REUEL"},"16 Ago":{"number":"29","name":"REUEL"},"17 Ago":{"number":"29","name":"REUEL"},"18 Ago":{"number":"30","name":"OMABEL"},"19 Ago":{"number":"30","name":"OMABEL"},"20 Ago":{"number":"30","name":"OMABEL"},"21 Ago":{"number":"30","name":"OMABEL"},"22 Ago":{"number":"30","name":"OMABEL"},"23 Ago":{"number":"31","name":"YECABEL"},"24 Ago":{"number":"31","name":"YECABEL"},"25 Ago":{"number":"31","name":"YECABEL"},"26 Ago":{"number":"31","name":"YECABEL"},"27 Ago":{"number":"31","name":"YECABEL"},"28 Ago":{"number":"31","name":"YECABEL"},"29 Ago":{"number":"32","name":"VASARIAH"},"30 Ago":{"number":"32","name":"VASARIAH"},"31 Ago":{"number":"32","name":"VASARIAH"},"01 Set":{"number":"32","name":"VASARIAH"},"02 Set":{"number":"32","name":"VASARIAH"},"03 Set":{"number":"33","name":"YEUIAH"},"04 Set":{"number":"33","name":"YEUIAH"},"05 Set":{"number":"33","name":"YEUIAH"},"06 Set":{"number":"33","name":"YEUIAH"},"07 Set":{"number":"33","name":"YEUIAH"},"08 Set":{"number":"34","name":"LEHAHIAH"},"09 Set":{"number":"34","name":"LEHAHIAH"},"10 Set":{"number":"34","name":"LEHAHIAH"},"11 Set":{"number":"34","name":"LEHAHIAH"},"12 Set":{"number":"34","name":"LEHAHIAH"},"13 Set":{"number":"35","name":"CHAVAKHIAH"},"14 Set":{"number":"35","name":"CHAVAKHIAH"},"15 Set":{"number":"35","name":"CHAVAKHIAH"},"16 Set":{"number":"35","name":"CHAVAKHIAH"},"17 Set":{"number":"35","name":"CHAVAKHIAH"},"18 Set":{"number":"36","name":"MENADEL"},"19 Set":{"number":"36","name":"MENADEL"},"20 Set":{"number":"36","name":"MENADEL"},"21 Set":{"number":"36","name":"MENADEL"},"22 Set":{"number":"36","name":"MENADEL"},"23 Set":{"number":"36","name":"MENADEL"},"24 Set":{"number":"37","name":"ANIEL"},"25 Set":{"number":"37","name":"ANIEL"},"26 Set":{"number":"37","name":"ANIEL"},"27 Set":{"number":"37","name":"ANIEL"},"28 Set":{"number":"37","name":"ANIEL"},"29 Set":{"number":"38","name":"HAAMIAH"},"30 Set":{"number":"38","name":"HAAMIAH"},"01 Ott":{"number":"38","name":"HAAMIAH"},"02 Ott":{"number":"38","name":"HAAMIAH"},"03 Ott":{"number":"38","name":"HAAMIAH"},"04 Ott":{"number":"39","name":"REHAEL"},"05 Ott":{"number":"39","name":"REHAEL"},"06 Ott":{"number":"39","name":"REHAEL"},"07 Ott":{"number":"39","name":"REHAEL"},"08 Ott":{"number":"39","name":"REHAEL"},"09 Ott":{"number":"40","name":"YEIAZEL"},"10 Ott":{"number":"40","name":"YEIAZEL"},"11 Ott":{"number":"40","name":"YEIAZEL"},"12 Ott":{"number":"40","name":"YEIAZEL"},"13 Ott":{"number":"40","name":"YEIAZEL"},"14 Ott":{"number":"41","name":"HAHAHEL"},"15 Ott":{"number":"41","name":"HAHAHEL"},"16 Ott":{"number":"41","name":"HAHAHEL"},"17 Ott":{"number":"41","name":"HAHAHEL"},"18 Ott":{"number":"41","name":"HAHAHEL"},"19 Ott":{"number":"42","name":"MIKAEL"},"20 Ott":{"number":"42","name":"MIKAEL"},"21 Ott":{"number":"42","name":"MIKAEL"},"22 Ott":{"number":"42","name":"MIKAEL"},"23 Ott":{"number":"42","name":"MIKAEL"},"24 Ott":{"number":"43","name":"YOLIAH"},"25 Ott":{"number":"43","name":"YOLIAH"},"26 Ott":{"number":"43","name":"YOLIAH"},"27 Ott":{"number":"43","name":"YOLIAH"},"28 Ott":{"number":"43","name":"YOLIAH"},"29 Ott":{"number":"44","name":"YELAHIAH"},"30 Ott":{"number":"44","name":"YELAHIAH"},"31 Ott":{"number":"44","name":"YELAHIAH"},"01 Nov":{"number":"44","name":"YELAHIAH"},"02 Nov":{"number":"44","name":"YELAHIAH"},"03 Nov":{"number":"45","name":"SEHALIAH"},"04 Nov":{"number":"45","name":"SEHALIAH"},"05 Nov":{"number":"45","name":"SEHALIAH"},"06 Nov":{"number":"45","name":"SEHALIAH"},"07 Nov":{"number":"45","name":"SEHALIAH"},"08 Nov":{"number":"46","name":"ARIEL"},"09 Nov":{"number":"46","name":"ARIEL"},"10 Nov":{"number":"46","name":"ARIEL"},"11 Nov":{"number":"46","name":"ARIEL"},"12 Nov":{"number":"46","name":"ARIEL"},"13 Nov":{"number":"47","name":"ASALIAH"},"14 Nov":{"number":"47","name":"ASALIAH"},"15 Nov":{"number":"47","name":"ASALIAH"},"16 Nov":{"number":"47","name":"ASALIAH"},"17 Nov":{"number":"47","name":"ASALIAH"},"18 Nov":{"number":"48","name":"MIHAEL"},"19 Nov":{"number":"48","name":"MIHAEL"},"20 Nov":{"number":"48","name":"MIHAEL"},"21 Nov":{"number":"48","name":"MIHAEL"},"22 Nov":{"number":"48","name":"MIHAEL"},"23 Nov":{"number":"49","name":"VEHUEL"},"24 Nov":{"number":"49","name":"VEHUEL"},"25 Nov":{"number":"49","name":"VEHUEL"},"26 Nov":{"number":"49","name":"VEHUEL"},"27 Nov":{"number":"49","name":"VEHUEL"},"28 Nov":{"number":"50","name":"DANIEL"},"29 Nov":{"number":"50","name":"DANIEL"},"30 Nov":{"number":"50","name":"DANIEL"},"01 Dic":{"number":"50","name":"DANIEL"},"02 Dic":{"number":"50","name":"DANIEL"},"03 Dic":{"number":"51","name":"HAHASIAH"},"04 Dic":{"number":"51","name":"HAHASIAH"},"05 Dic":{"number":"51","name":"HAHASIAH"},"06 Dic":{"number":"51","name":"HAHASIAH"},"07 Dic":{"number":"51","name":"HAHASIAH"},"08 Dic":{"number":"52","name":"IMAMIAH"},"09 Dic":{"number":"52","name":"IMAMIAH"},"10 Dic":{"number":"52","name":"IMAMIAH"},"11 Dic":{"number":"52","name":"IMAMIAH"},"12 Dic":{"number":"52","name":"IMAMIAH"},"13 Dic":{"number":"53","name":"NANAEL"},"14 Dic":{"number":"53","name":"NANAEL"},"15 Dic":{"number":"53","name":"NANAEL"},"16 Dic":{"number":"53","name":"NANAEL"},"17 Dic":{"number":"54","name":"NITHAEL"},"18 Dic":{"number":"54","name":"NITHAEL"},"19 Dic":{"number":"54","name":"NITHAEL"},"20 Dic":{"number":"54","name":"NITHAEL"},"21 Dic":{"number":"54","name":"NITHAEL"},"22 Dic":{"number":"55","name":"MEBAHIAH"},"23 Dic":{"number":"55","name":"MEBAHIAH"},"24 Dic":{"number":"55","name":"MEBAHIAH"},"25 Dic":{"number":"55","name":"MEBAHIAH"},"26 Dic":{"number":"55","name":"MEBAHIAH"},"27 Dic":{"number":"56","name":"POYEL"},"28 Dic":{"number":"56","name":"POYEL"},"29 Dic":{"number":"56","name":"POYEL"},"30 Dic":{"number":"56","name":"POYEL"},"31 Dic":{"number":"56","name":"POYEL"}};
+
+const M={"1":"Usa la tua forza di volontà per superare con successo ogni difficoltà e avviare nuove imprese.","2":"Cerca l'amore e la saggezza in ogni conflitto; la riconciliazione ti porterà equilibrio.","3":"Sii il costruttore della tua vita; ti offro protezione contro le energie negative.","4":"Se la via è confusa, invoca il mio potere divino: ti guiderò verso il successo e un nuovo inizio.","5":"Pratica l'armonia e la retta coscienza. La conoscenza ti aiuterà a trovare la pace interiore."};
+
+const CORO = {"1":"Serafini","2":"Serafini","3":"Serafini","4":"Serafini","5":"Serafini","6":"Serafini","7":"Serafini","8":"Serafini"};
+const ESSENZA = {"1":"Volontà divina","2":"Amore e saggezza","3":"Costruzione protetta","4":"Potere divino","5":"Armonia"};
+
+function getQueryParams() {
+const params = {};
+location.search.slice(1).split('&').forEach(function(param) {
+const [key, value] = param.split('=');
+params[key] = decodeURIComponent(value || '');
+});
+return params;
+}
+
+const dati = getQueryParams();
+const nome = dati.nome;
+const cognome = dati.cognome;
+const giorno = dati.giorno;
+const mese = dati.mese;
+
+if (!nome || !cognome || !giorno || !mese) {
+document.getElementById('content').innerHTML = '<div style="background:#ffe6e6;padding:30px;border-radius:15px;text-align:center"><h2 style="color:#e74c3c">⚠️ Dati Mancanti</h2><p>Torna al form e compila tutti i campi</p></div>';
+} else {
+const k = giorno + ' ' + mese;
+const info = D[k];
+if (!info) {
+document.getElementById('content').innerHTML = '<div style="background:#ffe6e6;padding:30px;border-radius:15px;text-align:center"><h2 style="color:#e74c3c">⚠️ Angelo Non Trovato</h2><p>Data non valida</p></div>';
+} else {
+const angelName = info.name;
+const angelNumber = info.number;
+const coro = CORO[angelNumber] || "Coro Angelico";
+const essenza = ESSENZA[angelNumber] || "Essenza Divina";
+const messaggio = M[angelNumber] || "Messaggio del tuo Angelo Custode";
+
+document.getElementById('content').innerHTML = `
+<div class="angel-header">
+<div class="angel-name">✨ ${angelName} ✨</div>
+<div class="angel-info">Angelo Custode #${angelNumber}</div>
+<div class="angel-info">per ${nome} ${cognome}</div>
+<div class="angel-info">🎭 ${coro}</div>
+<div class="angel-info">✨ ${essenza}</div>
+</div>
+
+<h2 class="plans-title">🌟 Scegli il Tuo Piano 🌟</h2>
+
+<div class="plans-grid">
+
+<!-- PIANO FREE -->
+<div class="plan-card">
+<div class="plan-header">
+<div class="plan-title">✨ Piano GRATUITO ✨</div>
+<div class="plan-price free-price">GRATIS</div>
+<p class="plan-description">Report base con informazioni essenziali e messaggio personalizzato del tuo Angelo Custode</p>
+</div>
+<ul class="features-list">
+<li>👤 Nome Cliente</li>
+<li>👼 Nome Angelo</li>
+<li>🔢 Numero Angelo</li>
+<li>🎭 Coro Angelico</li>
+<li>✨ Essenza</li>
+<li>💌 Messaggio Personale dell'Angelo</li>
+</ul>
+<button class="buy-btn" onclick="downloadFree()">📄 SCARICA GRATIS</button>
+</div>
+
+<!-- PIANO LIGHT -->
+<div class="plan-card">
+<div class="plan-header">
+<div class="plan-title">🌙 Piano LIGHT 🌙</div>
+<div class="plan-price light-price">€4.99</div>
+<p class="plan-description">Accedi alla preghiera sacra e al rituale base per connetterti con il tuo Angelo</p>
+</div>
+<ul class="features-list">
+<li>✅ TUTTO DEL Piano GRATUITO</li>
+<li>📋 Scheda Completa Angelo</li>
+<li>🙏 Preghiera Originale</li>
+<li>📿 1 Rituale Base Angelico</li>
+<li>📖 Guida utilizzo</li>
+<li>⭐ Domicilio Zodiacale</li>
+<li>🎯 Qualità sviluppate</li>
+<li>🛡️ Difetti annullati</li>
+</ul>
+<a href="https://iltuoangelo.it" class="buy-btn">💳 ACQUISTA LIGHT</a>
+</div>
+
+<!-- PIANO FULL -->
+<div class="plan-card">
+<div class="plan-header">
+<div class="plan-title">⭐ Piano FULL ⭐</div>
+<div class="plan-price full-price">€19.99</div>
+<p class="plan-description">3 rituali potenti + Mantra Speciale per attivare tutti i poteri del tuo Angelo</p>
+</div>
+<ul class="features-list">
+<li>✅ TUTTO DEL Piano LIGHT</li>
+<li>🔥 3 RITUALI ANGELICI Completi</li>
+<li>📿 MANTRA ANGELICO Speciale</li>
+<li>🎯 Rituale Connessione Profonda</li>
+<li>🛡️ Rituale Protezione Quotidiana</li>
+<li>✨ Rituale Essenza Specifica</li>
+<li>🔮 Invocazioni Complete</li>
+<li>📅 Giorni e Orari Reggenza</li>
+</ul>
+<div class="ritual-box">
+<h4>📿 MANTRA ANGELICO SPECIALE</h4>
+<ul class="ritual-steps">
+<li>1️⃣ Ripeti il NOME dell'Angelo per 108 volte</li>
+<li>2️⃣ Recita la PREGHIERA dedicata per 3 volte</li>
+<li>3️⃣ ESPRIMI il tuo desiderio con fede</li>
+<li>4️⃣ Visualizza il desiderio realizzato</li>
+<li>5️⃣ Ringrazia l'Angelo</li>
+</ul>
+</div>
+<a href="https://iltuoangelo.it" class="buy-btn">💳 ACQUISTA FULL</a>
+</div>
+
+<!-- PIANO PLATINUM -->
+<div class="plan-card">
+<div class="plan-header">
+<div class="plan-title">👼 Piano PLATINUM 👼</div>
+<div class="plan-price platinum-price">€49.99</div>
+<p class="plan-description">Attivazione energetica completa del tuo Angelo + tutti i contenuti FULL</p>
+</div>
+<ul class="features-list">
+<li>✅ TUTTO DEL Piano FULL</li>
+<li>⚡ ATTIVAZIONE ENERGETICA a Distanza</li>
+<li>💫 Attivazione DONI Angelo</li>
+<li>🔥 Attivazione POTERI Angelo</li>
+<li>⭐ Attivazione QUALITÀ Angelo</li>
+<li>🎁 Integrazione Completa</li>
+<li>👤 Consulenza Personalizzata</li>
+<li>⏰ Entro 3 Giorni Lavorativi</li>
+</ul>
+<div class="activation-box">
+<h4>🌟 ATTIVAZIONE ENERGETICA</h4>
+<p style="font-size:.9em;line-height:1.6">Attivazione professionale a distanza che integra nel tuo campo energetico tutti i doni, poteri e qualità del tuo Angelo Custode. Report completo entro 3 giorni lavorativi.</p>
+</div>
+<a href="https://iltuoangelo.it" class="buy-btn">💳 ACQUISTA PLATINUM</a>
+</div>
+
+<!-- PIANO DIAMOND -->
+<div class="plan-card">
+<div class="plan-header">
+<div class="plan-title">💎 Piano DIAMOND 💎</div>
+<div class="special-badge">SPECIAL DISCOUNT</div>
+<div class="plan-price diamond-price">€79.99</div>
+<p style="text-align:center;font-size:.9em;color:#999;text-decoration:line-through">invece di €100</p>
+<p class="plan-description">Attivazione energetica LIVE su Zoom/Google Meet con consulenza personalizzata</p>
+</div>
+<ul class="features-list">
+<li>✅ TUTTO Piano PLATINUM</li>
+<li>⚡ ATTIVAZIONE ENERGETICA DAL VIVO</li>
+<li>💫 Attivazione DONI Angelo LIVE</li>
+<li>🔥 Attivazione POTERI Angelo LIVE</li>
+<li>⭐ Attivazione QUALITÀ Angelo LIVE</li>
+<li>🎁 Integrazione Completa</li>
+<li>👤 Consulenza Personalizzata LIVE</li>
+<li>⏰ Entro 7 Giorni Lavorativi</li>
+</ul>
+<div class="activation-box">
+<h4>💎 ATTIVAZIONE LIVE</h4>
+<p style="font-size:.9em;line-height:1.6">Sessione personalizzata su Zoom/Google Meet. Consulenza in italiano o inglese. Prenota entro 1 settimana dall'acquisto inviando email a: <strong>iltuoangelorisponde@gmail.com</strong></p>
+</div>
+<a href="https://iltuoangelo.it" class="buy-btn">💳 ACQUISTA DIAMOND</a>
+</div>
+
+</div>
+`;
+}
+}
+
+function downloadFree() {
+const {jsPDF} = window.jspdf;
+const doc = new jsPDF();
+doc.setFillColor(74,144,226);
+doc.rect(0,0,210,40,'F');
+doc.setTextColor(255,255,255);
+doc.setFontSize(22);
+doc.text('Il Tuo Angelo Custode',105,25,{align:'center'});
+
+const k = giorno + ' ' + mese;
+const info = D[k];
+const angelName = info.name;
+const angelNumber = info.number;
+const coro = CORO[angelNumber] || "Coro Angelico";
+const essenza = ESSENZA[angelNumber] || "Essenza Divina";
+const messaggio = M[angelNumber] || "Messaggio Angelico";
+
+let y=60;
+doc.setTextColor(0,0,0);
+doc.setFontSize(14);
+doc.text('Per: '+nome+' '+cognome,20,y);
+y+=20;
+doc.setFontSize(20);
+doc.setTextColor(74,144,226);
+doc.text(angelName,105,y,{align:'center'});
+y+=10;
+doc.setFontSize(12);
+doc.setTextColor(212,175,55);
+doc.text('Angelo #'+angelNumber,105,y,{align:'center'});
+y+=8;
+doc.text('Coro: '+coro,105,y,{align:'center'});
+y+=8;
+doc.text('Essenza: '+essenza,105,y,{align:'center'});
+y+=20;
+doc.setFontSize(11);
+doc.setTextColor(0,0,0);
+doc.setFont(undefined,'bold');
+doc.text('Messaggio Personale:',20,y);
+y+=8;
+doc.setFont(undefined,'normal');
+const lines=doc.splitTextToSize(messaggio,170);
+doc.text(lines,20,y);
+doc.setFontSize(9);
+doc.setTextColor(150,150,150);
+doc.text('Piano GRATUITO - Angel Calculator',105,280,{align:'center'});
+doc.save('Angelo_'+angelName+'_FREE.pdf');
+}
+</script>
+</body>
+</html>
